@@ -1,0 +1,23 @@
+{
+  "name": "kanpro",
+  "version": "1.0.0",
+  "private": true,
+  "author": "yewton",
+  "license": "WTFPL",
+  "scripts": {
+    "clean": "rimraf dist",
+    "assets": "cpx 'src/assets/**/*' dist/assets",
+    "deck:index": "marp --no-stdin src/index.md -o dist/index.html --og-image ${URL}/index.jpg --url ${URL}",
+    "og-image:index": "marp src/index.md -o dist/index.jpg",
+    "deck:intro": "marp --no-stdin src/intro.md -o dist/intro.html --og-image ${URL}/intro.jpg --url ${URL}/intro.html",
+    "og-image:intro": "marp src/intro.md -o dist/intro.jpg",
+    "build": "npm run clean && npm run assets && run-p og-image:* && run-p deck:*",
+    "start": "marp -s src"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^0.16.2",
+    "cpx2": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0"
+  }
+}

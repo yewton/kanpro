@@ -1,0 +1,6 @@
+theme: gaia
+class:
+  - lead
+paginate: true
+_paginate: false
+headingDivider: 1
