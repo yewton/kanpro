@@ -30,6 +30,10 @@ jobs:
           npm ci
           npm i puppeteer --no-save
 
+      - name: Install fonts
+        run: |
+          sudo apt install fonts-noto-cjk
+
       - name: Build Marp slide deck
         run: |
           CHROME_PATH=$(node .puppeteer.js) npm run build
