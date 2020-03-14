@@ -22,7 +22,7 @@ yewton
 
 * {{{fit}}} この会の目的
 
-基本的には [[https://amzn.to/2R9TvN7][CODE COMPLETE 第2版]] を題材に、
+基本的には [[https://www.amazon.co.jp/dp/489100455X/][CODE COMPLETE 第2版]] を題材に、
 yewton の考える *〈完全なプログラミング〉* を知り、
 今後のコーディングや設計の基礎的な指針を
 メンバー間で擦り合わせること
@@ -38,7 +38,7 @@ yewton の考える *〈完全なプログラミング〉* を知り、
 
 {{{img(bg right contain,cc_book.jpg)}}}
 
-- [[https://amzn.to/2R9TvN7][CODE COMPLETE 第2版]] の日本語訳のサブタイトルが *完全なプログラミングを目指して*
+- [[https://www.amazon.co.jp/dp/489100455X/][CODE COMPLETE 第2版]] の日本語訳のサブタイトルが *完全なプログラミングを目指して*
 - 本書中に *〈完全なプログラミング〉に言及する記述は無し* :scream:
 
 {{{newpage}}}
@@ -300,33 +300,33 @@ It's *only the first 10 minutes that the code's original* , when you type it in 
 /--- CODE COMPLETE 20章 ソフトウェアの品質/
 #+end_quote
 
-* {{{fit}}} 低品質なコード
-** を高速で量産するエンジニア
+* {{{fit}}} 🤔
 
-* {{{fit}}} *高品質なコード*
-** を高速で量産するエンジニア
+* {{{fit}}} Q. 生産性を低下させる要因は？
 
-* {{{fit}}} どっちになりたいですか？ 😀
+* {{{fit}}} *エラー* 🐛
 
-* {{{fit}}} プログラマの三大美徳
+** それに伴うデバッグと修正
 
-* {{{fit}}} 怠惰<br>短気<br>傲慢
+{{{newpage}}}
 
-{{{img(bg right contain,larry.jpg)}}}
+#+begin_quote
+ほとんどのプロジェクトで最も時間のかかるアクティビティは、正しく動作しないコードのデバッグと修正である。
+デバッグとそれに伴うリファクタリングなどの修正作業は、従来の単純なソフトウェア開発サイクルにおいて約50%の時間を占める。
+#+end_quote
 
-* 〈完全〉を求めるのは<br>勤勉だからでも<br>完璧主義者だからでもない
+{{{newpage}}}
 
-* {{{fit}}} *怠惰*
+#+begin_quote
+エラーを予防してデバッグを減らせば、生産性は向上する。
+したがって、開発スケジュールを短縮する最も明らかな方法とは、製品の品質を向上させ、ソフトウェアのデバッグや作業のやり直しにかかる時間を減らすことである。
+/--- CODE COMPLETE 20章 ソフトウェアの品質/
+#+end_quote
 
-** だからだ
+* {{{fit}}}〈完全なプログラミング〉は<br> *はやい* ・ *やすい*
 
-* ただし
-
-- これまで言ってきたのは組織内でビジネスロジックをチーム開発で実装するという文脈の話
-- 関わる人が一人しかいないとか、全員が同じスキルレベルで人の出入りもない、とかなら、
- *「とりあえず動けばいい」が一番はやいかも* しれない
-- *最速* を目指してください
-- 組織でチーム開発するならこれまで言って来たことがきっと役に立ちます
+** なので
+* {{{fit}}} *うまい* <br> 😋
 
 * まとめ
 
@@ -340,5 +340,7 @@ It's *only the first 10 minutes that the code's original* , when you type it in 
 
 * Credits
 
+- [[https://www.amazon.co.jp/dp/489100455X/][CODE COMPLETE 第2版]]
+- [[https://www.amazon.co.jp/dp/4822285243][ピープルウエア 第3版]]
 - [[https://marp.app/][Marp - Markdown Presentation Ecosystem]]
 - [[https://www.pakutaso.com/20170458107post-11122.html][凶暴化した暴徒が鉄拳制裁のフリー素材 from ぱくたそ]]
