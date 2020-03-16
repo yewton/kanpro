@@ -163,202 +163,179 @@ yewton
 
 # <!--fit-->正解は
 
+---
+
 > クラスとは、強くて明確な責務(responsibility)を共有するデータとルーチンの集まりである。
 > *&#x2014; CODE COMPLETE 第6章 クラスの作成*
 
+
+# <!--fit--> どうして **クラス** が必要なの？
+
 ---
 
-> プログラム全体を一気に頭に詰め込むべきではない。プログラムの部分ごとに集中できるように、プログラムを整理して、一度に検討するプログラムの量は、最小限にとどめることを目指すべきである。
+> プログラム全体を一気に頭に詰め込むべきではない。
+> プログラムの部分ごとに集中できるように、プログラムを整理して、一度に検討するプログラムの量は、最小限にとどめることを目指すべきである。
 > *&#x2014; CODE COMPLETE 5.2.1 ソフトウェアの鉄則：複雑さへの対処*
 
----
 
-
-# <!--fit-->\*— Code Complete 6.4.2 クラスを作成する理由のまとめ\*
-
----
-
-
-# <!--fit-->または抽象的なオブジェクト
-
-
-# <!--fit-->\\( \`Circle\` に対する \`Shape\` など )
+# 現実世界のオブジェクト<br>または抽象的なオブジェクト( `Circle` に対する `Shape` など )を<br>モデリングする
 
 ---
 
 > プログラミングでは、抽象化がShapeのように用意されているわけではないので、
 > つじつまの合った抽象化を何とか考え出さなければならない。
 > 適切な抽象オブジェクトを考え出すことは、オブジェクト指向設計における主な課題の1つである。
-
----
-
-
-# <!--fit-->緩和する
+> *&#x2014; CODE COMPLETE 6.4 クラスを作成する理由*
 
 
-# <!--fit-->分離する
-
-
-# <!--fit-->隠蔽する
+# <!--fit-->複雑さを **緩和** ・ **分離** ・ **隠蔽** する
 
 ---
 
 > クラスを作成する最も重要な理由は、プログラムの複雑さを低減することである。
 > クラスの抽象化の威力を利用しなければ、複雑なプログラムを頭で整理することは不可能である。
+> *&#x2014; CODE COMPLETE 6.4 クラスを作成する理由*
+
+
+# その他
+
+-   変更による影響を限定する
+-   グローバルデータを隠蔽する
+-   引数の受け渡しを合理化する
+-   制御を一元化する
+-   コードの再利用を促進する
+-   プログラムのファミリを計画する
+    -   独立したプログラムの組み合わせでソフトウェアを構成する
+-   関連する操作をパッケージにまとめる
+-   特定のリファクタリングを実行する
+
+
+# <!--fit-->これ以外の目的で<br>クラスが使われていたら
+
+---
+
+![bg contain](assets/how-to-make-your-code-smell-like-teen-spirit-3-728.jpg)
+
+
+# <!--fit-->望ましくない<br>クラス
 
 ---
 
 
-# <!--fit-->コードの再利用を促進する
+# <!--fit-->God クラス
+
+![bg contain opacity](assets/internet_god.png)
 
 ---
 
----
-
-\![fit](images/how-to-make-your-code-smell-like-teen-spirit-3-728.jpg)
-
----
-
-
-# <!--fit-->望ましくない
-
-
-# <!--fit-->クラス
-
-
-# <!--fit-->― Code Complete 6.4.1 望ましくないクラス
-
----
-
-\![](images/internet<sub>god.png</sub>)
-
-
-# <!--fit-->「God」
-
----
+![bg contain opacity](assets/internet_god.png)
 
 > 全知全能のクラスを作成してはならない。
 > クラスがGet()ルーチンやSet()ルーチンを使って他のクラスからデータを取得することに明け暮れているなら
 > （つまり、他人の領分に首を突っ込み、あれこれ口出ししているようなら）、
 > それをゴッドクラスにまとめるよりも、他のクラスに整理する方がよいかどうか検討しよう
+> *&#x2014; CODE COMPLETE 6.4.1 望ましくないクラス*
+
+
+# <!--fit--> `FooManager` <br> `BarHelper` <br> `FizzHandler` <br> `BuzzInfo`
+
+![bg contain opacity](assets/internet_god.png)
 
 ---
-
-\![](images/internet<sub>god.png</sub>)
-
-
-# <!--fit-->\`FooManager\`
-
-
-# <!--fit-->\`BarHelper\`
-
-
-# <!--fit-->\`FizzHandler\`
-
-
-# <!--fit-->\`BuzzInfo\`
-
----
-
-\![](images/internet<sub>god.png</sub>)
 
 -   意味が広範過ぎる単語は怪しむ
 -   より明確な名前がないか一晩考える
-    -   \`Supervisor\`, \`Context\`, \`Bucket\`, \`Pool\`, etc&#x2026;
--   [クラスの命名のアンチパターン \&#x00ad; Qiita](<http://qiita.com/magicant/items/8134edf969f9629fa66e>)
--   [I Shall Call It\\.\\. SomethingManager](<https://blog.codinghorror.com/i-shall-call-it-somethingmanager/>)
-
----
-
-\![](images/calisthenics.jpg)
+    -   `Supervisor`, `Context`, `Pool`, etc&#x2026;
+-   [クラスの命名のアンチパターン - Qiita](https://qiita.com/magicant/items/8134edf969f9629fa66e)
+-   [I Shall Call It.. SomethingManager](https://blog.codinghorror.com/i-shall-call-it-somethingmanager/)
 
 
-# <!--fit-->[Object Calisthenics](<https://williamdurand.fr/2013/06/03/object-calisthenics/>)
+# <!--fit-->[Object Calisthenics](https://williamdurand.fr/2013/06/03/object-calisthenics/) <br> オブジェクト指向健康体操
+
+![bg contain opacity](assets/fitness-4245645_1280.jpg)
 
 
-# <!--fit-->オブジェクト指向健康体操
+# <!--fit-->クラスは **50行まで**
 
----
-
-\![](images/calisthenics.jpg)
+![bg contain opacity](assets/fitness-4245645_1280.jpg)
 
 
-# <!--fit-->パッケージは ****10ファイルまで****
+# <!--fit-->パッケージは **10ファイルまで**
+
+![bg contain opacity](assets/fitness-4245645_1280.jpg)
 
 
-# <!--fit-->インスタンス変数は ****2個まで****
+# <!--fit-->インスタンス変数は **2個まで**
+
+![bg contain opacity](assets/fitness-4245645_1280.jpg)
 
 
-# <!--fit-->"\`.\`" は1行につき ****1個まで****
+# <!--fit-->" `.` " は1行につき **1個まで**
 
----
+![bg contain opacity](assets/fitness-4245645_1280.jpg)
+
+(デメテルの法則)
 
 
 # <!--fit-->よいクラス
 
----
-
 
 # <!--fit-->SOLID
 
-----
+
+# <!--fit-->単一責務の原則<br>Single responsibility principle
 
 
-# <!--fit-->単一責務の原則
+# <!--fit-->クラスを変更する理由は<br> **常に1つ** でなければならない
 
 
-# <!--fit-->Single responsibility principle
-
----
-
-----
+# <!--fit-->オープンクローズドの原則<br>Open/closed principle
 
 
-# <!--fit-->オープンクローズドの原則
-
-
-# <!--fit-->Open/closed principle
+# <!--fit-->モジュールは拡張に対して開いていなければならず<br>修正に対して閉じていなければならない
 
 ---
 
----
-
-\![fit](images/thonk.png)
-
----
+![bg contain](assets/thonk.png)
 
 
-# <!--fit-->\\(拡張に対して開いている)
-
----
+# <!--fit-->拡張に対して開いている
 
 
-# <!--fit-->\\(修正に対して閉じている)
-
----
+## 他の関連機能を実装するベースとして<br>使えなければならない
 
 
-# <!--fit-->リスコフの置換原則
+# <!--fit-->修正に対して閉じている
 
 
-# <!--fit-->Liskov substitution principle
+## 既存の振る舞いを変更することは出来ない、する必要がない
 
 ---
 
----
-
-\![fit](images/thonk.png)
+![bg contain](assets/thonk.png)
 
 ---
 
-\![fit](images/framy.jpg)
+何か新しいことをやりたいときに、
+既存のクラスを **修正せずに** そのまま、
+**簡単に利用出来る** つくりになっていると素敵だね
+
+
+# <!--fit-->リスコフの置換原則<br>Liskov substitution principle
+
+
+# <!--fit-->サブクラスをその基底クラスと<br>置き換えることが出来なければならない
+
+クラス `S` がクラス `T` のサブクラスである場合に、
+プログラム中で使われる `T` のインスタンスは、
+何ら修正を加えることなく `S` のインスタンスに置き換えることが出来なければならない
 
 
 # <!--fit-->長方形と正方形
 
 ---
 
-\`\`\`java
+```java
 public class Rectangle {
     private int length;
     private int breadth;
@@ -376,14 +353,14 @@ public class Rectangle {
         this.breadth = breadth;
     }
     public int getArea() {
-        return this.length \* this.breadth;
+        return this.length * this.breadth;
     }
 }
-\`\`\`
+```
 
 ---
 
-\`\`\`java
+```java
 public class Square extends Rectangle {
     @Override
     public void setBreadth(int breadth) {
@@ -396,77 +373,69 @@ public class Square extends Rectangle {
         super.setBreadth(length);
     }
 }
-\`\`\`
+```
 
 ---
 
-\![fit](images/how-to-make-your-code-smell-like-teen-spirit-3-728.jpg)
+![bg contain right](assets/how-to-make-your-code-smell-like-teen-spirit-3-728.jpg)
+
+サブクラスであることが制限にしか感じなくなったら怪しい
+
+結局クラスごとの場合わけ書いてたら怪しい
+
+
+# <!--fit-->インターフェース分離の原則<br>Interface segregation principle
+
+
+# <!--fit-->クライアントが使用しないインターフェイスに<br>クライアントを強制的に依存させてはならない
 
 ---
 
-
-# <!--fit-->インターフェース分離の原則
-
-
-# <!--fit-->Interface segregation principle
+![bg contain](assets/thonk.png)
 
 ---
 
----
-
-\![fit](images/thonk.png)
+![bg contain](assets/java_list.jpg)
 
 ---
 
-\![fit](images/java<sub>list.jpg</sub>)
-
----
-
-\![fit](images/kotlin<sub>list.png</sub>)
-
----
+![bg contain](assets/kotlin_list.png)
 
 
-# <!--fit-->依存関係逆転の原則
+# <!--fit-->依存関係逆転の原則<br>Dependency inversion principle
 
 
-# <!--fit-->Dependency inversion principle
-
----
-
----
+# 上位モジュールを下位モジュールに依存させるのではなく<br>両方のモジュールを抽象化に依存させるべきである
 
 
 # <!--fit-->実装ではなく抽象に依存せよ
 
 ---
 
-\![fit](images/thonk.png)
+![bg contain](assets/thonk.png)
 
 ---
 
-\![fit](images/Traditional<sub>Layers</sub><sub>Pattern.png</sub>)
+![bg contain](assets/Traditional_Layers_Pattern.png)
 
 ---
 
-\![fit](images/DIPLayersPattern.png)
-
----
+![bg contain](assets/DIPLayersPattern.png)
 
 
 # <!--fit-->ポリモーフィズム
 
 ---
 
--   同一のインタフェースを ****複数の型に対して**** 定義出来ること
--   異なるクラスが ****同一のメッセージに対して**** 応答出来ること
+-   同一のインタフェースを **複数の型に対して** 定義出来ること
+-   異なるクラスが **同一のメッセージに対して** 応答出来ること
 
-----
+---
 
 > 実行時まで処理するドアの種類を知らないOpen()やClose()のような操作をサポートする言語の機能を「ポリモーフィズム」という。
-&#x2013; Code Complete 5.3.4 設計が単純になる場合の継承
+> *&#x2014; CODE COMPLETE 5.3.4 設計が単純になる場合の継承*
 
-----
+---
 
 -   日本語では ****多態性**** とか ****多相**** とも
 -   いくつか種類がある
@@ -474,54 +443,45 @@ public class Square extends Rectangle {
     -   パラメータ(総称型とか)
     -   アドホック(オーバーロードとか)
 
-----
+---
 
 > ■広範な型チェックよりもポリモーフィズムを選ぶ
+> 
 > case文の数が増えてきたら、継承を使って設計した方がよいという兆候かもしれない。
-&#x2013; Code Complete 6.3.2 継承(「is a」の関係)
+> *&#x2014; CODE COMPLETE 6.3.2 継承(「is a」の関係)*
 
-----
 
-\## 具体例
+# 具体例
 
--   [Replace Conditional with Polymorphism](<http://refactoring.com/catalog/replaceConditionalWithPolymorphism.html>)
+from [Replace Conditional with Polymorphism](http://refactoring.com/catalog/replaceConditionalWithPolymorphism.html)
 
-----
-\`\`\`java
+---
+
+```java
 class Bird {
-  // &#x2026;
+  // ...
   double getSpeed()
     switch (mType) {
       case EUROPEAN:
         return getBaseSpeed();
       case AFRICAN:
-        return getBaseSpeed() - getLoadFactor() \* mNumberOfCoconuts;
-      case NORWEGIAN<sub>BLUE</sub>:
+        return getBaseSpeed() - getLoadFactor() * mNumberOfCoconuts;
+      case NORWEGIAN_BLUE:
         return (mIsNailed) ? 0 : getBaseSpeed(mVoltage);
     }
     throw new RuntimeException ("Should be unreachable");
 }
-\`\`\`
+```
 
 ---
 
-\![fit](images/polymorphism.png)
-
----
+![bg contain](assets/polymorphism.png)
 
 
 # <!--fit-->何が嬉しいのか
 
----
 
-
-# <!--fit-->マジックナンバー
-
-
-# <!--fit-->7 ± 2
-
-
-# <!--fit-->\\(4 ± 1, 5 ± 3 という説も)
+# <!--fit-->マジックナンバー<br>7 ± 2<br>(4 ± 1, 5 ± 3 という説も)
 
 ---
 
@@ -529,13 +489,8 @@ class Bird {
 -   ****ある特定のケースにだけ関心があるときに、ずらずらと列挙された case 文を読むのは苦行****
     -   読み違いも起こりやすい
 
----
 
-
-# <!--fit-->[求めるな、命じよ](<http://martinfowler.com/bliki/TellDontAsk.html>)
-
-
-# <!--fit-->Tell-Don't-Ask
+# <!--fit-->[求めるな、命じよ](http://martinfowler.com/bliki/TellDontAsk.html)<br>Tell-Don't-Ask
 
 ---
 
@@ -543,38 +498,26 @@ class Bird {
 -   データと振る舞いを密接に関連付ける OOP の原則
 -   これが ****ポリモーフィズムを使って実現出来る場合も**** ある
 
----
-
 
 # <!--fit-->ただし
 
----
 
-
-# <!--fit-->継承よりも合成を
-
-
-# <!--fit-->Composition over inheritance
+# <!--fit-->継承よりも合成を<br>Composition over inheritance
 
 ---
 
 -   継承は強力だが使いこなすのは難しい
+    -   そもそも真に継承関係にあるような事象は稀
 -   ****リスコフの置換原則が守られないなら使ってはいけない****
 -   合成ですんなり表現出来るならそれでいい
 
----
-
 
 # <!--fit-->ここまでまとめ
-
----
 
 
 # <!--fit-->オブジェクト指向でなぜつくるのか
 
 -   ****複雑な問題**** を ****人間が解決できるようにする**** ため
-
----
 
 
 # <!--fit-->よいクラスとは何か
@@ -582,63 +525,45 @@ class Bird {
 
 # <!--fit-->SOLID
 
----
-
 
 # <!--fit-->ポリモーフィズムの取扱い
 
 -   ****問題を適切に表現出来る場合に**** 威力を発揮する
 -   濫用すると ****人間の能力を越えた複雑度になりかねない****
 
----
-
 
 # <!--fit-->命名について
 
----
 
-
-# <!--fit-->[TwoHardThings](<http://martinfowler.com/bliki/TwoHardThings.html>)
+# <!--fit-->[TwoHardThings](http://martinfowler.com/bliki/TwoHardThings.html)
 
 ---
 
 > There are only two hard things in Computer Science:
 > cache invalidation and naming things.
-&#x2013; Phil Karlton
+> *&#x2014; Phil Karlton*
+
+
+# <!--fit-->[ジョシュアツリー](http://d.hatena.ne.jp/asakichy/20100720/1279583824)
 
 ---
 
-
-# <!--fit-->[ジョシュアツリー](<http://d.hatena.ne.jp/asakichy/20100720/1279583824>)
-
----
-
-\![fit](images/300px-Joshua<sub>Tree</sub><sub>in</sub><sub>Joshua</sub><sub>Tree</sub><sub>National</sub><sub>Park.jpg</sub>)
+![bg contain](assets/300px-Joshua_Tree_in_Joshua_Tree_National_Park.jpg)
 
 ---
 
-\![fit](images/300px-Joshua<sub>Tree</sub><sub>in</sub><sub>Joshua</sub><sub>Tree</sub><sub>National</sub><sub>Park.jpg</sub>)
+![bg contain opacity](assets/300px-Joshua_Tree_in_Joshua_Tree_National_Park.jpg)
 
 > 名前を言えるようになったとたんに、いたる所でそれを見るようになりました
-&#x2013; Robin Williams [ノンデザイナーズ・デザインブック](<https://www.amazon.co.jp/dp/B01LW1BC2L/>)
-
-----
+> &#x2013; Robin Williams [デザイナーズ・デザインブック](https://www.amazon.co.jp/dp/B01LW1BC2L/)
 
 
-# <!--fit-->[名前重要](<http://xn--97-273ae6a4irb6e2hsoiozc2g4b8082p.com/%E3%82%A8%E3%83%83%E3%82%BB%E3%82%A4/%E5%90%8D%E5%89%8D%E9%87%8D%E8%A6%81>)
+# [名前重要](http://xn--97-273ae6a4irb6e2hsoiozc2g4b8082p.com/%E3%82%A8%E3%83%83%E3%82%BB%E3%82%A4/%E5%90%8D%E5%89%8D%E9%87%8D%E8%A6%81)
 
----
-
-\![fit](images/matz.JPG)
-
----
-
-\![fit](images/matz.JPG)
+![bg right](assets/matz.JPG)
 
 > あらゆる機能をデザインする時に、私はその名前にもっともこだわります。プログラマとしてのキャリアの中で、適切な名前をつけることができた機能は成功し、そうでない機能については後で後悔することが多かったように思うからです。
-&#x2013; まつもと ゆきひろ
-
-----
+> *&#x2014; まつもと ゆきひろ*
 
 
 # <!--fit-->よいメソッド名
@@ -780,4 +705,9 @@ class Bird {
 
 
 # <!--fit-->おわり
+
+
+# Credits
+
+-   [Alex Ceban](https://pixabay.com/ja/users/alexceban-2463891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4245645) による [Pixabay](https://pixabay.com/ja/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4245645) からの画像
 
