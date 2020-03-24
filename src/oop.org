@@ -171,8 +171,6 @@ yewton
 
 * {{{fit}}}望ましくない<br>クラス
 
-{{{newpage}}}
-
 * {{{fit}}}God クラス
 
 {{{img(bg contain opacity,internet_god.png)}}}
@@ -331,11 +329,15 @@ public class Square extends Rectangle {
 
 {{{newpage}}}
 
-{{{img(bg contain,java_list.jpg)}}}
+{{{img(,java_list.jpg)}}}
+
+from [[https://www.codejava.net/java-core/collections/overview-of-java-collections-framework-api-uml-diagram][Overview of Java Collections Framework API (UML diagram)]]
 
 {{{newpage}}}
 
-{{{img(bg contain,kotlin_list.png)}}}
+{{{img(,kotlin_list.png)}}}
+
+from [[https://kotlinlang.org/docs/reference/collections-overview.html][Kotlin Collections Overview]]
 
 * {{{fit}}}依存関係逆転の原則<br>Dependency inversion principle
 
