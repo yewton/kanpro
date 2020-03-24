@@ -11,6 +11,8 @@
     "og-image:index": "marp src/index.md -o dist/index.jpg",
     "deck:intro": "marp --no-stdin src/intro.md -o dist/intro.html --og-image ${URL}/intro.jpg --url ${URL}/intro.html",
     "og-image:intro": "marp src/intro.md -o dist/intro.jpg",
+    "deck:oop": "marp --no-stdin src/oop.md -o dist/oop.html --og-image ${URL}/oop.jpg --url ${URL}/oop.html",
+    "og-image:oop": "marp src/oop.md -o dist/oop.jpg",
     "build": "npm run clean && npm run assets && run-p og-image:* && run-p deck:*",
     "start": "marp -s src"
   },
