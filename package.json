@@ -13,6 +13,8 @@
     "og-image:intro": "marp src/intro.md -o dist/intro.jpg",
     "deck:oop": "marp --no-stdin src/oop.md -o dist/oop.html --og-image ${URL}/oop.jpg --url ${URL}/oop.html",
     "og-image:oop": "marp src/oop.md -o dist/oop.jpg",
+    "deck:naming": "marp --no-stdin src/naming.md -o dist/naming.html --og-image ${URL}/naming.jpg --url ${URL}/naming.html",
+    "og-image:naming": "marp src/naming.md -o dist/naming.jpg",
     "build": "npm run clean && npm run assets && run-p og-image:* && run-p deck:*",
     "start": "marp -s src"
   },
