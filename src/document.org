@@ -10,6 +10,11 @@ _footer: ""
 #+end_export
 {{{fm}}}
 
+* {{{fit}}} 〈完全なプログラミング〉を目指す会 2020
+** {{{fit}}} 第四回 ドキュメント
+
+yewton
+
 * {{{fit}}} ドキュメント
 
 * {{{fit}}}の前に
@@ -218,10 +223,12 @@ System.out.println(String.format("Product = %d", product));
 
 #+begin_export markdown
 ```java
-// 商品 FIXME validationをapplePaymentService*validateに移す
-Commodity commodity = Commodity.KOI_IOS_PLAN_MAP.get(receipt.getProductId());
+    // FIXME: Additional parameters are required in TS3.6, but ignored in 3.5.
+    // Remove the any cast once google3 is fully on TS3.6.
 ```
 #+end_export
+
+https://github.com/angular/angular/blob/f7815cf96defa6b19fff482824c5997f03fd78ea/packages/compiler-cli/src/ngtsc/util/src/typescript.ts#L128-L129
 
 - =TODO=
 - =FIXME=
@@ -250,8 +257,6 @@ Commodity commodity = Commodity.KOI_IOS_PLAN_MAP.get(receipt.getProductId());
 * {{{fit}}} コードよりも *素早く読める*
 
 * {{{fit}}}特に *作成者以外の誰か* <br> の役に立つ
-
-{{{newpage}}}
 
 * {{{fit}}} 5. コードの意図の説明
 
@@ -390,7 +395,7 @@ and as a result, a commit message shows *whether a developer is a good collabora
 - リンク部分は [[https://help.github.com/articles/closing-issues-via-commit-messages/][Fix #99]] みたいなのでも 👌
     - コンテキストの再構築に役立つ
 
-* (FYI)[[https://github.com/spring-projects/spring-boot/blob/v2.0.4.RELEASE/CONTRIBUTING.adoc*code-conventions-and-housekeeping][Spring Boot もこの形式]]
+* (FYI)[[https://github.com/spring-projects/spring-boot/blob/v2.2.6.RELEASE/CONTRIBUTING.adoc#code-conventions-and-housekeeping][Spring Boot もこのような形式]]
 
 #+begin_example
 Restore support for TransactionAwareCacheDecorator
@@ -415,16 +420,6 @@ PR Close #35271
 #+end_example
 
 https://github.com/angular/angular/commit/acc483e2ebe7d8207fe183d8ec1424c549863184
-
-* {{{fit}}} 書き方のポイント
-
-* {{{fit}}}どのように よりも <br> *何を* ・ *何故* <br> に重点を置く
-
-* {{{fit}}}どのように は *diff の役割*
-
-* {{{fit}}} *なぜこのコミットを* <br> *するハメになったのか* <br> 説明する
-
-** {{{fit}}} Pull Request の説明文を書くつもりで
 
 * {{{fit}}} ありがちで <br> *やめろ!* <br> と思うもの
 
@@ -585,7 +580,31 @@ and change the action of the moved commit from =pick= to =squash= (or =fixup=).
 - 同じファイル内に、複数の目的が異なる変更が入っちゃってる場合に使う
 - ぼちぼち使う
 
-* {{{fit}}} *残すべき* ドキュメント
+* =git config commit.template=
+
+- コミットメッセージのテンプレートを設定出来る
+- テンプレートの例: https://github.com/yewton/.dotfiles/blob/master/gitmessage
+
+#+begin_export markdown
+```gitconfig
+[commit]
+	template = ~/.gitmessage
+```
+#+end_export
+
+* {{{fit}}}コミットメッセージ<br>まとめ
+
+* {{{fit}}}どのように よりも <br> *何を* ・ *何故* <br> に重点を置く
+
+** どのように は *diff の役割*
+
+* {{{fit}}} このコミットを  <br> *cherry pick すると何が起こるのか？* <br> このコミットは <br> *どういう背景で積まれたのか？*
+
+** {{{fit}}} Pull Request の説明文を書くつもりで
+
+* その他のドキュメント
+
+* {{{fit}}} *残すべき* <br>ドキュメント
 
 * {{{fit}}} *Architecture Decision*
 

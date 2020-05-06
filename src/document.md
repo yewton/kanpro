@@ -15,6 +15,14 @@ _footer: ""
 ---
 
 
+# <!--fit--> 〈完全なプログラミング〉を目指す会 2020
+
+
+## <!--fit--> 第四回 ドキュメント
+
+yewton
+
+
 # <!--fit--> ドキュメント
 
 
@@ -248,9 +256,11 @@ System.out.println(String.format("Product = %d", product));
 # <!--fit--> 3. コードの目印(マーカー)
 
 ```java
-// 商品 FIXME validationをapplePaymentService*validateに移す
-Commodity commodity = Commodity.KOI_IOS_PLAN_MAP.get(receipt.getProductId());
+    // FIXME: Additional parameters are required in TS3.6, but ignored in 3.5.
+    // Remove the any cast once google3 is fully on TS3.6.
 ```
+
+<https://github.com/angular/angular/blob/f7815cf96defa6b19fff482824c5997f03fd78ea/packages/compiler-cli/src/ngtsc/util/src/typescript.ts#L128-L129>
 
 -   `TODO`
 -   `FIXME`
@@ -290,8 +300,6 @@ Commodity commodity = Commodity.KOI_IOS_PLAN_MAP.get(receipt.getProductId());
 
 
 # <!--fit-->特に **作成者以外の誰か** <br> の役に立つ
-
----
 
 
 # <!--fit--> 5. コードの意図の説明
@@ -447,7 +455,7 @@ Commodity commodity = Commodity.KOI_IOS_PLAN_MAP.get(receipt.getProductId());
     -   コンテキストの再構築に役立つ
 
 
-# (FYI)[Spring Boot もこの形式](https://github.com/spring-projects/spring-boot/blob/v2.0.4.RELEASE/CONTRIBUTING.adoc*code-conventions-and-housekeeping)
+# (FYI)[Spring Boot もこのような形式](https://github.com/spring-projects/spring-boot/blob/v2.2.6.RELEASE/CONTRIBUTING.adoc#code-conventions-and-housekeeping)
 
     Restore support for TransactionAwareCacheDecorator
     
@@ -469,21 +477,6 @@ Commodity commodity = Commodity.KOI_IOS_PLAN_MAP.get(receipt.getProductId());
     PR Close #35271
 
 <https://github.com/angular/angular/commit/acc483e2ebe7d8207fe183d8ec1424c549863184>
-
-
-# <!--fit--> 書き方のポイント
-
-
-# <!--fit-->どのように よりも <br> **何を** ・ **何故** <br> に重点を置く
-
-
-# <!--fit-->どのように は **diff の役割**
-
-
-# <!--fit--> **なぜこのコミットを** <br> **するハメになったのか** <br> 説明する
-
-
-## <!--fit--> Pull Request の説明文を書くつもりで
 
 
 # <!--fit--> ありがちで <br> **やめろ!** <br> と思うもの
@@ -660,7 +653,36 @@ Commodity commodity = Commodity.KOI_IOS_PLAN_MAP.get(receipt.getProductId());
 -   ぼちぼち使う
 
 
-# <!--fit--> **残すべき** ドキュメント
+# `git config commit.template`
+
+-   コミットメッセージのテンプレートを設定出来る
+-   テンプレートの例: <https://github.com/yewton/.dotfiles/blob/master/gitmessage>
+
+```gitconfig
+[commit]
+	template = ~/.gitmessage
+```
+
+
+# <!--fit-->コミットメッセージ<br>まとめ
+
+
+# <!--fit-->どのように よりも <br> **何を** ・ **何故** <br> に重点を置く
+
+
+## どのように は **diff の役割**
+
+
+# <!--fit--> このコミットを  <br> **cherry pick すると何が起こるのか？** <br> このコミットは <br> **どういう背景で積まれたのか？**
+
+
+## <!--fit--> Pull Request の説明文を書くつもりで
+
+
+# その他のドキュメント
+
+
+# <!--fit--> **残すべき** <br>ドキュメント
 
 
 # <!--fit--> **Architecture Decision**
