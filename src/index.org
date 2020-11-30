@@ -16,3 +16,4 @@ footer:  〈完全なプログラミング〉を目指す会 2020
 - @@html:[オブジェクト指向プログラミング](oop.html)@@
 - @@html:[命名](naming.html)@@
 - @@html:[ドキュメント](document.html)@@
+- @@html:[アーキテクチャ](architecture.html)@@
