@@ -67,8 +67,8 @@ omuomugin
 # 今日持ち帰って欲しいこと
 
 1. アーキテクチャを考えるために必要な一般的な知識
-2. クリーンアーキテクチャのあの図を知識をもって読み解けるようになること
-3. アーキテクチャについて議論できる下地を作ること
+2. アーキテクチャについて議論できる下地を作ること
+3. クリーンアーキテクチャのあの図を知識をもって読み解けるようになること
 
 ---
 ![bg contain opacity:0.5](assets/clean_architecture_uncle_bob.jpg)
@@ -77,7 +77,7 @@ omuomugin
 # <!--fit-->なぜアーキテクチャを学ぶ必要があるか
 
 ---
-> 優れたソフトウェア開発チームは、真正面から闘争に立ち向かう。ステークホルダーたちと対等に、ひるむことなく口論する。ソフトウェア開発者もステークホルダーであることは忘れてはいけない。**保護すべきソフトウェアに対する責任がある**。それがあなたの役割であり、義務である。それがあなたが雇われてる大きな理由だ。
+> 優れたソフトウェア開発チームは、真正面から闘争に立ち向かう。ステークホルダーたちと対等に、ひるむことなく口論する。ソフトウェア開発者もステークホルダーであることは忘れてはいけない。**保護すべきソフトウェアに対する責任がある**。それがあなたの役割であり、義務である。それがあなたが雇われている大きな理由だ。
 > 
 > *&#x2014; Clean Architecture　達人に学ぶソフトウェアの構造と設計 Robert C.Martin*
 
@@ -99,6 +99,11 @@ omuomugin
 
 # **ユースケース** + 中心
 
+# ユースケース
+
+---
+![bg contain](assets/thonk.png)
+
 # 「ユースケース」とは何か
 
 > 自動化されたシステムを定義・制限することによって、ビジネスのお金を生み出したり節約したりする **ビジネスルール** もある
@@ -106,18 +111,32 @@ omuomugin
 > *&#x2014; Clean Architecture　達人に学ぶソフトウェアの構造と設計 Robert C.Martin*
 
 # ビジネスルール
+
+---
+![bg contain](assets/thonk.png)
+
+# 「ビジネスルール」とは何か
 ### ビジネスを成り立たせる重要なルール
 ### <!--fit-->ビジネスルールを理解すれば、「誰を相手にしていて、どんな業務を提供しているのか」が理解できる。
 
-- エンタープライズビジネスロジック
-- アプリケーションビジネスロジック
+# 銀行のアプリケーションを例にとる
+
+# 「銀行がN%の利子をつける」
+
+# **エンタープライズ**ビジネスロジック
+### <!--fit-->利子をコンピュータで計算しようとそろばんで計算しようと関係ない
 
 # **エンタープライズ**ビジネスロジック
 ## <!--fit--> a.k.a ドメインモデル、ドメインサービス、エンティティ、最重要ビジネスルール、etc...
 
-- 最も重要なレイヤー
 - アプリケーションがなくても存在するビジネスルール
-- e.g ステークホルダーと共通認識ができるようなルール
+- i.e. ステークホルダーと共通認識ができるようなルール
+
+# **アプリケーション**ビジネスロジック
+## 「新規でローンを作成する」
+- ローン担当者が連絡先を収集、検証して、与信スコアが500以上であることを確認するまでローンの支払い見積もりを提示しない
+-> 連絡先情報が入力されて、値が検証され、与信スコアが500以上あることを確認するまでは支払い見積もりの画面に進まないようにシステムを設定する
+- **システムでどう自動化されるか**
 
 # **アプリケーション**ビジネスロジック
 ## <!--fit--> a.k.a アプリケーションサービス、ユースケース、etc...
@@ -130,7 +149,7 @@ omuomugin
 
 # ユースケース + **中心**
 
-# 「中心」に据えるとはどういうことか
+# 「中心」に据えるとは
 
 # 【再掲】
 ## アーキテクチャの目的は何か
@@ -177,14 +196,12 @@ omuomugin
 
 # 疎結合はテストも容易になる
 テストを書くとうまい、やすい！😋
-ref : [質とスピード by t_wada](https://speakerdeck.com/twada/quality-and-speed-2020-autumn-edition)
+see also [質とスピード by t_wada](https://speakerdeck.com/twada/quality-and-speed-2020-autumn-edition)
 
 ---
 > ドメイン関連のコードがそうした膨大な他のコードの中に拡散してしまうと、**コードを見て意味を理解するのがきわめて困難になる。**
-
-> ドメイン層を分離してはじめて、モデル駆動開発が可能になるのだ。
-
-*&#x2014; ドメイン駆動設計 Eric Evans*
+> **ドメイン層を分離して**はじめて、モデル駆動開発が可能になるのだ。
+> *&#x2014; ドメイン駆動設計 Eric Evans*
 
 # ドメインを目立たせることも重要
 
@@ -194,22 +211,26 @@ ref : [質とスピード by t_wada](https://speakerdeck.com/twada/quality-and-s
 > *&#x2014; ドメイン駆動設計 Eric Evans*
 
 ---
-![bg contain right:40%](assets/layered_architecture.png)
+![bg contain right:40%](assets/layered_architecture_ddd.png)
 
 ## <!--fit-->Domain Driven Development 
 ## の本に出てくる
 ## <!--fit-->レイヤードアーキテクチャ
 
-# ルール
-- 意味のあるレイヤーに分割されている
-- レイヤー間の依存は、1方向になっている
+# DDD本の説明と現代による実装例
+### <!--fit-->※Webアプリケーションやモバイルアプリケーションなどを想定<br>プラットフォームやビジネスドメインによって解釈や実装は変わりうる
 
 ---
-![bg contain right:40%](assets/layered_architecture.png)
+![bg 75%](assets/layered_architecture_ddd.png)
+![bg 65%](assets/layered_architecture.png)
 
-## 依存 
-## = 
-## 具体的な実装への依存
+# ルール
+- 意味のあるレイヤーに分割されている
+- レイヤー間の依存は、Domain Layer に向かって1方向になっている
+
+---
+![bg 75%](assets/layered_architecture_ddd.png)
+![bg 65%](assets/layered_architecture.png)
 
 # レイヤーの説明
 - **ユーザーインターフェース層 (or プレゼンテーション層)**
@@ -233,23 +254,30 @@ ref : [質とスピード by t_wada](https://speakerdeck.com/twada/quality-and-s
 - Robot Pattern
 
 # Humble Object Pattern
+
+# Humble Object Pattern
 > 振る舞いを2つのモジュールまたは、クラスに分割するだけである。ひとつのモジュールは「Humble(控えめ)」で、ここには**テストが難しい振る舞い**のみが含まれる。もうひとつのモジュールには、Humble Objectから取り除かれた**テストしやすい振る舞い**が含まれる。
 > 
 > *&#x2014; Clean Architecture　達人に学ぶソフトウェアの構造と設計 Robert C.Martin*
 
 ---
-![bg 50%](assets/not_humble.png)
+![bg 40%](assets/not_humble.png)
 
 ---
-![bg 50%](assets/humble.png)
+![bg 40%](assets/humble.png)
 
 # Presenter と View
 - View は Humble Objectである
 - Presenter はテストが容易になったもう1つのモジュール
 
 # Robot Pattern
+
+# Robot Pattern
 ## <!--fit-->Jake Wharton という Android エンジニアが発表してたUIテストを書くためのパターン
-https://jakewharton.com/testing-robots/
+## <!--fit-->直接的には、Presenter と View には関係ないがそれら2つの役割について考える参考になる
+- see also 
+  - https://jakewharton.com/testing-robots/
+  - https://academy.realm.io/posts/kau-jake-wharton-testing-robots/
 
 ---
 ![bg](assets/robot_pattern.png)
@@ -259,11 +287,31 @@ https://jakewharton.com/testing-robots/
 ## <!--fit-->ロボットが操作しているかのように<br>イベントを抽象的に考えるパターン
 
 ---
+![bg opacity:0.3](assets/robot_pattern_sample.png)
+## 決済端末を例に取る
+
+---
 ![bg](assets/robot_pattern_sample.png)
+
+# 「$100 を入力して決済する」 
+```
+findViewWithText("1").click();
+findViewWithText("＋").click();
+findViewWithText("1").click();
+findViewWithText("Send").click();
+
+// 計算結果に時間がかかるかも
+Theread.sleep(1000);
+
+// 計算が成功したことを通知するテキストが出てくることを確認
+findViewWithText("Success!");
+```
+
+# <!--fit-->「$100 を入力して決済する」 What と <br>実際のテストコードの How が混じってる
 
 ---
 ![bg opacity:0.3](assets/robot_pattern_sample.png)
-## 電卓を例に取る
+## What は Robot として表現する
 
 ---
 ![bg opacity:0.3](assets/robot_pattern_sample.png)
@@ -271,21 +319,75 @@ https://jakewharton.com/testing-robots/
 ## <!--fit-->「数式を入力して、計算結果ボタンを押す」
 
 ---
+```
+// Test Code
+PaymentRobot payment = new PaymentRobot();
+payment.amount(100);
+payment.send();
+
+// e.g.
+class PaymentRobot {
+  PaymentRobot amount(int amount) { 
+    findViewWithText("1").click();
+    findViewWithText("＋").click();
+    findViewWithText("1").click();
+  }
+
+  void send() { 
+    findViewWithText("Send").click();
+  }
+}
+```
+
+# Presenter と View に置き換えて考える
+
+---
 ![bg](assets/robot_pattern_sample.png)
 
 ---
 ![bg opacity:0.3](assets/robot_pattern_sample.png)
 ## Presenterは、
-- 「計算結果ボタンを押され、数式を渡される」 というインターフェースを公開
+- 「決済ボタンが押され、料金を渡される」 というインターフェースを公開
 - 呼び出されたら、必要な処理を呼んで計算の処理をする
-- Viewに結果を返す
+- Viewにどういう状態を描画するかの結果を返す
 
 ---
 ![bg opacity:0.3](assets/robot_pattern_sample.png)
 ## Viewは、
-- 数字入力ボタンのアクションを監視して、入力された数式を保持
-- 計算結果ボタンのアクションを監視
-- 「計算結果ボタンを押された」 という通知をPresenterに送信する
+- 数字入力ボタンのアクションを監視して、入力された金額を保持
+- 決済ボタンのアクションを監視
+- 「決済ボタンを押された」 という通知をPresenterに送信する
+
+---
+```
+interface View {
+  void showSuccessMessage();
+}
+
+class ViewImpl implements View {
+  // Event通知
+  void onTapSend() {
+    this.presenter.onTapSend(this.amount);
+  }
+
+  // 
+  void showSuccessMessage() {
+    // show "Success!";
+  }
+  // ...
+}
+
+class Presenter {
+  void onTapSend(int ammount) {
+    // ...
+    // ユースケースに委譲したり、いろんな計算を行う
+    // ...
+
+    // 理想は ViewModel みたいなオブジェクトが渡せるとテストが容易
+    this.view.showSuccessMessage();
+  }
+}
+```
 
 ---
 ![bg opacity:0.3](assets/robot_pattern_sample.png)
@@ -336,7 +438,7 @@ https://jakewharton.com/testing-robots/
 ## 【再掲】
 - 最も重要なレイヤー
 - アプリケーションがなくても存在するビジネスルール
-- e.g ステークホルダーと共通認識ができるようなルール
+- i.e. ステークホルダーと共通認識ができるようなルール
 
 # Domain Service
 ### そもそもServiceとは？
@@ -372,8 +474,16 @@ https://jakewharton.com/testing-robots/
 ---
 ![bg 30% opacity:0.3](assets/repository.png)
 ## Wheel は常に Car の一部なので
-## DB が異なっていても集約のルートは Car
+## テーブル が異なっていても集約のルートは Car
 ## => ドメインモデルと同じ構造になる
+
+# Repository
+## <!--fit-->ドメインモデルと同様の構造を**集約**としてモデリングして、<br>**集約ルート**へのアクセス方法を提供する役割
+
+# よくある間違い
+![bg opacity:0.3](assets/angrybaby.jpg)
+## <!--fit--> ローカルとリモートのデータ取得などをうまく扱うラッパークラス
+
 
 # Repository
 ## <!--fit-->ドメインモデルと同様の構造を**集約**としてモデリングして、<br>**集約ルート**へのアクセス方法を提供する役割
@@ -409,10 +519,23 @@ https://jakewharton.com/testing-robots/
 
 # まとめ
 
----
-![bg contain](assets/architecture_overall.jpeg)
+# <!--fit-->クリーンアーキテクチャの図を読み解いてみよう
+## <!--fit-->今、関わってるプロダクトではどういう処理がどこに属しますか？
 
-# <!--fit-->クリーンアーキテクチャのあの図が見えるでしょ？
+---
+![bg contain](assets/clean_architecture_uncle_bob.jpg)
+
+---
+![bg contain](assets/clean_architecture_uncle_bob_a.jpg)
+
+---
+![bg contain](assets/clean_architecture_uncle_bob_b.jpg)
+
+---
+![bg contain](assets/clean_architecture_uncle_bob_c.jpg)
+
+---
+![bg contain](assets/clean_architecture_uncle_bob_d.jpg)
 
 # 重要なことはこれだけ
 ## 「ビジネスルールが明確に表現されており、<br>技術的な詳細からは疎結合になっている状態」
@@ -430,10 +553,10 @@ https://jakewharton.com/testing-robots/
 
 # 付録
 
-# Ref Books
-- クリーンアーキテクチャ
-- ドメイン駆動開発
-- Patterns of Enterprise Application Architecture
+# Books
+- Robert C.Martin. 「Clean Architecture　達人に学ぶソフトウェアの構造と設計」
+- Eric Evans. 「ドメイン駆動設計」
+- Martin Fowler. 「Patterns of Enterprise Application Architecture」
 
 # Ref Articles
 - https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
@@ -441,6 +564,7 @@ https://jakewharton.com/testing-robots/
 - https://docs.microsoft.com/ja-jp/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design
 - https://martinfowler.com/bliki/HumbleObject.html
 - https://jakewharton.com/testing-robots/
+- https://academy.realm.io/posts/kau-jake-wharton-testing-robots/
 
 # 登場したキーワード
 ビジネスルール、エンタープライズビジネスロジック、アプリケーションビジネスロジック、ドメインモデル、ドメインサービス、エンティティ、最重要ビジネスルール、アプリケーションサービス、ユースケース、バウンダリー、依存性逆転、レイヤードアーキテクチャ、Humble Object Pattern、Robot Pattern、Service、集約、Repository
