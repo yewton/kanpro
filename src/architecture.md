@@ -217,7 +217,7 @@ see also [質とスピード by t_wada](https://speakerdeck.com/twada/quality-an
 ## の本に出てくる
 ## <!--fit-->レイヤードアーキテクチャ
 
-# DDD本の説明と現代による実装例
+# DDD本の説明と実装例
 ### <!--fit-->※Webアプリケーションやモバイルアプリケーションなどを想定<br>プラットフォームやビジネスドメインによって解釈や実装は変わりうる
 
 ---
@@ -296,8 +296,8 @@ see also [質とスピード by t_wada](https://speakerdeck.com/twada/quality-an
 # 「$100 を入力して決済する」 
 ```
 findViewWithText("1").click();
-findViewWithText("＋").click();
-findViewWithText("1").click();
+findViewWithText("0").click();
+findViewWithText("0").click();
 findViewWithText("Send").click();
 
 // 計算結果に時間がかかるかも
@@ -311,7 +311,7 @@ findViewWithText("Success!");
 
 ---
 ![bg opacity:0.3](assets/robot_pattern_sample.png)
-## What は Robot として表現する
+## How は Robot として表現する
 
 ---
 ![bg opacity:0.3](assets/robot_pattern_sample.png)
@@ -329,8 +329,8 @@ payment.send();
 class PaymentRobot {
   PaymentRobot amount(int amount) { 
     findViewWithText("1").click();
-    findViewWithText("＋").click();
-    findViewWithText("1").click();
+    findViewWithText("0").click();
+    findViewWithText("0").click();
   }
 
   void send() { 
@@ -508,10 +508,13 @@ class Presenter {
 ### 実装を他のレイヤーに提供する存在
 
 # 4つの層だけか？
----
+
 > ４つ以外にも必要なものはあるだろう。**この4つ以外は認めないというルールはない。** ただし依存性のルールは常に適用される。
 > 
 > *&#x2014; Clean Architecture　達人に学ぶソフトウェアの構造と設計 Robert C.Martin*
+
+# 登場したクラスだけか？
+## <!--fit-->レイヤードアーキテクチャの実装は、アプリケーションの特性や<br>プラットフォームの特性にもよるので課題を解決するためには<br>他にもクラスを作ってもよくてそれぞれのレイヤーの背景を理解することが大事。
 
 # ユースケースを中心
 ## is
