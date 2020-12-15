@@ -12,15 +12,16 @@ yewton が社内向けに *〈完全なプログラミング〉を目指す会* 
 
 スライドは [[https://github.com/marp-team/marp][Marp]] を用いて作成しており、ビルドやデプロイの設定は [[https://github.com/yhatt/marp-cli-example][yhatt/marp-cli-example]] を参考にしています。
 
-また、入力となる Markdown は [[https://orgmode.org/][Org mode]] で生成しています。
-
-=src= ディレクトリ以下に元となった `.org` (とそれから生成した `.md` )があります。
+Markdown を直接記述している場合もありますが、 [[https://orgmode.org/][Org mode]] で生成している場合もあり、
+その場合は =src= ディレクトリ以下に =.org= と、対応する =.md= がそれぞれあります。
 
 以下を実行するとプレビュー用の Marp サーバーが立ち上がります:
 
 #+begin_src sh
 npm start
 #+end_src
+
+個別のスライドをプレビューで確認するには、 =.md= の方のファイルを指定して(例: http://localhost:8080/intro.md )開きます。
 
 HTML としてビルドした結果を確認するには以下を実行します:
 
