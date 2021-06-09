@@ -1,4 +1,4 @@
-#+startup: indent showall
+#+startup: showall
 #+options: toc:nil
 #+property: dir assets/
 #+macro: fit @@html:<!--fit-->@@
