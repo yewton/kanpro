@@ -685,7 +685,12 @@ System.out.println(String.format("Product = %d", product));
 # <!--fit--> **残すべき** <br>ドキュメント
 
 
-# <!--fit--> **Architecture Decision**
+# **Architecture Decision Record**
+
+> One of the most effective ways of documenting architecture decisions is through Architecture Decision Records ([ADRs](https://adr.github.io/)).
+> ADRs were first evangelized by Michael Nygard in a [blog post](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) and later marked as “adopt” in the [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records).
+> 
+> &#x2014; [Fundamentals of Software Architecture](http://fundamentalsofsoftwarearchitecture.com/)
 
 
 # <!--fit--> **アーキテクチャ** とは
@@ -695,7 +700,7 @@ System.out.println(String.format("Product = %d", product));
 > *&#x2014; エンタープライズアプリケーションアーキテクチャパターン*
 
 
-# <!--fit--> Architecture Decision
+# <!--fit--> Architecture Decision<br>Record
 
 -   容易に変更できない **アーキテクチャ上の意思決定** について記録する
     -   **なぜ** そうしたのか、 **他に何を検討した** のか
@@ -710,7 +715,31 @@ System.out.println(String.format("Product = %d", product));
 # どうしても変更したくなったときに <br> 何を考慮しなければならないか分かる
 
 
-# <!--fit--> **Architecture Decision Record** の書き方(例)
+# <!--fit--> **Architecture Decision Record** の<br>フォーマット(例)
+
+
+# 参考にしたもの: [Y-Statements](https://medium.com/olzzio/y-statements-10eb07b5a177)
+
+![w:800](assets/ystatements.png)
+
+要点を汲みつつ日本語での書き易さを考えて再構成
+
+---
+
+
+## 目的
+
+
+## 背景
+
+
+## 前提
+
+
+## 選択肢
+
+
+## 結論
 
 
 # 目的
@@ -720,7 +749,7 @@ System.out.println(String.format("Product = %d", product));
     例) 行動ログ集約のアーキテクチャを決定する
 
 
-# 動機
+# 背景
 
 -   なぜその決定を下す必要があるのかを書く
 
@@ -734,7 +763,7 @@ System.out.println(String.format("Product = %d", product));
     例) 10分までの遅延は許容する
 
 
-# 提案
+# 選択肢
 
 -   検討した内容をすべて説明する
     -   それぞれの提案について、メリット・デメリットを述べる
@@ -742,7 +771,7 @@ System.out.println(String.format("Product = %d", product));
 
 # 結論
 
--   採用する提案とその理由を書く。特に、デメリットにどう対処するのかを忘れずに書く。
+-   採用する提案とその理由を書く。特に、デメリットにどう対処するのか(あるいは許容するのか)を忘れずに書く。
 
     例) A案を採用する。技術人員リソースの不足は開発支援チームの支援を受けることで解決する。
 
@@ -768,7 +797,7 @@ System.out.println(String.format("Product = %d", product));
 # <!--fit--> **完全なコメント** <br> **完全なコミットメッセージ** <br> 書きましょう
 
 
-# <!--fit--> 大きめの機能設計などの際には <br> **Architecture Decision** <br> の記録を残すようにしましょう
+# <!--fit--> 大きめの機能設計などの際には <br> **Architecture Decision Record** <br> を残すようにしましょう
 
 
 # <!--fit--> おわり
@@ -778,4 +807,6 @@ System.out.println(String.format("Product = %d", product));
 
 -   [xkcd: Future Self](https://xkcd.com/1421/)
 -   [Crazy Mean Baby | Know Your Meme](https://knowyourmeme.com/memes/crazy-mean-baby)
+-   [Fundamentals of Software Architecture | fundamentalsofsoftwarearchitecture.com](http://fundamentalsofsoftwarearchitecture.com/)
+-   [Architecture Decision Record Template: Y-Statements | ZIO’s Blog: Architectural Decisions, (Micro-)Services and More](https://medium.com/olzzio/y-statements-10eb07b5a177)
 
