@@ -29,6 +29,22 @@ HTML としてビルドした結果を確認するには以下を実行します
 npm run build
 #+end_src
 
+** Emacs でのスライド編集
+
+編集時の利便性を高める為の補助機能が [[file:libs.org]] に定義してあります。
+
+内容を理解した上で問題無ければ、各ファイルの以下の部分にカーソルを合わせて ~C-c C-c~ で実行出来ます:
+
+#+begin_src org
+,#+call: ../libs.org:setup()
+#+end_src
+
+元に戻すには以下の部分で ~C-c C-c~ しましょう:
+
+#+begin_src org
+,#+call: ../libs.org:teardown()
+#+end_src
+
 * GitHub Pages へのデプロイ
 
 スライドは [[https://help.github.com/en/github/working-with-github-pages/about-github-pages][GitHub Pages]] として公開しています。

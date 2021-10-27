@@ -1,0 +1,21 @@
+* 編集用セットアップ
+:PROPERTIES:
+:header-args:emacs-lisp: :eval no-export
+:END:
+
+保存時に自動で Markdown にエクスポートするようにしたり、
+Babel の評価を暗黙に行うように設定したりなどします。
+
+#+name: setup
+#+begin_src emacs-lisp :results silent
+(add-hook 'after-save-hook #'org-md-export-to-markdown :append :local)
+(setq-local org-confirm-babel-evaluate nil)
+(setq-local org-attach-auto-tag nil)
+#+end_src
+
+#+name: teardown
+#+begin_src emacs-lisp :results silent
+(remove-hook 'after-save-hook #'org-md-export-to-markdown :local)
+(kill-local-variable 'org-confirm-babel-evaluate)
+(kill-local-variable 'org-attach-auto-tag)
+#+end_src

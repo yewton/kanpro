@@ -10,6 +10,9 @@ _footer: ""
 #+end_export
 {{{fm}}}
 
+#+call: ../libs.org:setup()
+#+call: ../libs.org:teardown()
+
 * {{{fit}}} 〈完全なプログラミング〉を目指す会 2020
 ** {{{fit}}} 第四回 ドキュメント
 
