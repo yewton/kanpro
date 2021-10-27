@@ -1,6 +1,7 @@
 #+title: 〈完全なプログラミング〉を目指す会
 
 [[https://github.com/yewton/kanpro/workflows/GitHub%20Pages/badge.svg]]
+[[https://app.netlify.com/sites/kanpro/deploys][https://api.netlify.com/api/v1/badges/0c1485a1-e690-44d9-a416-ce073e77c634/deploy-status.svg]]
 
 yewton が社内向けに *〈完全なプログラミング〉を目指す会* と冠して実施した、
 言語やフレームワークに依らない基礎的なプログラミングの指針についての勉強会の資料を
