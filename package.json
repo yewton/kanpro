@@ -5,28 +5,9 @@
   "author": "yewton",
   "license": "WTFPL",
   "scripts": {
-    "clean": "rimraf dist",
-    "assets": "cpx 'src/assets/**/*' dist/assets",
-    "deck:index": "marp --no-stdin src/index.md -o dist/index.html --og-image ${URL}/index.jpg --url ${URL}",
-    "og-image:index": "marp src/index.md -o dist/index.jpg",
-    "deck:intro": "marp --no-stdin src/intro.md -o dist/intro.html --og-image ${URL}/intro.jpg --url ${URL}/intro.html",
-    "og-image:intro": "marp src/intro.md -o dist/intro.jpg",
-    "deck:oop": "marp --no-stdin src/oop.md -o dist/oop.html --og-image ${URL}/oop.jpg --url ${URL}/oop.html",
-    "og-image:oop": "marp src/oop.md -o dist/oop.jpg",
-    "deck:naming": "marp --no-stdin src/naming.md -o dist/naming.html --og-image ${URL}/naming.jpg --url ${URL}/naming.html",
-    "og-image:naming": "marp src/naming.md -o dist/naming.jpg",
-    "deck:document": "marp --no-stdin src/document.md -o dist/document.html --og-image ${URL}/document.jpg --url ${URL}/document.html",
-    "og-image:document": "marp src/document.md -o dist/document.jpg",
-    "deck:architecture": "marp --no-stdin src/architecture.md -o dist/architecture.html --og-image ${URL}/architecture.jpg --url ${URL}/architecture.html",
-    "og-image:architecture": "marp src/architecture.md -o dist/architecture.jpg",
-    "build": "npm run clean && npm run assets && run-p og-image:* && run-p deck:*",
     "start": "marp -s src"
   },
   "devDependencies": {
-    "@marp-team/marp-cli": "^0.23.0",
-    "cpx2": "^2.0.0",
-    "minimist": "^1.2.5",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.0"
+    "@marp-team/marp-cli": "^0.23.0"
   }
 }
