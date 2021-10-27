@@ -14,6 +14,7 @@ yewton が社内向けに *〈完全なプログラミング〉を目指す会* 
 
 Markdown を直接記述している場合もありますが、 [[https://orgmode.org/][Org mode]] で生成している場合もあり、
 その場合は =src= ディレクトリ以下に =.org= と、対応する =.md= がそれぞれあります。
+Emacs が無くても、 [[https://podman.io/][Podman]] または [[https://www.docker.com/][Docker]] が有れば、 =make= を実行して =.org= から =.md= を生成出来ます。
 
 以下を実行するとプレビュー用の Marp サーバーが立ち上がります:
 
