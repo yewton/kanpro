@@ -17,7 +17,7 @@ Markdown を直接記述している場合もありますが、 [[https://orgmod
 その場合は =src= ディレクトリ以下に =.org= と、対応する =.md= がそれぞれあります。
 Emacs が無くても、 [[https://podman.io/][Podman]] または [[https://www.docker.com/][Docker]] が有れば、 =make= を実行して =.org= から =.md= を生成出来ます。
 
-以下を実行するとプレビュー用の Marp サーバーが立ち上がります:
+=npm i= で依存パッケージをインストールした上で、以下を実行するとプレビュー用の Marp サーバーが立ち上がります:
 
 #+begin_src sh
 npm start
@@ -28,7 +28,7 @@ npm start
 HTML としてビルドした結果を確認するには以下を実行します:
 
 #+begin_src sh
-npm run build
+make deck
 #+end_src
 
 ** Emacs でのスライド編集

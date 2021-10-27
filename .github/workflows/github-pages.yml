@@ -37,7 +37,7 @@ jobs:
 
       - name: Build Marp slide deck
         run: |
-          CHROME_PATH=$(node .puppeteer.js) npm run build
+          CHROME_PATH=$(node .puppeteer.js) make deck
           touch ./dist/.nojekyll
         env:
           # Please update URL if you want to use custom domain
