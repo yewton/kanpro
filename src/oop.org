@@ -1,14 +1,8 @@
 #+setupfile: ../setupfile.org
+#+title: 第二回 オブジェクト指向プログラミング
+#+description: 〈完全なプログラミング〉を目指す会 2020 オブジェクト指向プログラミング編です
 
-{{{fm}}}
-#+include: "./front-matter.yml" export md
-#+begin_export md
-title: 第二回 オブジェクト指向プログラミング
-description: 〈完全なプログラミング〉を目指す会 2020 オブジェクト指向プログラミング編です
-footer:  〈完全なプログラミング〉を目指す会 2020
-_footer: ""
-#+end_export
-{{{fm}}}
+#+call: ../libs.org:front-matter()
 
 #+call: ../libs.org:setup()
 #+call: ../libs.org:teardown()
@@ -346,7 +340,7 @@ public class Square extends Rectangle {
 
 * {{{fit}}} =java.util.ArrayList=
 
-#+begin_src plantuml :eval never-export :file assets/java_collection.png :cmdline -charset UTF-8
+#+begin_src plantuml :exports none :file assets/java_collection.png :cmdline -charset UTF-8
   scale 2
 
   hide empty member
@@ -370,7 +364,7 @@ public class Square extends Rectangle {
 
 * {{{fit}}} =kotlin.collections.ArrayList=
 
-#+begin_src plantuml :eval never-export :file assets/kotlin_collection.png :cmdline -charset UTF-8
+#+begin_src plantuml :exports none :file assets/kotlin_collection.png :cmdline -charset UTF-8
   scale 2
   hide empty member
 
@@ -417,7 +411,7 @@ public class Square extends Rectangle {
 
 * 制御の流れ
 
-#+begin_src plantuml :eval never-export :file assets/traditional_layer.png :cmdline -charset UTF-8
+#+begin_src plantuml :exports none :file assets/traditional_layer.png :cmdline -charset UTF-8
   scale 2
   hide members
   hide circles
@@ -437,7 +431,7 @@ public class Square extends Rectangle {
 
 * 依存関係を逆転
 
-#+begin_src plantuml :eval never-export :file assets/dip_layer.png :cmdline -charset UTF-8
+#+begin_src plantuml :exports none :file assets/dip_layer.png :cmdline -charset UTF-8
   scale 1.5
   hide members
   hide class circles

@@ -1,13 +1,8 @@
 #+setupfile: ../setupfile.org
+#+title: 〈完全なプログラミング〉を目指す会 2020
+#+description: 〈完全なプログラミング〉を目指す会 2020 の資料へのインデックスです
 
-{{{fm}}}
-#+include: "./front-matter.yml" export md
-#+begin_export md
-title: 〈完全なプログラミング〉を目指す会 2020
-description: 〈完全なプログラミング〉を目指す会 2020 の資料へのインデックスです
-footer:  〈完全なプログラミング〉を目指す会 2020
-#+end_export
-{{{fm}}}
+#+call: ../libs.org:front-matter()
 
 #+call: ../libs.org:setup()
 #+call: ../libs.org:teardown()

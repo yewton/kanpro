@@ -1,14 +1,8 @@
 #+setupfile: ../setupfile.org
+#+title: 第三回 命名
+#+description: 〈完全なプログラミング〉を目指す会 2020 命名編です
 
-{{{fm}}}
-#+include: "./front-matter.yml" export md
-#+begin_export md
-title: 第三回 命名
-description: 〈完全なプログラミング〉を目指す会 2020 命名編です
-footer:  〈完全なプログラミング〉を目指す会 2020
-_footer: ""
-#+end_export
-{{{fm}}}
+#+call: ../libs.org:front-matter()
 
 #+call: ../libs.org:setup()
 #+call: ../libs.org:teardown()

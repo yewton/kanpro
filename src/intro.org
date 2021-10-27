@@ -1,14 +1,8 @@
 #+setupfile: ../setupfile.org
+#+title: 第一回 〈完全なプログラミング〉
+#+description: 〈完全なプログラミング〉を目指す会 2020 の導入です
 
-{{{fm}}}
-#+include: "./front-matter.yml" export md
-#+begin_export md
-title: 第一回 〈完全なプログラミング〉
-description: 〈完全なプログラミング〉を目指す会 2020 の導入です
-footer:  〈完全なプログラミング〉を目指す会 2020
-_footer: ""
-#+end_export
-{{{fm}}}
+#+call: ../libs.org:front-matter()
 
 #+call: ../libs.org:setup()
 #+call: ../libs.org:teardown()

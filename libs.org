@@ -19,3 +19,27 @@ Babel の評価を暗黙に行うように設定したりなどします。
 (kill-local-variable 'org-confirm-babel-evaluate)
 (kill-local-variable 'org-attach-auto-tag)
 #+end_src
+
+* Front-matter 出力
+:PROPERTIES:
+:header-args:emacs-lisp: :eval ""
+:END:
+
+#+name: front-matter
+#+begin_src emacs-lisp :wrap export md
+(let* ((keywords (org-collect-keywords '("title" "description")))
+       (title (cadar keywords))
+       (desc (cadadr keywords)))
+  (format "---
+theme: gaia
+class:
+  - lead
+paginate: true
+_paginate: false
+headingDivider: 1
+title: %s
+description: %s
+footer:  〈完全なプログラミング〉を目指す会 2020
+_footer: \"\"
+---" title desc))
+#+end_src
