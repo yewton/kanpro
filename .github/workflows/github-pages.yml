@@ -5,51 +5,49 @@ on:
     branches:
       - master
 
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
-  build:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
+      - uses: actions/checkout@v3
 
       - name: Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: '^12.13.1'
-
-      - uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: npm
+          node-version-file: '.nvmrc'
 
       - name: Install dependencies and Puppeteer
-        run: |
-          npm ci
-          sudo apt-get install libgbm-dev
-          npm i puppeteer --no-save
-
-      - name: Install fonts
-        run: |
-          sudo apt install fonts-noto-cjk
+        run: npm ci && npm i puppeteer --no-save
 
       - name: Build Marp slide deck
-        run: |
-          CHROME_PATH=$(node .puppeteer.js) npm run build
-          touch ./dist/.nojekyll
+        run: CHROME_PATH=$(node -e "console.log(require('puppeteer').executablePath())") npm run build
         env:
           # Please update URL if you want to use custom domain
           URL: https://${{ github.event.repository.owner.name }}.github.io/${{ github.event.repository.name }}
 
           # Recommend to set lang for your deck to get better rendering for Open Graph image
-          LANG: ja-JP
+          LANG: en-US
 
-      - name: Deploy to GitHub pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - name: Upload page artifacts
+        uses: actions/upload-pages-artifact@v1
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@main
