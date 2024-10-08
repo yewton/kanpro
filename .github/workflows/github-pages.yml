@@ -44,7 +44,7 @@ jobs:
           LANG: en-US
 
       - name: Upload page artifacts
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: dist
 
