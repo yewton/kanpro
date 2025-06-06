@@ -41,7 +41,7 @@ jobs:
           URL: https://${{ github.event.repository.owner.name }}.github.io/${{ github.event.repository.name }}
 
           # Recommend to set lang for your deck to get better rendering for Open Graph image
-          LANG: en-US
+          LANG: ja-JP
 
       - name: Upload page artifacts
         uses: actions/upload-pages-artifact@v3
