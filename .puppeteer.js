@@ -1,2 +1,9 @@
-// Output installed Chromium path by puppeteer
-console.log(require('puppeteer').executablePath())
+const { join } = require('path');
+
+/**
+ * @type {import("puppeteer").Configuration}
+ */
+module.exports = {
+  // Changes the cache location for Puppeteer.
+  cacheDirectory: join(__dirname, '.cache', 'puppeteer'),
+};
