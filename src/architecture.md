@@ -446,7 +446,7 @@ nurse.administerFluVaccine(patient, vaccine);
 ---
 
 ## 境界づけられたコンテキスト
-![](/assets/bounded_context.png)
+![](assets/bounded_context.png)
 
 境界を越えてモデルを扱うと様々な意味を含んでしまうことになる  
 結果としてモデルが複雑になり、腐っていってしまう
