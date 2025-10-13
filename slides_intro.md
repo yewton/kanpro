@@ -7,21 +7,21 @@ drawings:
   enabled: true
 ---
 
-# {w:fit} 〈完全なプログラミング〉を目指す会 2020
-## {w:fit} 第一回〈完全なプログラミング〉
+# 〈完全なプログラミング〉を目指す会 2020
+## 第一回〈完全なプログラミング〉
 
 yewton
 
 ---
 
-# {w:fit} 持ち帰って欲しいこと
+# 持ち帰って欲しいこと
 
 1. **〈完全なプログラミング〉** とは何か
 2. なぜそれを目指すのか
 
 ---
 
-# {w:fit} この会の目的
+# この会の目的
 
 基本的には [CODE COMPLETE 第2版](https://www.amazon.co.jp/dp/489100455X/) を題材に、
 yewton の考える **〈完全なプログラミング〉** を知り、
@@ -33,11 +33,11 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 ---
 
-# {w:fit} 完全な<br>プログラミング
+# 完全な<br>プログラミング
 
 ---
 
-# {w:fit} 🤔?
+# 🤔?
 
 ---
 ---
@@ -62,11 +62,11 @@ backgroundPosition: right
 
 ---
 
-# {w:fit} CODE<br>COMPLETE
+# CODE<br>COMPLETE
 
 ---
 
-# {w:fit} 🤔?
+# 🤔?
 
 ---
 ---
@@ -86,16 +86,16 @@ backgroundPosition: right
 
 ---
 
-# {w:fit} つまり
+# つまり
 
 ---
 
-# {w:fit} 〈完全なプログラミング〉
-## {w:fit} なるモノの定義は存在しない
+# 〈完全なプログラミング〉
+## なるモノの定義は存在しない
 
 ---
 
-# {w:fit} 個人的な解釈
+# 個人的な解釈
 
 ---
 ---
@@ -132,7 +132,7 @@ This is a comment in Slidev. The original had a background image, let's add it.
 
 ---
 
-# {w:fit} あります
+# あります
 ##  😤
 
 ---
@@ -146,13 +146,13 @@ This is a comment in Slidev. The original had a background image, let's add it.
 ---
 
 # なぜ
-## {w:fit} 〈完全なプログラミング〉
+## 〈完全なプログラミング〉
 ## を目指すのか
 
 ---
 
 # そもそも
-## {w:fit} プログラミング
+## プログラミング
 ## とは？
 
 ---
@@ -175,7 +175,7 @@ This is a comment in Slidev. The original had a background image, let's add it.
 ---
 
 # なぜ
-## {w:fit} 〈完全〉
+## 〈完全〉
 ## を目指すのか
 
 ---
@@ -187,7 +187,7 @@ This is a comment in Slidev. The original had a background image, let's add it.
 
 ---
 
-# {w:fit} *それは違う*
+# *それは違う*
 
 ---
 
@@ -196,15 +196,15 @@ This is a comment in Slidev. The original had a background image, let's add it.
 
 ---
 
-# {w:fit} 🤔?
+# 🤔?
 
 ---
 
-# {w:fit} Q. コードを読むのは誰?
+# Q. コードを読むのは誰?
 
 ---
 
-# {w:fit} A. 人間
+# A. 人間
 ## 🕺
 
 ---
@@ -215,7 +215,7 @@ This is a comment in Slidev. The original had a background image, let's add it.
 
 ---
 
-# {w:fit} 🙅
+# 🙅
 
 ---
 
@@ -227,8 +227,8 @@ This is a comment in Slidev. The original had a background image, let's add it.
 
 ---
 
-# {w:fit} プログラミングの
-## {w:fit} 大半は **保守**
+# プログラミングの
+## 大半は **保守**
 
 ---
 ---
@@ -242,7 +242,7 @@ layout: quote
 ---
 
 # プログラミングは
-## {w:fit} *コミュニケーション* 🤝
+## *コミュニケーション* 🤝
 
 ---
 ---
@@ -344,7 +344,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} 完全は<br> *はやい*
+# 完全は<br> *はやい*
 
 ---
 
@@ -366,7 +366,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} 完全は<br> *やすい*
+# 完全は<br> *やすい*
 
 ---
 
@@ -404,15 +404,15 @@ layout: quote
 
 ---
 
-# {w:fit} 🤔
+# 🤔
 
 ---
 
-# {w:fit} Q. 生産性を低下させる要因は？
+# Q. 生産性を低下させる要因は？
 
 ---
 
-# {w:fit} *エラー* 🐛
+# *エラー* 🐛
 ## それに伴うデバッグと修正
 
 ---
@@ -437,7 +437,7 @@ layout: quote
 
 # {w:fit}〈完全なプログラミング〉は<br> *はやい* ・ *やすい*
 ## なので
-# {w:fit} *うまい* <br> 😋
+# *うまい* <br> 😋
 
 ---
 

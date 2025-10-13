@@ -7,8 +7,8 @@ drawings:
   enabled: true
 ---
 
-# {w:fit} 〈完全なプログラミング〉を目指す会 2020
-## {w:fit} 第三回 命名
+# 〈完全なプログラミング〉を目指す会 2020
+## 第三回 命名
 
 yewton
 
@@ -22,7 +22,7 @@ yewton
 
 ---
 
-# {w:fit} *復習*
+# *復習*
 
 ---
 
@@ -64,11 +64,11 @@ yewton
 
 ---
 
-# {w:fit} *はやい* <br> *やすい*
+# *はやい* <br> *やすい*
 
 ---
 
-# {w:fit} *うまい* <br> 😋
+# *うまい* <br> 😋
 
 ---
 
@@ -76,7 +76,7 @@ yewton
 
 ---
 
-# {w:fit} *複雑な問題* を <br> *人間が解決できるようにする* ため
+# *複雑な問題* を <br> *人間が解決できるようにする* ため
 
 ---
 
@@ -84,7 +84,7 @@ yewton
 
 ---
 
-# {w:fit} *SOLID*
+# *SOLID*
 
 ---
 
@@ -171,7 +171,7 @@ backgroundPosition: right
 
 ---
 
-# {w:fit} *クラス名* <br> *メソッド名* <br> *変数名*
+# *クラス名* <br> *メソッド名* <br> *変数名*
 
 ---
 
@@ -179,7 +179,7 @@ backgroundPosition: right
 
 ---
 
-# {w:fit} *悪い* クラス名
+# *悪い* クラス名
 
 ---
 ---
@@ -189,7 +189,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} `=FooManager=` <br> `=BarHelper=` <br> `=FizzHandler=` <br> `=BuzzInfo=`
+# `=FooManager=` <br> `=BarHelper=` <br> `=FizzHandler=` <br> `=BuzzInfo=`
 
 ---
 

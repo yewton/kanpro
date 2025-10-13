@@ -7,8 +7,8 @@ drawings:
   enabled: true
 ---
 
-# {w:fit} 〈完全なプログラミング〉を目指す会 2020
-## {w:fit} 第二回 オブジェクト指向プログラミング
+# 〈完全なプログラミング〉を目指す会 2020
+## 第二回 オブジェクト指向プログラミング
 
 yewton
 
@@ -22,7 +22,7 @@ yewton
 
 ---
 
-# {w:fit} *復習*
+# *復習*
 
 ---
 
@@ -64,11 +64,11 @@ yewton
 
 ---
 
-# {w:fit} *はやい* <br> *やすい*
+# *はやい* <br> *やすい*
 
 ---
 
-# {w:fit} *うまい* <br> 😋
+# *うまい* <br> 😋
 
 ---
 
@@ -88,13 +88,13 @@ yewton
 
 ---
 
-# {w:fit} 原則と呼ばれるものの多くは<br> *経験則*
-## {w:fit} 多くの人が同意した <br> *ベストプラクティス集* みたいなもん
+# 原則と呼ばれるものの多くは<br> *経験則*
+## 多くの人が同意した <br> *ベストプラクティス集* みたいなもん
 
 ---
 
 # 同じ轍を踏むことのないよう
-## {w:fit} *DRY* に生きよう
+## *DRY* に生きよう
 
 ---
 
@@ -106,7 +106,7 @@ yewton
 
 ---
 
-# {w:fit} オブジェクト指向の<br> *歴史* に学ぶ
+# オブジェクト指向の<br> *歴史* に学ぶ
 
 ---
 
@@ -122,7 +122,7 @@ yewton
 
 ---
 
-# {w:fit} *オブジェクトやクラスの登場*
+# *オブジェクトやクラスの登場*
 
 ---
 
@@ -137,7 +137,7 @@ yewton
 
 ---
 
-# {w:fit} *オブジェクトやクラスが* <br> *最初に登場した言語* <br>とは？
+# *オブジェクトやクラスが* <br> *最初に登場した言語* <br>とは？
 
 ---
 
@@ -172,7 +172,7 @@ yewton
 
 ---
 
-# {w:fit} *クラス* とは？
+# *クラス* とは？
 
 ---
 
@@ -189,7 +189,7 @@ layout: quote
 
 ---
 
-# {w:fit} どうして *クラス* を作るのか？
+# どうして *クラス* を作るのか？
 
 ---
 ---
@@ -215,7 +215,7 @@ layout: quote
 
 ---
 
-# {w:fit} こんなときに *クラス* を作る
+# こんなときに *クラス* を作る
 
 ---
 
@@ -262,7 +262,7 @@ layout: quote
 
 ---
 
-# {w:fit} *望ましくない* <br>クラス
+# *望ましくない* <br>クラス
 
 ---
 
@@ -289,7 +289,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} `=FooManager=` <br> `=BarHelper=` <br> `=FizzHandler=` <br> `=BuzzInfo=`
+# `=FooManager=` <br> `=BarHelper=` <br> `=FizzHandler=` <br> `=BuzzInfo=`
 
 ---
 
@@ -322,15 +322,15 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} *よい* クラス
+# *よい* クラス
 
 ---
 
-# {w:fit} *SOLID*
+# *SOLID*
 
 ---
 
-# {w:fit} *単一責務の原則* <br> /Single responsibility principle/
+# *単一責務の原則* <br> /Single responsibility principle/
 
 ---
 
@@ -338,7 +338,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} *あるクラスを変更したいと思う人* は<br> *ひとり* だけ
+# *あるクラスを変更したいと思う人* は<br> *ひとり* だけ
 
 ---
 
@@ -351,7 +351,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} *オープンクローズドの原則* <br> /Open/closed principle/
+# *オープンクローズドの原則* <br> /Open/closed principle/
 
 ---
 
@@ -365,12 +365,12 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} *拡張に対して開いている*
+# *拡張に対して開いている*
 ##  他の関連機能を実装するベースとして<br>使えなければならない
 
 ---
 
-# {w:fit} *修正に対して閉じている*
+# *修正に対して閉じている*
 ## 既存の振る舞いを変更することは出来ない、する必要がない
 
 ---
@@ -387,7 +387,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} *リスコフの置換原則* <br> /Liskov substitution principle/
+# *リスコフの置換原則* <br> /Liskov substitution principle/
 
 ---
 
@@ -453,7 +453,7 @@ public class Square extends Rectangle {
 
 ---
 
-# {w:fit} *インターフェース分離の原則* <br> /Interface segregation principle/
+# *インターフェース分離の原則* <br> /Interface segregation principle/
 
 ---
 
@@ -467,7 +467,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} `=java.util.ArrayList=`
+# `=java.util.ArrayList=`
 
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -503,7 +503,7 @@ AbstractList <|-- ArrayList
 
 ---
 
-# {w:fit} `=kotlin.collections.ArrayList=`
+# `=kotlin.collections.ArrayList=`
 
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -557,7 +557,7 @@ MutableList <|.. ArrayList
 
 ---
 
-# {w:fit} *依存関係逆転の原則* <br> /Dependency inversion principle/
+# *依存関係逆転の原則* <br> /Dependency inversion principle/
 
 ---
 
@@ -646,7 +646,7 @@ DataAccessInterface <|.. Database
 
 ---
 
-# {w:fit} *ポリモーフィズム*
+# *ポリモーフィズム*
 
 - 同一のインタフェースを *複数の型に対して* 定義出来ること
 - 異なるクラスが *同一のメッセージに対して* 応答出来ること
@@ -735,7 +735,7 @@ class Bird {
 
 ---
 
-# {w:fit} *継承よりも合成を* <br> /Composition over inheritance/
+# *継承よりも合成を* <br> /Composition over inheritance/
 
 - 継承は強力だが使いこなすのは難しい
   - そもそも真に継承関係にあるような事象は稀
@@ -744,7 +744,7 @@ class Bird {
 
 ---
 
-# {w:fit} そして *DIP* 再び
+# そして *DIP* 再び
 
 - 依存関係を逆転出来るのは *ポリモーフィズムのおかげ*
 - 依存関係を逆転出来るということは *関心事のスコープを限定出来る* ということ
@@ -760,7 +760,7 @@ class Bird {
 
 ---
 
-# {w:fit} *複雑な問題* を <br> *人間が解決できるようにする* ため
+# *複雑な問題* を <br> *人間が解決できるようにする* ため
 
 ---
 
@@ -768,7 +768,7 @@ class Bird {
 
 ---
 
-# {w:fit} *SOLID*
+# *SOLID*
 
 ---
 
