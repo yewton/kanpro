@@ -5,28 +5,26 @@
   "author": "yewton",
   "license": "WTFPL",
   "scripts": {
+    "dev": "slidev",
+    "build": "npm run clean && npm run build:assets && npm run build:slides && npm run build:index",
+    "build:slides": "npm run build:intro && npm run build:oop && npm run build:naming && npm run build:document && npm run build:architecture",
+    "build:index": "npx marked -i index.md -o dist/index.html",
+    "build:intro": "slidev build slides_intro.md --out dist/build-intro --base=./ && mv dist/build-intro/index.html dist/intro.html && npx cpx 'dist/build-intro/assets/**/*' dist/assets && rm -rf dist/build-intro",
+    "build:oop": "slidev build slides_oop.md --out dist/build-oop --base=./ && mv dist/build-oop/index.html dist/oop.html && npx cpx 'dist/build-oop/assets/**/*' dist/assets && rm -rf dist/build-oop",
+    "build:naming": "slidev build slides_naming.md --out dist/build-naming --base=./ && mv dist/build-naming/index.html dist/naming.html && npx cpx 'dist/build-naming/assets/**/*' dist/assets && rm -rf dist/build-naming",
+    "build:document": "slidev build slides_document.md --out dist/build-document --base=./ && mv dist/build-document/index.html dist/document.html && npx cpx 'dist/build-document/assets/**/*' dist/assets && rm -rf dist/build-document",
+    "build:architecture": "slidev build slides_architecture.md --out dist/build-architecture --base=./ && mv dist/build-architecture/index.html dist/architecture.html && npx cpx 'dist/build-architecture/assets/**/*' dist/assets && rm -rf dist/build-architecture",
+    "build:assets": "mkdir -p dist/assets && npx cpx 'assets/**/*' dist/assets",
     "clean": "rimraf dist",
-    "assets": "cpx 'src/assets/**/*' dist/assets",
-    "deck:index": "marp --no-stdin src/index.md -o dist/index.html --og-image ${URL}/index.jpg --url ${URL}",
-    "og-image:index": "marp --no-stdin src/index.md -o dist/index.jpg",
-    "deck:intro": "marp --no-stdin src/intro.md -o dist/intro.html --og-image ${URL}/intro.jpg --url ${URL}/intro.html",
-    "og-image:intro": "marp --no-stdin src/intro.md -o dist/intro.jpg",
-    "deck:oop": "marp --no-stdin src/oop.md -o dist/oop.html --og-image ${URL}/oop.jpg --url ${URL}/oop.html",
-    "og-image:oop": "marp --no-stdin src/oop.md -o dist/oop.jpg",
-    "deck:naming": "marp --no-stdin src/naming.md -o dist/naming.html --og-image ${URL}/naming.jpg --url ${URL}/naming.html",
-    "og-image:naming": "marp --no-stdin src/naming.md -o dist/naming.jpg",
-    "deck:document": "marp --no-stdin src/document.md -o dist/document.html --og-image ${URL}/document.jpg --url ${URL}/document.html",
-    "og-image:document": "marp --no-stdin src/document.md -o dist/document.jpg",
-    "deck:architecture": "marp --no-stdin src/architecture.md -o dist/architecture.html --og-image ${URL}/architecture.jpg --url ${URL}/architecture.html",
-    "og-image:architecture": "marp src/architecture.md -o dist/architecture.jpg",
-    "build": "npm run clean && npm run assets && run-p og-image:* && run-p deck:*",
-    "start": "marp -s src"
+    "export": "slidev export"
   },
   "devDependencies": {
-    "@marp-team/marp-cli": "^4.2.3",
+    "@slidev/cli": "^52.2.5",
+    "@slidev/theme-seriph": "^0.25.0",
     "cpx2": "^8.0.0",
+    "marked": "^16.4.0",
     "minimist": "^1.2.8",
-    "npm-run-all": "^4.1.5",
+    "playwright-chromium": "^1.56.0",
     "rimraf": "^6.0.1"
   }
 }
