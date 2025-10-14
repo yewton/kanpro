@@ -180,7 +180,6 @@ yewton
 # {w:fit}正解は
 
 ---
----
 layout: quote
 ---
 
@@ -193,7 +192,6 @@ layout: quote
 # どうして *クラス* を作るのか？
 
 ---
----
 layout: quote
 ---
 
@@ -202,7 +200,6 @@ layout: quote
 >
 > *--- CODE COMPLETE 5.2.1 ソフトウェアの鉄則：複雑さへの対処*
 
----
 ---
 layout: quote
 ---
@@ -223,7 +220,6 @@ layout: quote
 # 現実世界のオブジェクト<br>または抽象的なオブジェクト( `=`Circle`=` に対する `=`Shape`=` など )を<br>モデリングする
 
 ---
----
 layout: quote
 ---
 
@@ -237,7 +233,6 @@ layout: quote
 
 # {w:fit}複雑さを *緩和* ・ *分離* ・ *隠蔽* する
 
----
 ---
 layout: quote
 ---
@@ -270,12 +265,10 @@ layout: quote
 # {w:fit}God クラス
 
 ---
----
 background: /assets/internet_god.png
 backgroundSize: contain
 ---
 
----
 ---
 background: /assets/internet_god.png
 backgroundSize: contain
@@ -359,7 +352,6 @@ backgroundSize: contain
 # {w:fit}モジュールは *拡張に対して開いて* いなければならず<br> *修正に対して閉じて* いなければならない
 
 ---
----
 background: /assets/thonk.png
 backgroundSize: contain
 ---
@@ -374,7 +366,6 @@ backgroundSize: contain
 # *修正に対して閉じている*
 ## 既存の振る舞いを変更することは出来ない、する必要がない
 
----
 ---
 background: /assets/thonk.png
 backgroundSize: contain
@@ -460,7 +451,6 @@ public class Square extends Rectangle {
 
 # {w:fit}クライアントが使用しないインターフェイスに<br>クライアントを強制的に依存させてはならない
 
----
 ---
 background: /assets/thonk.png
 backgroundSize: contain
@@ -569,7 +559,6 @@ MutableList <|.. ArrayList
 # {w:fit}実装ではなく *抽象に依存せよ*
 
 ---
----
 background: /assets/thonk.png
 backgroundSize: contain
 ---
@@ -653,7 +642,6 @@ DataAccessInterface <|.. Database
 - 異なるクラスが *同一のメッセージに対して* 応答出来ること
 
 ---
----
 layout: quote
 ---
 
@@ -669,7 +657,6 @@ layout: quote
     - パラメータ(総称型とか)
     - アドホック(オーバーロードとか)
 
----
 ---
 layout: quote
 ---

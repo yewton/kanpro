@@ -50,7 +50,6 @@ backgroundPosition: right
 - 本書中に *〈完全なプログラミング〉に言及する記述は無し* 😱
 
 ---
----
 background: /assets/cc_book_e.jpg
 backgroundSize: contain
 backgroundPosition: right
@@ -68,7 +67,6 @@ backgroundPosition: right
 
 # 🤔?
 
----
 ---
 background: /assets/Software_dev2.svg
 backgroundSize: contain
@@ -97,7 +95,6 @@ backgroundPosition: right
 
 # 個人的な解釈
 
----
 ---
 layout: quote
 ---
@@ -231,7 +228,6 @@ This is a comment in Slidev. The original had a background image, let's add it.
 ## 大半は **保守**
 
 ---
----
 layout: quote
 ---
 
@@ -245,7 +241,6 @@ layout: quote
 ## *コミュニケーション* 🤝
 
 ---
----
 layout: quote
 ---
 
@@ -253,7 +248,6 @@ layout: quote
 >
 > */-- CODE COMPLETE 33.1 個人の資質は話題からずれているか/*
 
----
 ---
 background: /assets/martin.jpg
 backgroundSize: contain
@@ -267,7 +261,6 @@ class: 'text-white'
 > *--- マーティン・ファウラー*
 
 ---
----
 layout: quote
 ---
 
@@ -277,7 +270,6 @@ layout: quote
 > *--- CODE COMPLETE 6.2.2 良いカプセル化*
 
 ---
----
 layout: quote
 ---
 
@@ -285,7 +277,6 @@ layout: quote
 >
 > *--- CODE COMPLETE 34.3 人間が1番、コンピュータは2番*
 
----
 ---
 layout: quote
 ---
@@ -307,7 +298,6 @@ layout: quote
 - **じゃない！！！！！！！！**
 
 ---
----
 background: /assets/chart1.png
 backgroundSize: contain
 ---
@@ -319,7 +309,6 @@ backgroundSize: contain
 </div>
 
 ---
----
 background: /assets/chart2.png
 backgroundSize: contain
 ---
@@ -330,7 +319,6 @@ backgroundSize: contain
   <img src="/assets/chart2.png" class="h-40 opacity-20 blur" />
 </div>
 
----
 ---
 background: /assets/chart2.png
 backgroundSize: contain
@@ -373,13 +361,11 @@ backgroundSize: contain
 # 品性は<br>タダである
 
 ---
----
 background: /assets/quality-is-free.jpg
 backgroundSize: contain
 backgroundPosition: right
 ---
 
----
 ---
 layout: quote
 ---
@@ -392,7 +378,6 @@ layout: quote
   <img src="/assets/2020-03-10_04-11-03_image-4.png" class="h-40" />
 </div>
 
----
 ---
 layout: quote
 ---
@@ -416,14 +401,12 @@ layout: quote
 ## それに伴うデバッグと修正
 
 ---
----
 layout: quote
 ---
 
 > ほとんどのプロジェクトで最も時間のかかるアクティビティは、正しく動作しないコードのデバッグと修正である。
 > デバッグとそれに伴うリファクタリングなどの修正作業は、従来の単純なソフトウェア開発サイクルにおいて約50%の時間を占める。
 
----
 ---
 layout: quote
 ---

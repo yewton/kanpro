@@ -76,7 +76,6 @@ yewton
 # {w:fit}命名は重要か？
 
 ---
----
 background: /assets/2020-04-24_05-40-04_1024px-Yukihiro_Matsumoto_EuRuKo_2011.jpg
 backgroundPosition: right
 ---
@@ -99,7 +98,6 @@ backgroundPosition: right
 2. 効果的な **コミットメッセージ** の書き方
 3. 残すべき **ドキュメント** とは何か
 
----
 ---
 background: /assets/future_self.png
 backgroundSize: contain
@@ -130,7 +128,6 @@ System.out.println( "r = " + r );
 ```
 
 ---
----
 background: /assets/thonk.png
 backgroundSize: contain
 ---
@@ -156,7 +153,6 @@ System.out.println( "r = " + SquareRootApproximation(r) );
 
 # *コメントが全く無い* <br> コード
 
----
 ---
 background: /assets/thonk.png
 backgroundSize: contain
@@ -225,7 +221,6 @@ System.out.println(String.format("Product = %d", product));
 ```
 
 ---
----
 background: /assets/angrybaby.jpg
 backgroundSize: contain
 ---
@@ -250,12 +245,10 @@ backgroundSize: contain
 ```
 
 ---
----
 background: /assets/angrybaby.jpg
 backgroundSize: contain
 ---
 
----
 ---
 layout: quote
 ---
@@ -264,7 +257,6 @@ layout: quote
 >
 > *--- プログラム書法 第2版 Brian W. Kernighan and P. J. Plauger*
 
----
 ---
 layout: quote
 ---
@@ -332,7 +324,6 @@ https://github.com/angular/angular/blob/f7815cf96defa6b19fff482824c5997f03fd78ea
 # その *"いつか"* は
 
 ---
----
 background: /assets/angrybaby.jpg
 backgroundSize: contain
 ---
@@ -373,7 +364,6 @@ backgroundSize: contain
 // createdAt が LocalDate.now() の Entry を filter して 降順ソートする
 ```
 
----
 ---
 background: /assets/angrybaby.jpg
 backgroundSize: contain
@@ -424,7 +414,6 @@ backgroundSize: contain
 >
 > *--- [Code Tells You How, Comments Tell You Why](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)*
 
----
 ---
 background: /assets/git_commit.png
 backgroundSize: contain
@@ -482,7 +471,6 @@ Date:   Fri Apr 24 06:22:36 2020 +0900
 ```
 
 ---
----
 background: /assets/angrybaby.jpg
 backgroundSize: contain
 ---
@@ -504,7 +492,6 @@ backgroundSize: contain
 # コミットメッセージには <br> *なぜ書かなければならなかったのか* <br> を書く
 
 ---
----
 layout: quote
 ---
 
@@ -513,7 +500,6 @@ layout: quote
 >
 > Commit messages can do exactly that
 
----
 ---
 layout: quote
 ---
@@ -588,7 +574,6 @@ https://github.com/angular/angular/commit/acc483e2ebe7d8207fe183d8ec1424c5498631
 ```
 
 ---
----
 background: /assets/angrybaby.jpg
 backgroundSize: contain
 ---
@@ -609,7 +594,6 @@ backgroundSize: contain
 ```
 
 ---
----
 background: /assets/angrybaby.jpg
 backgroundSize: contain
 ---
@@ -628,7 +612,6 @@ backgroundSize: contain
 もろもろ修正
 ```
 
----
 ---
 background: /assets/angrybaby.jpg
 backgroundSize: contain
