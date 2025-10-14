@@ -1,6 +1,6 @@
 ---
-routerMode: 'hash'
 theme: seriph
+routerMode: 'hash'
 title: '第二回 オブジェクト指向プログラミング'
 description: '〈完全なプログラミング〉を目指す会 2020 オブジェクト指向プログラミング編です'
 footer: '〈完全なプログラミング〉を目指す会 2020'
@@ -180,6 +180,7 @@ yewton
 # 正解は
 
 ---
+
 layout: quote
 ---
 
@@ -192,6 +193,7 @@ layout: quote
 # どうして *クラス* を作るのか？
 
 ---
+
 layout: quote
 ---
 
@@ -201,6 +203,7 @@ layout: quote
 > *--- CODE COMPLETE 5.2.1 ソフトウェアの鉄則：複雑さへの対処*
 
 ---
+
 layout: quote
 ---
 > 有能なプログラマは自分の脳味噌のサイズがいかに制限されたものであるかをよく心得ています
@@ -220,6 +223,7 @@ layout: quote
 # 現実世界のオブジェクト<br>または抽象的なオブジェクト( `=`Circle`=` に対する `=`Shape`=` など )を<br>モデリングする
 
 ---
+
 layout: quote
 ---
 
@@ -234,6 +238,7 @@ layout: quote
 # 複雑さを *緩和* ・ *分離* ・ *隠蔽* する
 
 ---
+
 layout: quote
 ---
 
@@ -265,13 +270,15 @@ layout: quote
 # God クラス
 
 ---
+
+layout: background-blur
 background: /assets/internet_god.png
-backgroundSize: contain
 ---
 
 ---
+
+layout: background-blur
 background: /assets/internet_god.png
-backgroundSize: contain
 ---
 
 > 全知全能のクラスを作成してはならない。
@@ -352,8 +359,9 @@ backgroundSize: contain
 # モジュールは *拡張に対して開いて* いなければならず<br> *修正に対して閉じて* いなければならない
 
 ---
+
+layout: background-blur
 background: /assets/thonk.png
-backgroundSize: contain
 ---
 
 ---
@@ -367,8 +375,9 @@ backgroundSize: contain
 ## 既存の振る舞いを変更することは出来ない、する必要がない
 
 ---
+
+layout: background-blur
 background: /assets/thonk.png
-backgroundSize: contain
 ---
 
 ---
@@ -452,8 +461,9 @@ public class Square extends Rectangle {
 # クライアントが使用しないインターフェイスに<br>クライアントを強制的に依存させてはならない
 
 ---
+
+layout: background-blur
 background: /assets/thonk.png
-backgroundSize: contain
 ---
 
 ---
@@ -559,8 +569,9 @@ MutableList <|.. ArrayList
 # 実装ではなく *抽象に依存せよ*
 
 ---
+
+layout: background-blur
 background: /assets/thonk.png
-backgroundSize: contain
 ---
 
 ---
@@ -642,6 +653,7 @@ DataAccessInterface <|.. Database
 - 異なるクラスが *同一のメッセージに対して* 応答出来ること
 
 ---
+
 layout: quote
 ---
 
@@ -658,6 +670,7 @@ layout: quote
     - アドホック(オーバーロードとか)
 
 ---
+
 layout: quote
 ---
 

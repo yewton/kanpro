@@ -1,6 +1,6 @@
 ---
-routerMode: 'hash'
 theme: seriph
+routerMode: 'hash'
 title: '第一回 〈完全なプログラミング〉'
 description: '〈完全なプログラミング〉を目指す会 2020 の導入です'
 footer: '〈完全なプログラミング〉を目指す会 2020'
@@ -41,18 +41,18 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 # 🤔?
 
 ---
-background: /assets/cc_book.jpg
-backgroundSize: contain
-backgroundPosition: right
+
+layout: image-right
+image: /assets/cc_book.jpg
 ---
 
 - [CODE COMPLETE 第2版](https://www.amazon.co.jp/dp/489100455X/) の日本語訳のサブタイトルが *完全なプログラミングを目指して*
 - 本書中に *〈完全なプログラミング〉に言及する記述は無し* 😱
 
 ---
-background: /assets/cc_book_e.jpg
-backgroundSize: contain
-backgroundPosition: right
+
+layout: image-right
+image: /assets/cc_book_e.jpg
 ---
 
 - 原著のサブタイトルは *A Practical Handbook of Software Construction*
@@ -68,9 +68,9 @@ backgroundPosition: right
 # 🤔?
 
 ---
-background: /assets/Software_dev2.svg
-backgroundSize: contain
-backgroundPosition: right
+
+layout: image-right
+image: /assets/Software_dev2.svg
 ---
 
 > A release is called *code complete* when the development team agrees that no entirely new source code will be added to this release.
@@ -96,6 +96,7 @@ backgroundPosition: right
 # 個人的な解釈
 
 ---
+
 layout: quote
 ---
 
@@ -228,6 +229,7 @@ This is a comment in Slidev. The original had a background image, let's add it.
 ## 大半は **保守**
 
 ---
+
 layout: quote
 ---
 
@@ -241,6 +243,7 @@ layout: quote
 ## *コミュニケーション* 🤝
 
 ---
+
 layout: quote
 ---
 
@@ -249,9 +252,9 @@ layout: quote
 > */-- CODE COMPLETE 33.1 個人の資質は話題からずれているか/*
 
 ---
+
+layout: background-blur
 background: /assets/martin.jpg
-backgroundSize: contain
-backgroundPosition: center
 class: 'text-white'
 ---
 
@@ -261,6 +264,7 @@ class: 'text-white'
 > *--- マーティン・ファウラー*
 
 ---
+
 layout: quote
 ---
 
@@ -270,6 +274,7 @@ layout: quote
 > *--- CODE COMPLETE 6.2.2 良いカプセル化*
 
 ---
+
 layout: quote
 ---
 
@@ -278,6 +283,7 @@ layout: quote
 > *--- CODE COMPLETE 34.3 人間が1番、コンピュータは2番*
 
 ---
+
 layout: quote
 ---
 
@@ -298,8 +304,9 @@ layout: quote
 - **じゃない！！！！！！！！**
 
 ---
+
+layout: background-blur
 background: /assets/chart1.png
-backgroundSize: contain
 ---
 
 # こうじゃない
@@ -309,8 +316,9 @@ backgroundSize: contain
 </div>
 
 ---
+
+layout: background-blur
 background: /assets/chart2.png
-backgroundSize: contain
 ---
 
 # こう
@@ -320,8 +328,9 @@ backgroundSize: contain
 </div>
 
 ---
+
+layout: background-blur
 background: /assets/chart2.png
-backgroundSize: contain
 ---
 
 # こう!!!
@@ -361,12 +370,13 @@ backgroundSize: contain
 # 品質は<br>タダである
 
 ---
-background: /assets/quality-is-free.jpg
-backgroundSize: contain
-backgroundPosition: right
+
+layout: image-right
+image: /assets/quality-is-free.jpg
 ---
 
 ---
+
 layout: quote
 ---
 
@@ -379,6 +389,7 @@ layout: quote
 </div>
 
 ---
+
 layout: quote
 ---
 
@@ -401,6 +412,7 @@ layout: quote
 ## それに伴うデバッグと修正
 
 ---
+
 layout: quote
 ---
 
@@ -408,6 +420,7 @@ layout: quote
 > デバッグとそれに伴うリファクタリングなどの修正作業は、従来の単純なソフトウェア開発サイクルにおいて約50%の時間を占める。
 
 ---
+
 layout: quote
 ---
 

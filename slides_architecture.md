@@ -1,6 +1,6 @@
 ---
-routerMode: 'hash'
 theme: seriph
+routerMode: 'hash'
 title: '第五回 アーキテクチャ'
 description: '〈完全なプログラミング〉を目指す会 2020 アーキテクチャ編です'
 footer: '〈完全なプログラミング〉を目指す会 2020'
@@ -80,6 +80,7 @@ omuomugin
 # 今日持ち帰って欲しいこと
 
 ---
+
 layout: quote
 ---
 
@@ -98,6 +99,7 @@ see also [ベストな「How」は「Why」でしか規定できない メルカ
 ## では本編
 
 ---
+
 layout: quote
 ---
 
@@ -115,6 +117,7 @@ layout: quote
 ## なぜソフトウェアは<br>変更しにくくなってしまうのか
 
 ---
+
 layout: quote
 ---
 
@@ -123,6 +126,7 @@ layout: quote
 > *&#x2014; Design Principles and Design Patterns, 2000, Robert C. Martin*
 
 ---
+
 layout: quote
 ---
 
@@ -146,6 +150,7 @@ layout: quote
 ## 疎結合かつ凝集性を高く
 
 ---
+
 layout: quote
 ---
 
@@ -220,6 +225,7 @@ a = 7  // ソフトウェア要素 B
 ## 「１つだけ」のサイズは？
 
 ---
+
 layout: quote
 ---
 
@@ -228,6 +234,7 @@ layout: quote
 > *&#x2014; Dan North (creator of BDD)*
 
 ---
+
 layout: quote
 ---
 
@@ -268,6 +275,7 @@ fun doSomething(obj: SomeObj)
 ```
 
 ---
+
 layout: quote
 ---
 
@@ -287,6 +295,7 @@ layout: quote
 ## 小休憩がてら偉人のお言葉を
 
 ---
+
 layout: quote
 ---
 
@@ -297,6 +306,7 @@ layout: quote
 > *&#x2014; Software Engineering Radio EP 215: Gang of Four - 20 Years Later*
 
 ---
+
 layout: quote
 ---
 
@@ -423,13 +433,15 @@ nurse.administerFluVaccine(patient, vaccine);
 ## [ジョシュアツリーの法則](https://ktr-05.hatenablog.com/entry/2019/07/07/184436#%E3%82%B8%E3%83%A7%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%84%E3%83%AA%E3%83%BC%E3%81%AE%E6%B3%95%E5%89%87) 覚えてますか？
 
 ---
+
+layout: background-blur
 background: /assets/2020-04-24_05-21-45_joshua-tree-1772159_1280.jpg
-backgroundSize: contain
 ---
 
 ---
+
+layout: background-blur
 background: /assets/2020-04-24_05-21-45_joshua-tree-1772159_1280.jpg
-backgroundSize: contain
 ---
 
 > 名前を言えるようになったとたんに、いたる所でそれを見るようになりました
@@ -473,6 +485,7 @@ backgroundSize: contain
 ## 戦略的設計
 
 ---
+
 layout: quote
 ---
 

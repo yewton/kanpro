@@ -1,6 +1,6 @@
 ---
-routerMode: 'hash'
 theme: seriph
+routerMode: 'hash'
 title: '第三回 命名'
 description: '〈完全なプログラミング〉を目指す会 2020 命名編です'
 footer: '〈完全なプログラミング〉を目指す会 2020'
@@ -118,12 +118,14 @@ yewton
 # [TwoHardThings](http://martinfowler.com/bliki/TwoHardThings.html)
 
 ---
+
 layout: quote
 ---
 
 > There are only two hard things in Computer Science:
 
 ---
+
 layout: quote
 ---
 
@@ -136,13 +138,15 @@ layout: quote
 # [ジョシュアツリーの法則](https://ktr-05.hatenablog.com/entry/2019/07/07/184436#%E3%82%B8%E3%83%A7%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%84%E3%83%AA%E3%83%BC%E3%81%AE%E6%B3%95%E5%89%87)
 
 ---
+
+layout: background-blur
 background: /assets/2020-04-24_05-21-45_joshua-tree-1772159_1280.jpg
-backgroundSize: contain
 ---
 
 ---
+
+layout: background-blur
 background: /assets/2020-04-24_05-21-45_joshua-tree-1772159_1280.jpg
-backgroundSize: contain
 ---
 
 > 名前を言えるようになったとたんに、いたる所でそれを見るようになりました
@@ -155,6 +159,7 @@ backgroundSize: contain
 - 森羅万象、名前を与えることで初めて、それについて考えることが出来るようになる
 
 ---
+
 background: /assets/2020-04-24_05-40-04_1024px-Yukihiro_Matsumoto_EuRuKo_2011.jpg
 backgroundPosition: right
 ---
@@ -178,8 +183,9 @@ backgroundPosition: right
 # *悪い* クラス名
 
 ---
+
+layout: background-blur
 background: /assets/internet_god.png
-backgroundSize: contain
 ---
 
 ---
@@ -325,6 +331,7 @@ OSS だったらコードを見てどのような変数が定義されている�
 # 命名は重要か？
 
 ---
+
 background: /assets/2020-04-24_05-40-04_1024px-Yukihiro_Matsumoto_EuRuKo_2011.jpg
 backgroundPosition: right
 ---
