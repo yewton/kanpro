@@ -34,14 +34,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Marp slide deck
+      - name: Build Slidev slide decks
         run: npm run build
-        env:
-          # Please update URL if you want to use custom domain
-          URL: https://${{ github.event.repository.owner.name }}.github.io/${{ github.event.repository.name }}
-
-          # Recommend to set lang for your deck to get better rendering for Open Graph image
-          LANG: ja-JP
 
       - name: Upload page artifacts
         uses: actions/upload-pages-artifact@v3

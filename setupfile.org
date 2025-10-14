@@ -1,6 +1,0 @@
-#+startup: showall
-#+options: toc:nil
-#+property: dir assets/
-#+macro: fit @@html:<!--fit-->@@
-#+macro: newpage @@html:---@@
-#+macro: img @@html:![$1](assets/$2)@@
