@@ -19,7 +19,7 @@ omuomugin
 
 ---
 
-# {w:fit}の前に
+# の前に
 
 ---
 
@@ -27,41 +27,41 @@ omuomugin
 
 ---
 
-# {w:fit}〈完全なプログラミング〉
+# 〈完全なプログラミング〉
 ## とは？
 
 ---
 
-# {w:fit}「読めば分かるコードを書く」<br>「必要十分なドキュメントを書く」
+# 「読めば分かるコードを書く」<br>「必要十分なドキュメントを書く」
 
 ---
 
-# {w:fit}余計なモノを<br>一切必要としない
+# 余計なモノを<br>一切必要としない
 ## ソフトウェアづくり
 
 ---
 
-# {w:fit}その心は？
+# その心は？
 
 ---
 
-# {w:fit}コードは圧倒的に<br> **人間によって読まれる**
+# コードは圧倒的に<br> **人間によって読まれる**
 
 ---
 
-# {w:fit}故に〈完全なプログラミング〉は<br>圧倒的に **はやい**
+# 故に〈完全なプログラミング〉は<br>圧倒的に **はやい**
 
 ---
 
-# {w:fit}さらに
+# さらに
 
 ---
 
-# {w:fit}品質の改善は<br> **コストを削減する**
+# 品質の改善は<br> **コストを削減する**
 
 ---
 
-# {w:fit}故に〈完全なプログラミング〉は<br>圧倒的に **やすい**
+# 故に〈完全なプログラミング〉は<br>圧倒的に **やすい**
 
 ---
 
@@ -73,11 +73,11 @@ omuomugin
 
 ---
 
-# {w:fit}今回はアーキテクチャ編
+# 今回はアーキテクチャ編
 
 ---
 
-# {w:fit}今日持ち帰って欲しいこと
+# 今日持ち帰って欲しいこと
 
 ---
 layout: quote
@@ -91,11 +91,11 @@ see also [ベストな「How」は「Why」でしか規定できない メルカ
 
 ---
 
-## {w:fit}すべての解決策は<br>「なぜ」適用するかが大事
+## すべての解決策は<br>「なぜ」適用するかが大事
 
 ---
 
-## {w:fit}では本編
+## では本編
 
 ---
 layout: quote
@@ -139,11 +139,11 @@ layout: quote
 
 ---
 
-## {w:fit}変化し続ける要求に耐えながら<br>依存を完結に保つのが大事
+## 変化し続ける要求に耐えながら<br>依存を完結に保つのが大事
 
 ---
 
-## {w:fit}疎結合かつ凝集性を高く
+## 疎結合かつ凝集性を高く
 
 ---
 layout: quote
@@ -155,7 +155,7 @@ layout: quote
 
 ---
 
-## {w:fit}疎結合と凝集性はお互いに表裏の関係にある
+## 疎結合と凝集性はお互いに表裏の関係にある
 
 ---
 
@@ -217,7 +217,7 @@ a = 7  // ソフトウェア要素 B
 
 ---
 
-## {w:fit}「１つだけ」のサイズは？
+## 「１つだけ」のサイズは？
 
 ---
 layout: quote
@@ -237,19 +237,19 @@ layout: quote
 
 ---
 
-## {w:fit}サイズの決定権は、<br>「我々」に委ねられている
+## サイズの決定権は、<br>「我々」に委ねられている
 
 ---
 
-## {w:fit}強い凝集性は<br>構造的にはわからない
+## 強い凝集性は<br>構造的にはわからない
 
 ---
 
-## {w:fit}プログラムの「意味」を理解して<br>はじめて凝集性の判断ができる
+## プログラムの「意味」を理解して<br>はじめて凝集性の判断ができる
 
 ---
 
-## {w:fit}全ては、プログラムの「意味」を<br>理解するところから
+## 全ては、プログラムの「意味」を<br>理解するところから
 
 ---
 
@@ -323,7 +323,7 @@ layout: quote
 
 ---
 
-## {w:fit}すべての解決策は<br>「なぜ」適用するかが大事
+## すべての解決策は<br>「なぜ」適用するかが大事
 
 ---
 
@@ -354,7 +354,7 @@ layout: quote
 
 ---
 
-## {w:fit}ドメイン分析
+## ドメイン分析
 
 ---
 
@@ -375,11 +375,11 @@ layout: quote
 
 ---
 
-## {w:fit}インフルエンザワクチンを患者に投与する
+## インフルエンザワクチンを患者に投与する
 
 ---
 
-## {w:fit}あなたなら<br>どんなコードを書く？
+## あなたなら<br>どんなコードを書く？
 
 ---
 
@@ -416,7 +416,7 @@ nurse.administerFluVaccine(patient, vaccine);
 
 ---
 
-## {w:fit}業務やモデルの理解がコードに現れる<br>理解したことしか表現できない
+## 業務やモデルの理解がコードに現れる<br>理解したことしか表現できない
 
 ---
 
@@ -457,7 +457,7 @@ backgroundSize: contain
 
 ---
 
-## {w:fit}実際に[スライドの例](https://speakerdeck.com/nihonbuson/example-mapping?slide=14)を見てみよう
+## 実際に[スライドの例](https://speakerdeck.com/nihonbuson/example-mapping?slide=14)を見てみよう
 
 ---
 
@@ -470,7 +470,7 @@ backgroundSize: contain
 
 ---
 
-## {w:fit}戦略的設計
+## 戦略的設計
 
 ---
 layout: quote
@@ -488,11 +488,11 @@ layout: quote
 - 配達者が配達する「商品」
 - 在庫管理者が在庫管理している「商品」
 
-#### {w:fit}それぞれでの「商品」の意味が異なる
+#### それぞれでの「商品」の意味が異なる
 
 ---
 
-## {w:fit}「商品」の意味が異なる<br>=<br>「商品」のコンテキストが異なる
+## 「商品」の意味が異なる<br>=<br>「商品」のコンテキストが異なる
 
 ---
 
@@ -508,7 +508,7 @@ layout: quote
 
 ---
 
-## {w:fit}ドメインを<br>分析するしかない
+## ドメインを<br>分析するしかない
 
 ---
 
@@ -537,12 +537,12 @@ layout: quote
 
 ---
 
-## {w:fit}戦術的設計
+## 戦術的設計
 ※ 詳細には立ち入らないです！
 
 ---
 
-## {w:fit}必ずしも DDD本 で<br>紹介されているものだけじゃない
+## 必ずしも DDD本 で<br>紹介されているものだけじゃない
 
 ---
 
@@ -550,104 +550,104 @@ layout: quote
 
 ---
 
-## {w:fit}集約とRepositoryパターン
+## 集約とRepositoryパターン
 
 ---
 
-## {w:fit}Layered Architecture
+## Layered Architecture
 
 ---
 
-## {w:fit}ヘキサゴナル (Port and Adapter) アーキテクチャ
+## ヘキサゴナル (Port and Adapter) アーキテクチャ
 
 ---
 
-## {w:fit}CQRS と Event Sourcing
+## CQRS と Event Sourcing
 
 ---
 
-## {w:fit}Clean Architecture
+## Clean Architecture
 
 ---
 
-## {w:fit}Humble Object Pattern
+## Humble Object Pattern
 
 ---
 
-## {w:fit}DTOやDPO
+## DTOやDPO
 ※ DTO = Data Transfer Object
 ※ DPO = Domain Payload Object
 
 ---
 
-## {w:fit}Transaction Script と Domain Modeling
+## Transaction Script と Domain Modeling
 
 ---
 
-## {w:fit}Service Oriented Architecture (SOA)
+## Service Oriented Architecture (SOA)
 
 ---
 
-## {w:fit}RESTとRPC
+## RESTとRPC
 ※ RPC = Remote Procedure Call
 
 ---
 
-## {w:fit}マイクロサービス、モジュラモノリス
+## マイクロサービス、モジュラモノリス
 
 ---
 
-## {w:fit}Dependency Injection
+## Dependency Injection
 
 ---
 
-## {w:fit}GoF の Design Pattern
+## GoF の Design Pattern
 
 ---
 
-## {w:fit}Design By Contract
+## Design By Contract
 
 ---
 
-## {w:fit}防御的プログラミング
+## 防御的プログラミング
 
 ---
 
-## {w:fit}REP, CCP, CRP原則
+## REP, CCP, CRP原則
 ※SOLID原則と共に紹介されるパッケージにおける原則
 
 ---
 
-## {w:fit}ADP, SDP, SAP原則
+## ADP, SDP, SAP原則
 ※SOLID原則と共に紹介されるパッケージ間の関係における原則
 
 ---
 
-## {w:fit}SOLID原則
+## SOLID原則
 
 ---
 
-## {w:fit}DRY, KISS, YAGNI
+## DRY, KISS, YAGNI
 
 ---
 
-## {w:fit}あなたはいくつ知ってましたか？
+## あなたはいくつ知ってましたか？
 
 ---
 
-## {w:fit}まだまだあるし<br>これからも増え続ける
+## まだまだあるし<br>これからも増え続ける
 
 ---
 
-## {w:fit}最後にもう一度
+## 最後にもう一度
 
 ---
 
-## {w:fit}すべての解決策は<br>「なぜ」適用するかが大事
+## すべての解決策は<br>「なぜ」適用するかが大事
 
 ---
 
-## {w:fit}付録
+## 付録
 
 ---
 
@@ -691,4 +691,4 @@ layout: quote
 
 ---
 
-## {w:fit}EOF
+## EOF

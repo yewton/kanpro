@@ -1,6 +1,6 @@
 ---
-theme: seriph
 routerMode: 'hash'
+theme: seriph
 title: '第一回 〈完全なプログラミング〉'
 description: '〈完全なプログラミング〉を目指す会 2020 の導入です'
 footer: '〈完全なプログラミング〉を目指す会 2020'
@@ -358,7 +358,7 @@ backgroundSize: contain
 
 ---
 
-# 品性は<br>タダである
+# 品質は<br>タダである
 
 ---
 background: /assets/quality-is-free.jpg
