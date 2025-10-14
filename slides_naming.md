@@ -1,5 +1,6 @@
 ---
 theme: seriph
+routerMode: 'hash'
 title: '第三回 命名'
 description: '〈完全なプログラミング〉を目指す会 2020 命名編です'
 footer: '〈完全なプログラミング〉を目指す会 2020'
@@ -7,88 +8,88 @@ drawings:
   enabled: true
 ---
 
-# {w:fit} 〈完全なプログラミング〉を目指す会 2020
-## {w:fit} 第三回 命名
+# 〈完全なプログラミング〉を目指す会 2020
+## 第三回 命名
 
 yewton
 
 ---
 
-# {w:fit}命名
+# 命名
 
 ---
 
-# {w:fit}の前に
+# の前に
 
 ---
 
-# {w:fit} *復習*
+# *復習*
 
 ---
 
-# {w:fit}〈完全なプログラミング〉
+# 〈完全なプログラミング〉
 ## とは？
 
 ---
 
-# {w:fit}「読めば分かるコードを書く」<br>「必要十分なドキュメントを書く」
+# 「読めば分かるコードを書く」<br>「必要十分なドキュメントを書く」
 
 ---
 
-# {w:fit}余計なモノを<br>一切必要としない
+# 余計なモノを<br>一切必要としない
 ## ソフトウェアづくり
 
 ---
 
-# {w:fit}その心は？
+# その心は？
 
 ---
 
-# {w:fit}コードは圧倒的に<br> *人間によって読まれる*
+# コードは圧倒的に<br> *人間によって読まれる*
 
 ---
 
-# {w:fit}故に〈完全なプログラミング〉は<br>圧倒的に *はやい*
+# 故に〈完全なプログラミング〉は<br>圧倒的に *はやい*
 
 ---
 
-# {w:fit}さらに
+# さらに
 
 ---
 
-# {w:fit}品質の改善は<br> *コストを削減する*
+# 品質の改善は<br> *コストを削減する*
 
 ---
 
-# {w:fit}故に〈完全なプログラミング〉は<br>圧倒的に *やすい*
+# 故に〈完全なプログラミング〉は<br>圧倒的に *やすい*
 
 ---
 
-# {w:fit} *はやい* <br> *やすい*
+# *はやい* <br> *やすい*
 
 ---
 
-# {w:fit} *うまい* <br> 😋
+# *うまい* <br> 😋
 
 ---
 
-# {w:fit}オブジェクト指向でなぜつくるのか
+# オブジェクト指向でなぜつくるのか
 
 ---
 
-# {w:fit} *複雑な問題* を <br> *人間が解決できるようにする* ため
+# *複雑な問題* を <br> *人間が解決できるようにする* ため
 
 ---
 
-# {w:fit}よいクラスとは
+# よいクラスとは
 
 ---
 
-# {w:fit} *SOLID*
+# *SOLID*
 
 ---
 
-# {w:fit}ポリモーフィズムのうまみ
+# ポリモーフィズムのうまみ
 
 ---
 
@@ -110,21 +111,21 @@ yewton
 
 ---
 
-# {w:fit}命名
+# 命名
 
 ---
 
-# {w:fit}[TwoHardThings](http://martinfowler.com/bliki/TwoHardThings.html)
+# [TwoHardThings](http://martinfowler.com/bliki/TwoHardThings.html)
 
 ---
----
+
 layout: quote
 ---
 
 > There are only two hard things in Computer Science:
 
 ---
----
+
 layout: quote
 ---
 
@@ -134,18 +135,18 @@ layout: quote
 
 ---
 
-# {w:fit}[ジョシュアツリーの法則](https://ktr-05.hatenablog.com/entry/2019/07/07/184436#%E3%82%B8%E3%83%A7%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%84%E3%83%AA%E3%83%BC%E3%81%AE%E6%B3%95%E5%89%87)
+# [ジョシュアツリーの法則](https://ktr-05.hatenablog.com/entry/2019/07/07/184436#%E3%82%B8%E3%83%A7%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%84%E3%83%AA%E3%83%BC%E3%81%AE%E6%B3%95%E5%89%87)
 
 ---
----
+
+layout: background-blur
 background: /assets/2020-04-24_05-21-45_joshua-tree-1772159_1280.jpg
-backgroundSize: contain
 ---
 
 ---
----
+
+layout: background-blur
 background: /assets/2020-04-24_05-21-45_joshua-tree-1772159_1280.jpg
-backgroundSize: contain
 ---
 
 > 名前を言えるようになったとたんに、いたる所でそれを見るようになりました
@@ -158,7 +159,7 @@ backgroundSize: contain
 - 森羅万象、名前を与えることで初めて、それについて考えることが出来るようになる
 
 ---
----
+
 background: /assets/2020-04-24_05-40-04_1024px-Yukihiro_Matsumoto_EuRuKo_2011.jpg
 backgroundPosition: right
 ---
@@ -171,29 +172,29 @@ backgroundPosition: right
 
 ---
 
-# {w:fit} *クラス名* <br> *メソッド名* <br> *変数名*
+# *クラス名* <br> *メソッド名* <br> *変数名*
 
 ---
 
-# {w:fit}よいクラス名
+# よいクラス名
 
 ---
 
-# {w:fit} *悪い* クラス名
+# *悪い* クラス名
 
 ---
----
+
+layout: background-blur
 background: /assets/internet_god.png
-backgroundSize: contain
 ---
 
 ---
 
-# {w:fit} `=FooManager=` <br> `=BarHelper=` <br> `=FizzHandler=` <br> `=BuzzInfo=`
+# `=FooManager=` <br> `=BarHelper=` <br> `=FizzHandler=` <br> `=BuzzInfo=`
 
 ---
 
-# {w:fit}何の抽象化なのか <br> *一見して分からない*
+# 何の抽象化なのか <br> *一見して分からない*
 
 ---
 
@@ -206,13 +207,13 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}よいメソッド名
+# よいメソッド名
 
 *--- CODE COMPLETE 7.3 良いルーチン名*
 
 ---
 
-# {w:fit}メソッドが行うことをすべて説明する
+# メソッドが行うことをすべて説明する
 
 - そのために `And` がたくさん並ぶようなら *分割を検討する*
 - 暗黙的な副次作用を持つようなメソッドをそもそも作らない
@@ -231,16 +232,16 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}必要な長さのメソッド名にする
+# 必要な長さのメソッド名にする
 
 - 無理に短くしようとしなくていい
 - でもその結果あんまりにも長いなら *実装を疑え*
 
 ---
 
-# {w:fit}正確な反意語を使用する
-## {w:fit}👍 `=open/close=`, `=first/last=`, `=take/drop=`, etc...
-## {w:fit}👎 `=register,sign_up/withdraw,quit,resign=`, etc..
+# 正確な反意語を使用する
+## 👍 `=open/close=`, `=first/last=`, `=take/drop=`, etc...
+## 👎 `=register,sign_up/withdraw,quit,resign=`, etc..
 
 ---
 
@@ -253,7 +254,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}よい変数名
+# よい変数名
 
 *--- CODE COMPLETE 第11章 変数名の力*
 
@@ -269,7 +270,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}問題志向の名前
+# 問題志向の名前
 
 - 方法(how)ではなく *モノ(what)* を表す
 
@@ -281,7 +282,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}名前の最適な長さ
+# 名前の最適な長さ
 
 - 平均 **10〜16文字** が最もデバッグしやすい(1990年のとある研究)
 - 厳密に守る必要はないが目安にはなる
@@ -291,7 +292,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}変数名とスコープ
+# 変数名とスコープ
 
 - **スコープが短ければ名前も短くていい**
     - ループカウンタなどは `=i=` とかでいい
@@ -301,7 +302,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}計算値による変数名の修飾
+# 計算値による変数名の修飾
 
 - **`=total=`, `=sum=`, `=average=`, `=max=`, `=min=`** , etc.
 - 修飾子を最後につけるなど **一貫性を持たせる**
@@ -323,23 +324,23 @@ OSS だったらコードを見てどのような変数が定義されている�
 
 ---
 
-# {w:fit}まとめ
+# まとめ
 
 ---
 
-# {w:fit}命名は重要か？
+# 命名は重要か？
 
 ---
----
+
 background: /assets/2020-04-24_05-40-04_1024px-Yukihiro_Matsumoto_EuRuKo_2011.jpg
 backgroundPosition: right
 ---
 
-# {w:fit}[名前重要](http://xn--97-273ae6a4irb6e2hsoiozc2g4b8082p.com/%E3%82%A8%E3%83%83%E3%82%BB%E3%82%A4/%E5%90%8D%E5%89%8D%E9%87%8D%E8%A6%81/)
+# [名前重要](http://xn--97-273ae6a4irb6e2hsoiozc2g4b8082p.com/%E3%82%A8%E3%83%83%E3%82%BB%E3%82%A4/%E5%90%8D%E5%89%8D%E9%87%8D%E8%A6%81/)
 
 ---
 
-# {w:fit}命名 Tips
+# 命名 Tips
 
 - それが何をするのか、何を表すのか、まずは *言葉で説明してみる*
 - *解読* の必要が生じるような命名を避け、 *読めば分かる* 名前をつけよう
@@ -347,7 +348,7 @@ backgroundPosition: right
 
 ---
 
-# {w:fit}おわり
+# おわり
 
 ---
 

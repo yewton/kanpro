@@ -1,5 +1,6 @@
 ---
 theme: seriph
+routerMode: 'hash'
 title: '第二回 オブジェクト指向プログラミング'
 description: '〈完全なプログラミング〉を目指す会 2020 オブジェクト指向プログラミング編です'
 footer: '〈完全なプログラミング〉を目指す会 2020'
@@ -7,94 +8,94 @@ drawings:
   enabled: true
 ---
 
-# {w:fit} 〈完全なプログラミング〉を目指す会 2020
-## {w:fit} 第二回 オブジェクト指向プログラミング
+# 〈完全なプログラミング〉を目指す会 2020
+## 第二回 オブジェクト指向プログラミング
 
 yewton
 
 ---
 
-# {w:fit}オブジェクト指向<br>プログラミング
+# オブジェクト指向<br>プログラミング
 
 ---
 
-# {w:fit}の前に
+# の前に
 
 ---
 
-# {w:fit} *復習*
+# *復習*
 
 ---
 
-# {w:fit}〈完全なプログラミング〉
+# 〈完全なプログラミング〉
 ## とは？
 
 ---
 
-# {w:fit}「読めば分かるコードを書く」<br>「必要十分なドキュメントを書く」
+# 「読めば分かるコードを書く」<br>「必要十分なドキュメントを書く」
 
 ---
 
-# {w:fit}余計なモノを<br>一切必要としない
+# 余計なモノを<br>一切必要としない
 ## ソフトウェアづくり
 
 ---
 
-# {w:fit}その心は？
+# その心は？
 
 ---
 
-# {w:fit}コードは圧倒的に<br> *人間によって読まれる*
+# コードは圧倒的に<br> *人間によって読まれる*
 
 ---
 
-# {w:fit}故に〈完全なプログラミング〉は<br>圧倒的に *はやい*
+# 故に〈完全なプログラミング〉は<br>圧倒的に *はやい*
 
 ---
 
-# {w:fit}さらに
+# さらに
 
 ---
 
-# {w:fit}品質の改善は<br> *コストを削減する*
+# 品質の改善は<br> *コストを削減する*
 
 ---
 
-# {w:fit}故に〈完全なプログラミング〉は<br>圧倒的に *やすい*
+# 故に〈完全なプログラミング〉は<br>圧倒的に *やすい*
 
 ---
 
-# {w:fit} *はやい* <br> *やすい*
+# *はやい* <br> *やすい*
 
 ---
 
-# {w:fit} *うまい* <br> 😋
+# *うまい* <br> 😋
 
 ---
 
-# {w:fit}三つの原則
+# 三つの原則
 
 ---
 
-# {w:fit}KISS<br>DRY<br>YAGNI
+# KISS<br>DRY<br>YAGNI
 
 ---
 
-# {w:fit}なぜ〈原則〉を知ってほしいか
+# なぜ〈原則〉を知ってほしいか
 
 ---
 
-# {w:fit}なぜ *〈原則〉になった* のか
+# なぜ *〈原則〉になった* のか
 
 ---
 
-# {w:fit} 原則と呼ばれるものの多くは<br> *経験則*
-## {w:fit} 多くの人が同意した <br> *ベストプラクティス集* みたいなもん
+# 原則と呼ばれるものの多くは<br> *経験則*
+## 多くの人が同意した <br> *ベストプラクティス集* みたいなもん
 
 ---
 
 # 同じ轍を踏むことのないよう
-## {w:fit} *DRY* に生きよう
+## *DRY* に生きよう
 
 ---
 
@@ -106,11 +107,11 @@ yewton
 
 ---
 
-# {w:fit} オブジェクト指向の<br> *歴史* に学ぶ
+# オブジェクト指向の<br> *歴史* に学ぶ
 
 ---
 
-# {w:fit}問題
+# 問題
 
 ---
 
@@ -118,11 +119,11 @@ yewton
 
 ---
 
-# {w:fit}正解は
+# 正解は
 
 ---
 
-# {w:fit} *オブジェクトやクラスの登場*
+# *オブジェクトやクラスの登場*
 
 ---
 
@@ -133,19 +134,19 @@ yewton
 
 ---
 
-# {w:fit}問題
+# 問題
 
 ---
 
-# {w:fit} *オブジェクトやクラスが* <br> *最初に登場した言語* <br>とは？
+# *オブジェクトやクラスが* <br> *最初に登場した言語* <br>とは？
 
 ---
 
-# {w:fit}正解は
+# 正解は
 
 ---
 
-# {w:fit}Simula 67
+# Simula 67
 
 ---
 
@@ -155,31 +156,31 @@ yewton
 
 ---
 
-# {w:fit}何が言いたいか
+# 何が言いたいか
 
 ---
 
-# {w:fit}オブジェクト指向とは、
+# オブジェクト指向とは、
 ## 複雑な問題解決のために<br> 遥か昔に発明され、今日まで現役の <br> *「問題の考え方」*
 
 ---
 
-# {w:fit}役に立たない <br> ワケがない
+# 役に立たない <br> ワケがない
 
 ---
 
-# {w:fit}問題
+# 問題
 
 ---
 
-# {w:fit} *クラス* とは？
+# *クラス* とは？
 
 ---
 
-# {w:fit}正解は
+# 正解は
 
 ---
----
+
 layout: quote
 ---
 
@@ -189,10 +190,10 @@ layout: quote
 
 ---
 
-# {w:fit} どうして *クラス* を作るのか？
+# どうして *クラス* を作るのか？
 
 ---
----
+
 layout: quote
 ---
 
@@ -202,7 +203,7 @@ layout: quote
 > *--- CODE COMPLETE 5.2.1 ソフトウェアの鉄則：複雑さへの対処*
 
 ---
----
+
 layout: quote
 ---
 > 有能なプログラマは自分の脳味噌のサイズがいかに制限されたものであるかをよく心得ています
@@ -215,14 +216,14 @@ layout: quote
 
 ---
 
-# {w:fit} こんなときに *クラス* を作る
+# こんなときに *クラス* を作る
 
 ---
 
 # 現実世界のオブジェクト<br>または抽象的なオブジェクト( `=`Circle`=` に対する `=`Shape`=` など )を<br>モデリングする
 
 ---
----
+
 layout: quote
 ---
 
@@ -234,10 +235,10 @@ layout: quote
 
 ---
 
-# {w:fit}複雑さを *緩和* ・ *分離* ・ *隠蔽* する
+# 複雑さを *緩和* ・ *分離* ・ *隠蔽* する
 
 ---
----
+
 layout: quote
 ---
 
@@ -262,22 +263,22 @@ layout: quote
 
 ---
 
-# {w:fit} *望ましくない* <br>クラス
+# *望ましくない* <br>クラス
 
 ---
 
-# {w:fit}God クラス
+# God クラス
 
 ---
----
+
+layout: background-blur
 background: /assets/internet_god.png
-backgroundSize: contain
 ---
 
 ---
----
+
+layout: background-blur
 background: /assets/internet_god.png
-backgroundSize: contain
 ---
 
 > 全知全能のクラスを作成してはならない。
@@ -289,7 +290,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} `=FooManager=` <br> `=BarHelper=` <br> `=FizzHandler=` <br> `=BuzzInfo=`
+# `=FooManager=` <br> `=BarHelper=` <br> `=FizzHandler=` <br> `=BuzzInfo=`
 
 ---
 
@@ -301,44 +302,44 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}[Object Calisthenics](https://williamdurand.fr/2013/06/03/object-calisthenics/) <br> オブジェクト指向健康体操
+# [Object Calisthenics](https://williamdurand.fr/2013/06/03/object-calisthenics/) <br> オブジェクト指向健康体操
 
 ---
 
-# {w:fit}クラスは *50行まで*
+# クラスは *50行まで*
 
 ---
 
-# {w:fit}パッケージは *10ファイルまで*
+# パッケージは *10ファイルまで*
 
 ---
 
-# {w:fit}インスタンス変数は *2個まで*
+# インスタンス変数は *2個まで*
 
 ---
 
-# {w:fit}" `=`=` " は1行につき *1個まで*
+# " `=`=` " は1行につき *1個まで*
 (デメテルの法則)
 
 ---
 
-# {w:fit} *よい* クラス
+# *よい* クラス
 
 ---
 
-# {w:fit} *SOLID*
+# *SOLID*
 
 ---
 
-# {w:fit} *単一責務の原則* <br> /Single responsibility principle/
+# *単一責務の原則* <br> /Single responsibility principle/
 
 ---
 
-# {w:fit}クラスを変更する理由は<br> *常に1つ* でなければならない
+# クラスを変更する理由は<br> *常に1つ* でなければならない
 
 ---
 
-# {w:fit} *あるクラスを変更したいと思う人* は<br> *ひとり* だけ
+# *あるクラスを変更したいと思う人* は<br> *ひとり* だけ
 
 ---
 
@@ -351,32 +352,32 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} *オープンクローズドの原則* <br> /Open/closed principle/
+# *オープンクローズドの原則* <br> /Open/closed principle/
 
 ---
 
-# {w:fit}モジュールは *拡張に対して開いて* いなければならず<br> *修正に対して閉じて* いなければならない
+# モジュールは *拡張に対して開いて* いなければならず<br> *修正に対して閉じて* いなければならない
 
 ---
----
+
+layout: background-blur
 background: /assets/thonk.png
-backgroundSize: contain
 ---
 
 ---
 
-# {w:fit} *拡張に対して開いている*
+# *拡張に対して開いている*
 ##  他の関連機能を実装するベースとして<br>使えなければならない
 
 ---
 
-# {w:fit} *修正に対して閉じている*
+# *修正に対して閉じている*
 ## 既存の振る舞いを変更することは出来ない、する必要がない
 
 ---
----
+
+layout: background-blur
 background: /assets/thonk.png
-backgroundSize: contain
 ---
 
 ---
@@ -387,11 +388,11 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} *リスコフの置換原則* <br> /Liskov substitution principle/
+# *リスコフの置換原則* <br> /Liskov substitution principle/
 
 ---
 
-# {w:fit}サブクラスをその基底クラスと<br>置き換えることが出来なければならない
+# サブクラスをその基底クラスと<br>置き換えることが出来なければならない
 
 クラス =S= がクラス =T= のサブクラスである場合に、
 プログラム中で使われる =T= のインスタンスは、
@@ -399,7 +400,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}長方形と正方形
+# 長方形と正方形
 
 ---
 
@@ -453,21 +454,21 @@ public class Square extends Rectangle {
 
 ---
 
-# {w:fit} *インターフェース分離の原則* <br> /Interface segregation principle/
+# *インターフェース分離の原則* <br> /Interface segregation principle/
 
 ---
 
-# {w:fit}クライアントが使用しないインターフェイスに<br>クライアントを強制的に依存させてはならない
+# クライアントが使用しないインターフェイスに<br>クライアントを強制的に依存させてはならない
 
 ---
----
+
+layout: background-blur
 background: /assets/thonk.png
-backgroundSize: contain
 ---
 
 ---
 
-# {w:fit} `=java.util.ArrayList=`
+# `=java.util.ArrayList=`
 
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -503,7 +504,7 @@ AbstractList <|-- ArrayList
 
 ---
 
-# {w:fit} `=kotlin.collections.ArrayList=`
+# `=kotlin.collections.ArrayList=`
 
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -557,7 +558,7 @@ MutableList <|.. ArrayList
 
 ---
 
-# {w:fit} *依存関係逆転の原則* <br> /Dependency inversion principle/
+# *依存関係逆転の原則* <br> /Dependency inversion principle/
 
 ---
 
@@ -565,12 +566,12 @@ MutableList <|.. ArrayList
 
 ---
 
-# {w:fit}実装ではなく *抽象に依存せよ*
+# 実装ではなく *抽象に依存せよ*
 
 ---
----
+
+layout: background-blur
 background: /assets/thonk.png
-backgroundSize: contain
 ---
 
 ---
@@ -646,13 +647,13 @@ DataAccessInterface <|.. Database
 
 ---
 
-# {w:fit} *ポリモーフィズム*
+# *ポリモーフィズム*
 
 - 同一のインタフェースを *複数の型に対して* 定義出来ること
 - 異なるクラスが *同一のメッセージに対して* 応答出来ること
 
 ---
----
+
 layout: quote
 ---
 
@@ -669,7 +670,7 @@ layout: quote
     - アドホック(オーバーロードとか)
 
 ---
----
+
 layout: quote
 ---
 
@@ -709,11 +710,11 @@ class Bird {
 
 ---
 
-# {w:fit}何が嬉しいのか
+# 何が嬉しいのか
 
 ---
 
-# {w:fit}マジックナンバー<br> *7 ± 2* <br>(4 ± 1, 5 ± 3 という説も)
+# マジックナンバー<br> *7 ± 2* <br>(4 ± 1, 5 ± 3 という説も)
 
 ---
 
@@ -723,7 +724,7 @@ class Bird {
 
 ---
 
-# {w:fit}[求めるな、命じよ](http://martinfowler.com/bliki/TellDontAsk.html)<br> /Tell-Don't-Ask/
+# [求めるな、命じよ](http://martinfowler.com/bliki/TellDontAsk.html)<br> /Tell-Don't-Ask/
 
 - どう振る舞うべきかはその *オブジェクト自身* が知っている
 - データと振る舞いを密接に関連付ける OOP の原則
@@ -731,11 +732,11 @@ class Bird {
 
 ---
 
-# {w:fit}ただし
+# ただし
 
 ---
 
-# {w:fit} *継承よりも合成を* <br> /Composition over inheritance/
+# *継承よりも合成を* <br> /Composition over inheritance/
 
 - 継承は強力だが使いこなすのは難しい
   - そもそも真に継承関係にあるような事象は稀
@@ -744,7 +745,7 @@ class Bird {
 
 ---
 
-# {w:fit} そして *DIP* 再び
+# そして *DIP* 再び
 
 - 依存関係を逆転出来るのは *ポリモーフィズムのおかげ*
 - 依存関係を逆転出来るということは *関心事のスコープを限定出来る* ということ
@@ -752,27 +753,27 @@ class Bird {
 
 ---
 
-# {w:fit}まとめ
+# まとめ
 
 ---
 
-# {w:fit}オブジェクト指向でなぜつくるのか
+# オブジェクト指向でなぜつくるのか
 
 ---
 
-# {w:fit} *複雑な問題* を <br> *人間が解決できるようにする* ため
+# *複雑な問題* を <br> *人間が解決できるようにする* ため
 
 ---
 
-# {w:fit}よいクラスとは
+# よいクラスとは
 
 ---
 
-# {w:fit} *SOLID*
+# *SOLID*
 
 ---
 
-# {w:fit}ポリモーフィズムのうまみ
+# ポリモーフィズムのうまみ
 
 ---
 

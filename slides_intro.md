@@ -1,5 +1,6 @@
 ---
 theme: seriph
+routerMode: 'hash'
 title: '第一回 〈完全なプログラミング〉'
 description: '〈完全なプログラミング〉を目指す会 2020 の導入です'
 footer: '〈完全なプログラミング〉を目指す会 2020'
@@ -7,21 +8,21 @@ drawings:
   enabled: true
 ---
 
-# {w:fit} 〈完全なプログラミング〉を目指す会 2020
-## {w:fit} 第一回〈完全なプログラミング〉
+# 〈完全なプログラミング〉を目指す会 2020
+## 第一回〈完全なプログラミング〉
 
 yewton
 
 ---
 
-# {w:fit} 持ち帰って欲しいこと
+# 持ち帰って欲しいこと
 
 1. **〈完全なプログラミング〉** とは何か
 2. なぜそれを目指すのか
 
 ---
 
-# {w:fit} この会の目的
+# この会の目的
 
 基本的には [CODE COMPLETE 第2版](https://www.amazon.co.jp/dp/489100455X/) を題材に、
 yewton の考える **〈完全なプログラミング〉** を知り、
@@ -33,27 +34,25 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 ---
 
-# {w:fit} 完全な<br>プログラミング
+# 完全な<br>プログラミング
 
 ---
 
-# {w:fit} 🤔?
+# 🤔?
 
 ---
----
-background: /assets/cc_book.jpg
-backgroundSize: contain
-backgroundPosition: right
+
+layout: image-right
+image: /assets/cc_book.jpg
 ---
 
 - [CODE COMPLETE 第2版](https://www.amazon.co.jp/dp/489100455X/) の日本語訳のサブタイトルが *完全なプログラミングを目指して*
 - 本書中に *〈完全なプログラミング〉に言及する記述は無し* 😱
 
 ---
----
-background: /assets/cc_book_e.jpg
-backgroundSize: contain
-backgroundPosition: right
+
+layout: image-right
+image: /assets/cc_book_e.jpg
 ---
 
 - 原著のサブタイトルは *A Practical Handbook of Software Construction*
@@ -62,17 +61,16 @@ backgroundPosition: right
 
 ---
 
-# {w:fit} CODE<br>COMPLETE
+# CODE<br>COMPLETE
 
 ---
 
-# {w:fit} 🤔?
+# 🤔?
 
 ---
----
-background: /assets/Software_dev2.svg
-backgroundSize: contain
-backgroundPosition: right
+
+layout: image-right
+image: /assets/Software_dev2.svg
 ---
 
 > A release is called *code complete* when the development team agrees that no entirely new source code will be added to this release.
@@ -86,19 +84,19 @@ backgroundPosition: right
 
 ---
 
-# {w:fit} つまり
+# つまり
 
 ---
 
-# {w:fit} 〈完全なプログラミング〉
-## {w:fit} なるモノの定義は存在しない
+# 〈完全なプログラミング〉
+## なるモノの定義は存在しない
 
 ---
 
-# {w:fit} 個人的な解釈
+# 個人的な解釈
 
 ---
----
+
 layout: quote
 ---
 
@@ -132,7 +130,7 @@ This is a comment in Slidev. The original had a background image, let's add it.
 
 ---
 
-# {w:fit} あります
+# あります
 ##  😤
 
 ---
@@ -146,13 +144,13 @@ This is a comment in Slidev. The original had a background image, let's add it.
 ---
 
 # なぜ
-## {w:fit} 〈完全なプログラミング〉
+## 〈完全なプログラミング〉
 ## を目指すのか
 
 ---
 
 # そもそも
-## {w:fit} プログラミング
+## プログラミング
 ## とは？
 
 ---
@@ -175,7 +173,7 @@ This is a comment in Slidev. The original had a background image, let's add it.
 ---
 
 # なぜ
-## {w:fit} 〈完全〉
+## 〈完全〉
 ## を目指すのか
 
 ---
@@ -187,24 +185,24 @@ This is a comment in Slidev. The original had a background image, let's add it.
 
 ---
 
-# {w:fit} *それは違う*
+# *それは違う*
 
 ---
 
-# {w:fit}〈完全〉が *〈最速〉*
+# 〈完全〉が *〈最速〉*
 ## だから
 
 ---
 
-# {w:fit} 🤔?
+# 🤔?
 
 ---
 
-# {w:fit} Q. コードを読むのは誰?
+# Q. コードを読むのは誰?
 
 ---
 
-# {w:fit} A. 人間
+# A. 人間
 ## 🕺
 
 ---
@@ -215,7 +213,7 @@ This is a comment in Slidev. The original had a background image, let's add it.
 
 ---
 
-# {w:fit} 🙅
+# 🙅
 
 ---
 
@@ -227,11 +225,11 @@ This is a comment in Slidev. The original had a background image, let's add it.
 
 ---
 
-# {w:fit} プログラミングの
-## {w:fit} 大半は **保守**
+# プログラミングの
+## 大半は **保守**
 
 ---
----
+
 layout: quote
 ---
 
@@ -242,10 +240,10 @@ layout: quote
 ---
 
 # プログラミングは
-## {w:fit} *コミュニケーション* 🤝
+## *コミュニケーション* 🤝
 
 ---
----
+
 layout: quote
 ---
 
@@ -254,10 +252,9 @@ layout: quote
 > */-- CODE COMPLETE 33.1 個人の資質は話題からずれているか/*
 
 ---
----
+
+layout: background-blur
 background: /assets/martin.jpg
-backgroundSize: contain
-backgroundPosition: center
 class: 'text-white'
 ---
 
@@ -267,7 +264,7 @@ class: 'text-white'
 > *--- マーティン・ファウラー*
 
 ---
----
+
 layout: quote
 ---
 
@@ -277,7 +274,7 @@ layout: quote
 > *--- CODE COMPLETE 6.2.2 良いカプセル化*
 
 ---
----
+
 layout: quote
 ---
 
@@ -286,7 +283,7 @@ layout: quote
 > *--- CODE COMPLETE 34.3 人間が1番、コンピュータは2番*
 
 ---
----
+
 layout: quote
 ---
 
@@ -300,16 +297,16 @@ layout: quote
 
 ---
 
-# {w:fit}勘違いしないで 😰
+# 勘違いしないで 😰
 
 - 開発速度を犠牲にしてでも品質を上げろ
 - 開発速度 < 品質
 - **じゃない！！！！！！！！**
 
 ---
----
+
+layout: background-blur
 background: /assets/chart1.png
-backgroundSize: contain
 ---
 
 # こうじゃない
@@ -319,9 +316,9 @@ backgroundSize: contain
 </div>
 
 ---
----
+
+layout: background-blur
 background: /assets/chart2.png
-backgroundSize: contain
 ---
 
 # こう
@@ -331,12 +328,12 @@ backgroundSize: contain
 </div>
 
 ---
----
+
+layout: background-blur
 background: /assets/chart2.png
-backgroundSize: contain
 ---
 
-# {w:fit}こう!!!
+# こう!!!
 
 <div class="abs-br m-6 flex items-center">
   <img src="/assets/chart2.png" class="h-40 opacity-20 blur" />
@@ -344,7 +341,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} 完全は<br> *はやい*
+# 完全は<br> *はやい*
 
 ---
 
@@ -366,21 +363,20 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} 完全は<br> *やすい*
+# 完全は<br> *やすい*
 
 ---
 
-# {w:fit}品質は<br>タダである
+# 品質は<br>タダである
 
 ---
----
-background: /assets/quality-is-free.jpg
-backgroundSize: contain
-backgroundPosition: right
+
+layout: image-right
+image: /assets/quality-is-free.jpg
 ---
 
 ---
----
+
 layout: quote
 ---
 
@@ -393,7 +389,7 @@ layout: quote
 </div>
 
 ---
----
+
 layout: quote
 ---
 
@@ -404,19 +400,19 @@ layout: quote
 
 ---
 
-# {w:fit} 🤔
+# 🤔
 
 ---
 
-# {w:fit} Q. 生産性を低下させる要因は？
+# Q. 生産性を低下させる要因は？
 
 ---
 
-# {w:fit} *エラー* 🐛
+# *エラー* 🐛
 ## それに伴うデバッグと修正
 
 ---
----
+
 layout: quote
 ---
 
@@ -424,7 +420,7 @@ layout: quote
 > デバッグとそれに伴うリファクタリングなどの修正作業は、従来の単純なソフトウェア開発サイクルにおいて約50%の時間を占める。
 
 ---
----
+
 layout: quote
 ---
 
@@ -435,9 +431,9 @@ layout: quote
 
 ---
 
-# {w:fit}〈完全なプログラミング〉は<br> *はやい* ・ *やすい*
+# 〈完全なプログラミング〉は<br> *はやい* ・ *やすい*
 ## なので
-# {w:fit} *うまい* <br> 😋
+# *うまい* <br> 😋
 
 ---
 

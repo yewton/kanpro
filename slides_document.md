@@ -1,5 +1,6 @@
 ---
 theme: seriph
+routerMode: 'hash'
 title: '第四回 ドキュメント'
 description: '〈完全なプログラミング〉を目指す会 2020 ドキュメント編です'
 footer: '〈完全なプログラミング〉を目指す会 2020'
@@ -7,84 +8,84 @@ drawings:
   enabled: true
 ---
 
-# {w:fit} 〈完全なプログラミング〉を目指す会 2020
-## {w:fit} 第四回 ドキュメント
+# 〈完全なプログラミング〉を目指す会 2020
+## 第四回 ドキュメント
 
 yewton
 
 ---
 
-# {w:fit} ドキュメント
+# ドキュメント
 
 ---
 
-# {w:fit}の前に
+# の前に
 
 ---
 
-# {w:fit} *復習*
+# *復習*
 
 ---
 
-# {w:fit}〈完全なプログラミング〉
+# 〈完全なプログラミング〉
 ## とは？
 
 ---
 
-# {w:fit}「読めば分かるコードを書く」<br>「必要十分なドキュメントを書く」
+# 「読めば分かるコードを書く」<br>「必要十分なドキュメントを書く」
 
 ---
 
-# {w:fit}余計なモノを<br>一切必要としない
+# 余計なモノを<br>一切必要としない
 ## ソフトウェアづくり
 
 ---
 
-# {w:fit}その心は？
+# その心は？
 
 ---
 
-# {w:fit}コードは圧倒的に<br> *人間によって読まれる*
+# コードは圧倒的に<br> *人間によって読まれる*
 
 ---
 
-# {w:fit}故に〈完全なプログラミング〉は<br>圧倒的に *はやい*
+# 故に〈完全なプログラミング〉は<br>圧倒的に *はやい*
 
 ---
 
-# {w:fit}さらに
+# さらに
 
 ---
 
-# {w:fit}品質の改善は<br> *コストを削減する*
+# 品質の改善は<br> *コストを削減する*
 
 ---
 
-# {w:fit}故に〈完全なプログラミング〉は<br>圧倒的に *やすい*
+# 故に〈完全なプログラミング〉は<br>圧倒的に *やすい*
 
 ---
 
-# {w:fit} *はやい* <br> *やすい*
+# *はやい* <br> *やすい*
 
 ---
 
-# {w:fit} *うまい* <br> 😋
+# *うまい* <br> 😋
 
 ---
 
-# {w:fit}命名は重要か？
+# 命名は重要か？
 
 ---
----
+
 background: /assets/2020-04-24_05-40-04_1024px-Yukihiro_Matsumoto_EuRuKo_2011.jpg
 backgroundPosition: right
 ---
 
-# {w:fit}[名前重要](http://xn--97-273ae6a4irb6e2hsoiozc2g4b8082p.com/%E3%82%A8%E3%83%83%E3%82%BB%E3%82%A4/%E5%90%8D%E5%89%8D%E9%87%8D%E8%A6%81/)
+# [名前重要](http://xn--97-273ae6a4irb6e2hsoiozc2g4b8082p.com/%E3%82%A8%E3%83%83%E3%82%BB%E3%82%A4/%E5%90%8D%E5%89%8D%E9%87%8D%E8%A6%81/)
 
 ---
 
-# {w:fit}命名 Tips
+# 命名 Tips
 
 - それが何をするのか、何を表すのか、まずは *言葉で説明してみる*
 - *解読* の必要が生じるような命名を避け、 *読めば分かる* 名前をつけよう
@@ -99,13 +100,12 @@ backgroundPosition: right
 3. 残すべき **ドキュメント** とは何か
 
 ---
----
-background: /assets/future_self.png
-backgroundSize: contain
-backgroundPosition: right
+
+layout: image-right
+image: /assets/future_self.png
 ---
 
-# {w:fit} *効果的* な <br> コメント
+# *効果的* な <br> コメント
 
 ---
 
@@ -129,9 +129,9 @@ System.out.println( "r = " + r );
 ```
 
 ---
----
+
+layout: background-blur
 background: /assets/thonk.png
-backgroundSize: contain
 ---
 
 ---
@@ -149,65 +149,65 @@ System.out.println( "r = " + SquareRootApproximation(r) );
 
 ---
 
-# {w:fit}理想
+# 理想
 
 ---
 
-# {w:fit} *コメントが全く無い* <br> コード
+# *コメントが全く無い* <br> コード
 
 ---
----
+
+layout: background-blur
 background: /assets/thonk.png
-backgroundSize: contain
 ---
 
 ---
 
-# {w:fit} コメントが全く <br> *必要無い* <br> コード
+# コメントが全く <br> *必要無い* <br> コード
 
 ---
 
-# {w:fit} *読めば分かる* コード
+# *読めば分かる* コード
 
 ---
 
-# {w:fit} 適切な <br> *モジュール名* <br> *クラス名* <br> *メソッド名*
+# 適切な <br> *モジュール名* <br> *クラス名* <br> *メソッド名*
 
 ---
 
-# {w:fit} 「コードが仕様」は <br> *正義*
+# 「コードが仕様」は <br> *正義*
 
 ---
 
-# {w:fit} 現実
+# 現実
 
 ---
 
-# {w:fit} 制約
+# 制約
 
 ---
 
-# {w:fit} 歴史的経緯 <br> 時間的制約 <br> リソース制約
+# 歴史的経緯 <br> 時間的制約 <br> リソース制約
 
 ---
 
-# {w:fit} 😭
+# 😭
 
 ---
 
-# {w:fit} コードでは表現できない <br> **筆者の気持ち・意図** <br> を残すためにコメントを使う
+# コードでは表現できない <br> **筆者の気持ち・意図** <br> を残すためにコメントを使う
 
 ---
 
-# {w:fit} *ポイント*
+# *ポイント*
 
 ---
 
-# {w:fit} コメントの種類
+# コメントの種類
 
 ---
 
-# {w:fit} 1. コードの繰り返し
+# 1. コードの繰り返し
 
 ---
 
@@ -224,9 +224,9 @@ System.out.println(String.format("Product = %d", product));
 ```
 
 ---
----
+
+layout: background-blur
 background: /assets/angrybaby.jpg
-backgroundSize: contain
 ---
 
 ---
@@ -236,7 +236,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} 2. コードの説明
+# 2. コードの説明
 
 ---
 
@@ -249,13 +249,13 @@ backgroundSize: contain
 ```
 
 ---
----
+
+layout: background-blur
 background: /assets/angrybaby.jpg
-backgroundSize: contain
 ---
 
 ---
----
+
 layout: quote
 ---
 
@@ -264,7 +264,7 @@ layout: quote
 > *--- プログラム書法 第2版 Brian W. Kernighan and P. J. Plauger*
 
 ---
----
+
 layout: quote
 ---
 
@@ -278,11 +278,11 @@ layout: quote
 
 ---
 
-# {w:fit} *複雑* なコード <br> *トリッキー* なコード <br> *細心の注意が必要* なコード
+# *複雑* なコード <br> *トリッキー* なコード <br> *細心の注意が必要* なコード
 
 ---
 
-# {w:fit} *"凝った"* コードの<br>コメントは怪しい
+# *"凝った"* コードの<br>コメントは怪しい
 
 ---
 
@@ -290,15 +290,15 @@ layout: quote
 
 ---
 
-# {w:fit} Keep It <br> Simple, <br> Sxxx
+# Keep It <br> Simple, <br> Sxxx
 
 ---
 
-# {w:fit} コメント追加の前に <br> *コードを改良*
+# コメント追加の前に <br> *コードを改良*
 
 ---
 
-# {w:fit} 3. コードの目印(マーカー)
+# 3. コードの目印(マーカー)
 
 ```java
     // FIXME: Additional parameters are required in TS3.6, but ignored in 3.5.
@@ -312,39 +312,39 @@ https://github.com/angular/angular/blob/f7815cf96defa6b19fff482824c5997f03fd78ea
 
 ---
 
-# {w:fit} チーム内で <br> 認識を合わせる
+# チーム内で <br> 認識を合わせる
 
 ---
 
-# {w:fit} 言い訳のようにつけられた <br> `=TODO=` や `=FIXME=`
+# 言い訳のようにつけられた <br> `=TODO=` や `=FIXME=`
 
 ---
 
-# {w:fit} いつまでも <br> 残っていませんか
+# いつまでも <br> 残っていませんか
 
 ---
 
-# {w:fit} いつか直す
+# いつか直す
 
 ---
 
-# {w:fit} その *"いつか"* は
+# その *"いつか"* は
 
 ---
----
+
+layout: background-blur
 background: /assets/angrybaby.jpg
-backgroundSize: contain
 ---
 
-# {w:fit} 永遠に <br> 来ない
-
----
-
-# {w:fit} 4. コードの概要
+# 永遠に <br> 来ない
 
 ---
 
-# {w:fit} コードを要約するコメント
+# 4. コードの概要
+
+---
+
+# コードを要約するコメント
 
 ---
 
@@ -352,15 +352,15 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} コードよりも *素早く読める*
+# コードよりも *素早く読める*
 
 ---
 
-# {w:fit}特に *作成者以外の誰か* <br> の役に立つ
+# 特に *作成者以外の誰か* <br> の役に立つ
 
 ---
 
-# {w:fit} 5. コードの意図の説明
+# 5. コードの意図の説明
 
 ---
 
@@ -373,9 +373,9 @@ backgroundSize: contain
 ```
 
 ---
----
+
+layout: background-blur
 background: /assets/angrybaby.jpg
-backgroundSize: contain
 ---
 
 ---
@@ -386,7 +386,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} パフォーマンスを重視して <br> *直感に反する* 実装になっている場合
+# パフォーマンスを重視して <br> *直感に反する* 実装になっている場合
 
 ---
 
@@ -400,11 +400,11 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}必要ならいくらでも <br> 長くなっていい
+# 必要ならいくらでも <br> 長くなっていい
 
 ---
 
-# {w:fit} 6. コードでは表せない情報
+# 6. コードでは表せない情報
 
 ---
 
@@ -424,17 +424,16 @@ backgroundSize: contain
 > *--- [Code Tells You How, Comments Tell You Why](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)*
 
 ---
----
-background: /assets/git_commit.png
-backgroundSize: contain
-backgroundPosition: right
----
 
-# {w:fit} *効果的な* <br> コミットメッセージ
-
+layout: image-right
+image: /assets/git_commit.png
 ---
 
-# {w:fit}人は *何故* <br> コミットメッセージを書くのか
+# *効果的な* <br> コミットメッセージ
+
+---
+
+# 人は *何故* <br> コミットメッセージを書くのか
 
 ---
 
@@ -456,19 +455,19 @@ backgroundPosition: right
 
 ---
 
-# {w:fit} *障害だ!!*
+# *障害だ!!*
 
 ---
 
-# {w:fit} なんでこうなってるんだ？
+# なんでこうなってるんだ？
 
 ---
 
-# {w:fit} 直していいのか？
+# 直していいのか？
 
 ---
 
-# {w:fit} 頼りになるのは <br> コミットメッセージ
+# 頼りになるのは <br> コミットメッセージ
 
 ---
 
@@ -481,18 +480,18 @@ Date:   Fri Apr 24 06:22:36 2020 +0900
 ```
 
 ---
----
+
+layout: background-blur
 background: /assets/angrybaby.jpg
-backgroundSize: contain
 ---
 
 ---
 
-# {w:fit} 変更内容は diff を見れば分かる
+# 変更内容は diff を見れば分かる
 
 ---
 
-# {w:fit} *背景* や *気持ち* <br> は分からない
+# *背景* や *気持ち* <br> は分からない
 
 ---
 
@@ -503,7 +502,7 @@ backgroundSize: contain
 # コミットメッセージには <br> *なぜ書かなければならなかったのか* <br> を書く
 
 ---
----
+
 layout: quote
 ---
 
@@ -513,7 +512,7 @@ layout: quote
 > Commit messages can do exactly that
 
 ---
----
+
 layout: quote
 ---
 
@@ -523,7 +522,7 @@ layout: quote
 
 ---
 
-# {w:fit} メッセージの構成
+# メッセージの構成
 
 1. *このコミットを適用するとどうなるか* を１行で言うと？
 2. なぜこの変更が為されたのか？その他補足情報
@@ -578,7 +577,7 @@ https://github.com/angular/angular/commit/acc483e2ebe7d8207fe183d8ec1424c5498631
 
 ---
 
-# {w:fit} ありがちで <br> *やめろ!* <br> と思うもの
+# ありがちで <br> *やめろ!* <br> と思うもの
 
 ---
 
@@ -587,18 +586,18 @@ https://github.com/angular/angular/commit/acc483e2ebe7d8207fe183d8ec1424c5498631
 ```
 
 ---
----
+
+layout: background-blur
 background: /assets/angrybaby.jpg
-backgroundSize: contain
 ---
 
 ---
 
-# {w:fit} レビューで指摘されたから <br> 直したのかどうかは <br> *どうでもいい*
+# レビューで指摘されたから <br> 直したのかどうかは <br> *どうでもいい*
 
 ---
 
-# {w:fit}直すべきだと思ったなら <br> *その気持ち* を書け
+# 直すべきだと思ったなら <br> *その気持ち* を書け
 ** 最悪その Pull Request コメントへのリンクは貼れ
 
 ---
@@ -608,18 +607,18 @@ backgroundSize: contain
 ```
 
 ---
----
+
+layout: background-blur
 background: /assets/angrybaby.jpg
-backgroundSize: contain
 ---
 
 ---
 
-# {w:fit} 知るか
+# 知るか
 
 ---
 
-# {w:fit} *まとめろ*
+# *まとめろ*
 
 ---
 
@@ -628,18 +627,18 @@ backgroundSize: contain
 ```
 
 ---
----
+
+layout: background-blur
 background: /assets/angrybaby.jpg
-backgroundSize: contain
 ---
 
 ---
 
-# {w:fit} まとめるな
+# まとめるな
 
 ---
 
-# {w:fit} *分けろ*
+# *分けろ*
 
 ---
 
@@ -662,7 +661,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit} 実装にまとまってた方が望ましいけれど、<br> 読まなくてよさそうなことが分かるので 👌
+# 実装にまとまってた方が望ましいけれど、<br> 読まなくてよさそうなことが分かるので 👌
 
 ---
 
@@ -674,39 +673,39 @@ typoを修正する
 
 ---
 
-# {w:fit} ただし
+# ただし
 
 ---
 
-# {w:fit} 同一 Pull Request 内なら <br> (変更の文脈が同じなら) <br> まとめてほしい
+# 同一 Pull Request 内なら <br> (変更の文脈が同じなら) <br> まとめてほしい
 
 ---
 
-# {w:fit} ケアレスミス直したとか<br>考え直して変えたとか<br>人に言われて変えたとか
+# ケアレスミス直したとか<br>考え直して変えたとか<br>人に言われて変えたとか
 
 ---
 
-# {w:fit} 一ヶ月後、一年後には <br> *不要なコンテキスト*
+# 一ヶ月後、一年後には <br> *不要なコンテキスト*
 
 ---
 
-# {w:fit} そうは言ってもさぁ…
+# そうは言ってもさぁ…
 
 ---
 
-# {w:fit} 開発中にいちいち <br> コミットメッセージ <br> 熟考してらんないよ
+# 開発中にいちいち <br> コミットメッセージ <br> 熟考してらんないよ
 
 ---
 
-# {w:fit} *しなくていい*
+# *しなくていい*
 
 ---
 
-# {w:fit} レビュー前に <br> 整理すればいい
+# レビュー前に <br> 整理すればいい
 
 ---
 
-# {w:fit}開発中のメッセージの例
+# 開発中のメッセージの例
 
 ---
 
@@ -726,7 +725,7 @@ specついｋ
 
 ---
 
-# {w:fit} レビュー提出時
+# レビュー提出時
 
 ---
 
@@ -740,7 +739,7 @@ specついｋ
 
 ---
 
-# {w:fit} 使える道具
+# 使える道具
 
 ---
 
@@ -808,17 +807,17 @@ specついｋ
 
 ---
 
-# {w:fit}コミットメッセージ<br>まとめ
+# コミットメッセージ<br>まとめ
 
 ---
 
-# {w:fit}どのように よりも <br> *何を* ・ *何故* <br> に重点を置く
+# どのように よりも <br> *何を* ・ *何故* <br> に重点を置く
 ** どのように は *diff の役割*
 
 ---
 
-# {w:fit} このコミットを  <br> *cherry pick すると何が起こるのか？* <br> このコミットは <br> *どういう背景で積まれたのか？*
-## {w:fit} Pull Request の説明文を書くつもりで
+# このコミットを  <br> *cherry pick すると何が起こるのか？* <br> このコミットは <br> *どういう背景で積まれたのか？*
+## Pull Request の説明文を書くつもりで
 
 ---
 
@@ -826,7 +825,7 @@ specついｋ
 
 ---
 
-# {w:fit} *残すべき* <br>ドキュメント
+# *残すべき* <br>ドキュメント
 
 ---
 
@@ -839,7 +838,7 @@ specついｋ
 
 ---
 
-# {w:fit} *アーキテクチャ* とは
+# *アーキテクチャ* とは
 
 > 1つは、システムから個々のパーツへとどこまでもブレークダウンできるということ、もう1つは、簡単には変更できない決定事項だということである
 >
@@ -847,7 +846,7 @@ specついｋ
 
 ---
 
-# {w:fit} Architecture Decision<br>Record
+# Architecture Decision<br>Record
 
 - 容易に変更できない *アーキテクチャ上の意思決定* について記録する
     - *なぜ* そうしたのか、 *他に何を検討した* のか
@@ -866,7 +865,7 @@ specついｋ
 
 ---
 
-# {w:fit} *Architecture Decision Record* の<br>フォーマット(例)
+# *Architecture Decision Record* の<br>フォーマット(例)
 
 * 参考にしたもの: [Y-Statements](https://medium.com/olzzio/y-statements-10eb07b5a177)
 
@@ -927,7 +926,7 @@ specついｋ
 
 ---
 
-# {w:fit} まとめ
+# まとめ
 
 ---
 
@@ -935,7 +934,7 @@ specついｋ
 
 ---
 
-# {w:fit} コミットメッセージは変更内容ではなく <br> *変更の意図・背景* を説明する
+# コミットメッセージは変更内容ではなく <br> *変更の意図・背景* を説明する
 
 ---
 
@@ -943,23 +942,23 @@ specついｋ
 
 ---
 
-# {w:fit} 容易に変更不可能な <br> *アーキテクチャ上の意思決定の過程* <br> はドキュメントに残す
+# 容易に変更不可能な <br> *アーキテクチャ上の意思決定の過程* <br> はドキュメントに残す
 
 ---
 
-# {w:fit} *今* この瞬間から
+# *今* この瞬間から
 
 ---
 
-# {w:fit} *完全なコメント* <br> *完全なコミットメッセージ* <br> 書きましょう
+# *完全なコメント* <br> *完全なコミットメッセージ* <br> 書きましょう
 
 ---
 
-# {w:fit} 大きめの機能設計などの際には <br> *Architecture Decision Record* <br> を残すようにしましょう
+# 大きめの機能設計などの際には <br> *Architecture Decision Record* <br> を残すようにしましょう
 
 ---
 
-# {w:fit} おわり
+# おわり
 
 ---
 
