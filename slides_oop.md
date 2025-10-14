@@ -1,4 +1,5 @@
 ---
+routerMode: 'hash'
 theme: seriph
 title: '第二回 オブジェクト指向プログラミング'
 description: '〈完全なプログラミング〉を目指す会 2020 オブジェクト指向プログラミング編です'

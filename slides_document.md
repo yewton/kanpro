@@ -1,4 +1,5 @@
 ---
+routerMode: 'hash'
 theme: seriph
 title: '第四回 ドキュメント'
 description: '〈完全なプログラミング〉を目指す会 2020 ドキュメント編です'

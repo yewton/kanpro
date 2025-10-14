@@ -1,5 +1,6 @@
 ---
 theme: seriph
+routerMode: 'hash'
 title: '第一回 〈完全なプログラミング〉'
 description: '〈完全なプログラミング〉を目指す会 2020 の導入です'
 footer: '〈完全なプログラミング〉を目指す会 2020'
@@ -39,7 +40,6 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 # 🤔?
 
----
 ---
 background: /assets/cc_book.jpg
 backgroundSize: contain
@@ -191,7 +191,7 @@ This is a comment in Slidev. The original had a background image, let's add it.
 
 ---
 
-# {w:fit}〈完全〉が *〈最速〉*
+# 〈完全〉が *〈最速〉*
 ## だから
 
 ---
@@ -300,7 +300,7 @@ layout: quote
 
 ---
 
-# {w:fit}勘違いしないで 😰
+# 勘違いしないで 😰
 
 - 開発速度を犠牲にしてでも品質を上げろ
 - 開発速度 < 品質
@@ -336,7 +336,7 @@ background: /assets/chart2.png
 backgroundSize: contain
 ---
 
-# {w:fit}こう!!!
+# こう!!!
 
 <div class="abs-br m-6 flex items-center">
   <img src="/assets/chart2.png" class="h-40 opacity-20 blur" />
@@ -370,7 +370,7 @@ backgroundSize: contain
 
 ---
 
-# {w:fit}品質は<br>タダである
+# 品性は<br>タダである
 
 ---
 ---
@@ -435,7 +435,7 @@ layout: quote
 
 ---
 
-# {w:fit}〈完全なプログラミング〉は<br> *はやい* ・ *やすい*
+# 〈完全なプログラミング〉は<br> *はやい* ・ *やすい*
 ## なので
 # *うまい* <br> 😋
 
