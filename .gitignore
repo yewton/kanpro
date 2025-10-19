@@ -61,3 +61,12 @@ typings/
 .env
 
 /tmp
+
+# IDE files
+.idea/
+
+# Build output
+public/
+
+# Gemini files
+.gemini/
