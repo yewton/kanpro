@@ -61,3 +61,6 @@ typings/
 .env
 
 /tmp
+
+.gemini/
+gha-creds-*.json
