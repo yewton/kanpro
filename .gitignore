@@ -62,5 +62,12 @@ typings/
 
 /tmp
 
+# IDE files
+.idea/
+
+# Build output
+public/
+
+# Gemini files
 .gemini/
 gha-creds-*.json
