@@ -11,6 +11,11 @@ title: 第五回 アーキテクチャ
 description: 〈完全なプログラミング〉を目指す会 2020 アーキテクチャ編です
 footer: 〈完全なプログラミング〉を目指す会 2020
 _footer: ""
+style: |
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+  section {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
 
 ---
 
