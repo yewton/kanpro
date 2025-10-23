@@ -41,5 +41,5 @@ title: %s
 description: %s
 footer:  〈完全なプログラミング〉を目指す会 2020
 _footer: \"\"
----" title desc))
+style: |\n  @import url(\"https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap\");\n  section {\n    font-family: 'Noto Sans JP', sans-serif;\n  }\n---" title desc))
 #+end_src

@@ -9,6 +9,11 @@ title: 第三回 命名
 description: 〈完全なプログラミング〉を目指す会 2020 命名編です
 footer:  〈完全なプログラミング〉を目指す会 2020
 _footer: ""
+style: |
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+  section {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
 ---
 
 
