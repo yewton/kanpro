@@ -1,3 +1,6 @@
 [build]
   publish = "dist"
   command = "CHROME_PATH=$(npx -y @puppeteer/browsers@latest install chrome@stable --path $(realpath ./tmp) | awk '{print $2}') npm run build"
+
+[build.environment]
+  APT_PACKAGES = ["fonts-noto-cjk"]
