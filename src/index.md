@@ -1,13 +1,9 @@
 ---
-theme: gaia
 class:
   - lead
 paginate: true
 _paginate: false
-headingDivider: 1
-title: 〈完全なプログラミング〉を目指す会 2020
-description: 〈完全なプログラミング〉を目指す会 2020 の資料へのインデックスです
-footer:  〈完全なプログラミング〉を目指す会 2020
+footer: 〈完全なプログラミング〉を目指す会 2020
 _footer: ""
 style: |
   @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");

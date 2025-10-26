@@ -1,13 +1,9 @@
 ---
-theme: gaia
 class:
   - lead
 paginate: true
 _paginate: false
-headingDivider: 1
-title: 第二回 オブジェクト指向プログラミング
-description: 〈完全なプログラミング〉を目指す会 2020 オブジェクト指向プログラミング編です
-footer:  〈完全なプログラミング〉を目指す会 2020
+footer: 〈完全なプログラミング〉を目指す会 2020
 _footer: ""
 style: |
   @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");

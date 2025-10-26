@@ -1,11 +1,9 @@
 ---
 
-theme: gaia
 class:
   - lead
 paginate: true
 _paginate: false
-headingDivider: 1
 
 title: 第五回 アーキテクチャ
 description: 〈完全なプログラミング〉を目指す会 2020 アーキテクチャ編です
