@@ -1,0 +1,11 @@
+@import 'gaia';
+
+@import url(https://fonts.bunny.net/css?family=noto-sans-jp:400|m-plus-1-code:400,700);
+
+code {
+    font-family: 'M PLUS 1 Code', monospace;
+}
+
+section {
+    font-family: 'Noto Sans JP', sans-serif;
+}
