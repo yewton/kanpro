@@ -1,10 +1,4 @@
 ---
-class: lead
-paginate: true
-footer:  〈完全なプログラミング〉を目指す会 2020
-_paginate: false
-_footer: ""
-
 title: 第一回 〈完全なプログラミング〉
 description: 〈完全なプログラミング〉を目指す会 2020 の導入です
 ---

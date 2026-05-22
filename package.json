@@ -7,6 +7,11 @@
   "scripts": {
     "clean": "rimraf dist",
     "assets": "cpx 'src/assets/**/*' dist/assets",
+    "diagrams": "run-p diagram:*",
+    "diagram:java_collection": "mmdc -p puppeteer.config.json -b transparent -s 2 -i src/diagrams/java_collection.mmd -o src/assets/java_collection.png",
+    "diagram:kotlin_collection": "mmdc -p puppeteer.config.json -b transparent -s 2 -i src/diagrams/kotlin_collection.mmd -o src/assets/kotlin_collection.png",
+    "diagram:traditional_layer": "mmdc -p puppeteer.config.json -b transparent -s 2 -i src/diagrams/traditional_layer.mmd -o src/assets/traditional_layer.png",
+    "diagram:dip_layer": "mmdc -p puppeteer.config.json -b transparent -s 2 -i src/diagrams/dip_layer.mmd -o src/assets/dip_layer.png",
     "deck:index": "marp --no-stdin src/index.md -o dist/index.html --og-image ${URL}/index.jpg --url ${URL}",
     "og-image:index": "marp --no-stdin src/index.md -o dist/index.jpg",
     "deck:intro": "marp --no-stdin src/intro.md -o dist/intro.html --og-image ${URL}/intro.jpg --url ${URL}/intro.html",
@@ -24,6 +29,7 @@
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^4.2.3",
+    "@mermaid-js/mermaid-cli": "^11.4.2",
     "cpx2": "^8.0.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^6.0.1"

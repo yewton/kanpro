@@ -1,10 +1,4 @@
 ---
-class: lead
-paginate: true
-footer:  〈完全なプログラミング〉を目指す会 2020
-_paginate: false
-_footer: ""
-
 title: 第四回 ドキュメント
 description: 〈完全なプログラミング〉を目指す会 2020 ドキュメント編です
 ---
