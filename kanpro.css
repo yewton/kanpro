@@ -134,6 +134,13 @@ section blockquote p {
   margin: 0.2em 0;
 }
 
+/* gaia のブロック引用符デコレーション（::before/::after に " を挿入）を無効化。
+   section.quote 専用スタイルで独自の引用符を使うため。 */
+section blockquote::before,
+section blockquote::after {
+  content: none;
+}
+
 /* 出典（em in blockquote）*/
 section blockquote em {
   display: block;
@@ -264,15 +271,10 @@ section.title {
     radial-gradient(ellipse at 80% 75%, rgba(77, 216, 197, 0.08) 0%, transparent 50%),
     var(--c-bg);
   justify-content: center;
-  align-items: flex-start;
 }
 
 section.title h1 {
-  background: linear-gradient(135deg, var(--c-accent) 0%, var(--c-teal) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  padding-bottom: 0.05em;
+  color: var(--c-accent);
 }
 
 section.title h2 {
