@@ -1,8 +1,8 @@
-# Gemini Code Assistant Context
+# Claude Code コンテキスト
 
 ## プロジェクト概要
 
-[REAMDE](README.org) を参照。
+[README](README.org) を参照。
 
 ## コミット方針
 
@@ -19,30 +19,23 @@
 
 ## スライドのプレビュー方法
 
-仕組みは [REAMDE](README.org) を参照。
+仕組みは [README](README.org) を参照。
 
-[Run blocking/long running shell commands in background · Issue #1689 · google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli/issues/1689) が解消されるまでは、以下のように対応すること。
-
-まず、 marp サーバーをバックグラウンドで起動する:
+Marp サーバーをバックグラウンドで起動する:
 
 ```sh
-npx marp -s src > /tmp/kanpro-marp.stdout 2> /tmp/kanpro-marp.stderr &
+npm start
 ```
-marp サーバーの起動を確認する:
+
+起動を確認する:
 
 ```sh
-grep 'Start server listened at' /tmp/kanpro-marp.stderr
+grep 'Start server listened at' /tmp/kanpro-marp.stderr 2>/dev/null || curl -sf http://localhost:8080/ > /dev/null && echo OK
 ```
 
-この結果が以下のようになっていれば OK:
+個別のスライドは `http://localhost:8080/<filename>.md` でプレビューできる。
 
-```sh
-[  INFO ] [Server mode] Start server listened at http://localhost:8080/ ...
-```
-
-以降は、 [REAMDE](README.org) に記載の方法で各スライドをプレビュー出来る。
-
-marp サーバーを終了する際は以下を実行する:
+Marp サーバーを終了する際は以下を実行する:
 
 ```sh
 pkill -f 'marp -s src'
@@ -52,9 +45,7 @@ pkill -f 'marp -s src'
 
 前述の方法でスライドの変更内容をプレビューすること。
 
-また、リグレッション確認の為に、変更の影響を受けるスライドをピックアップし、変更作業の前にスクリーンショットを撮影しておくこと。
-
-変更作業後に再び同ページのスライドのスクリーンショットを撮影し、前後比較を行うこと。
+リグレッション確認の為に、変更の影響を受けるスライドをピックアップし、変更作業の前にスクリーンショットを撮影しておくこと。変更作業後に再び同ページのスライドのスクリーンショットを撮影し、前後比較を行うこと。
 
 字がはみ出して読めない、画像が表示されない、ソースの Markdown と内容が異なる、など体裁が崩れていないことは常に確認すること。
 
