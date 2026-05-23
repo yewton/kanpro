@@ -20,17 +20,17 @@ pre code.hljs {
   padding: 0;
 }
 code.hljs { padding: 0; }
-.hljs                           { background: transparent; color: #c6d0ee; }
-.hljs-comment, .hljs-quote      { color: #637098; font-style: italic; }
-.hljs-keyword, .hljs-selector-tag, .hljs-type { color: #a78bfa; }
-.hljs-string, .hljs-regexp      { color: #4dd8c5; }
-.hljs-number, .hljs-literal, .hljs-symbol, .hljs-bullet { color: #f6c94e; }
-.hljs-name, .hljs-section, .hljs-tag { color: #5899f5; }
-.hljs-title, .hljs-title.class_, .hljs-title.function_ { color: #93c5fd; }
-.hljs-attribute, .hljs-variable, .hljs-template-variable { color: #f6c94e; }
-.hljs-built_in                  { color: #4dd8c5; }
-.hljs-addition                  { color: #4dd8c5; background: rgba(77, 216, 197, 0.1); }
-.hljs-deletion                  { color: #f87171; background: rgba(248, 113, 113, 0.1); }
+.hljs                           { background: transparent; color: var(--c-text); }
+.hljs-comment, .hljs-quote      { color: var(--c-dim); font-style: italic; }
+.hljs-keyword, .hljs-selector-tag, .hljs-type { color: var(--c-purple); }
+.hljs-string, .hljs-regexp      { color: var(--c-teal); }
+.hljs-number, .hljs-literal, .hljs-symbol, .hljs-bullet { color: var(--c-strong); }
+.hljs-name, .hljs-section, .hljs-tag { color: var(--c-accent); }
+.hljs-title, .hljs-title.class_, .hljs-title.function_ { color: var(--c-sky); }
+.hljs-attribute, .hljs-variable, .hljs-template-variable { color: var(--c-strong); }
+.hljs-built_in                  { color: var(--c-teal); }
+.hljs-addition                  { color: var(--c-teal); background: rgba(77, 216, 197, 0.1); }
+.hljs-deletion                  { color: var(--c-red); background: rgba(248, 113, 113, 0.1); }
 .hljs-strong                    { font-weight: 700; }
 .hljs-emphasis                  { font-style: italic; }
 
@@ -65,6 +65,9 @@ section {
   --c-strong:  #f6c94e;
   --c-dim:     #637098;
   --c-codebg:  #090f1e;
+  --c-purple:  #a78bfa;
+  --c-sky:     #93c5fd;
+  --c-red:     #f87171;
 
   /* Marpit スライドサイズ（@size 宣言と一致させる） */
   width: 1280px;
@@ -100,7 +103,7 @@ section::before {
     to right,
     var(--c-accent) 0%,
     var(--c-teal) 50%,
-    #a78bfa 100%
+    var(--c-purple) 100%
   );
   z-index: 10;
 }
@@ -262,7 +265,7 @@ section pre {
 
 section pre code {
   background: transparent;
-  color: #c6d0ee;
+  color: var(--c-text);
   border: none;
   font-size: 0.71em;
   padding: 0;
@@ -302,6 +305,8 @@ section img {
    LEAD クラス（全スライド共通）
    ================================================================ */
 section.lead {
+  display: flex;
+  flex-flow: column nowrap;
   place-content: safe center;
   align-items: stretch;
 }
@@ -317,15 +322,6 @@ section.lead h6 {
 
 section.lead p {
   text-align: center;
-}
-
-section.lead h1 { color: var(--c-head); }
-section.lead h2 { color: var(--c-accent); }
-section.lead h3 { color: var(--c-teal); }
-section.lead strong { color: var(--c-strong); }
-section.lead a {
-  color: var(--c-accent);
-  border-bottom-color: rgba(88, 153, 245, 0.35);
 }
 
 /* ================================================================
