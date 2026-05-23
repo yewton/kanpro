@@ -143,9 +143,10 @@ section blockquote::after {
 
 /* 出典（em in blockquote）*/
 section blockquote em {
-  display: block;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.25em;
   margin-top: 0.5em;
-  text-align: right;
   font-size: 0.84em;
   color: var(--c-dim);
   font-style: italic;
@@ -333,7 +334,9 @@ section.quote blockquote em {
    リストを 2 カラムに自動レイアウト
    ================================================================ */
 section.cols-2 ul,
-section.cols-2 ol {
+section.cols-2 ol,
+section.cols-2 blockquote ul,
+section.cols-2 blockquote ol {
   column-count: 2;
   column-gap: 3em;
   column-rule: 1px solid var(--c-border);

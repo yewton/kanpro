@@ -686,7 +686,7 @@ System.out.println(String.format("Product = %d", product));
 > One of the most effective ways of documenting architecture decisions is through Architecture Decision Records ([ADRs](https://adr.github.io/)).
 > ADRs were first evangelized by Michael Nygard in a [blog post](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) and later marked as “adopt” in the [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records).
 > 
-> &#x2014; [Fundamentals of Software Architecture](http://fundamentalsofsoftwarearchitecture.com/)
+> *&#x2014; [Fundamentals of Software Architecture](http://fundamentalsofsoftwarearchitecture.com/)*
 
 
 # <!--fit--> **アーキテクチャ** とは

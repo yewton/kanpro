@@ -118,7 +118,7 @@ yewton
 ![bg contain opacity](assets/2020-04-24_05-21-45_joshua-tree-1772159_1280.jpg)
 
 > 名前を言えるようになったとたんに、いたる所でそれを見るようになりました
-> &#x2013; Robin Williams [ノンデザイナーズ・デザインブック](https://www.amazon.co.jp/dp/B01LW1BC2L/)
+> *&#x2013; Robin Williams [ノンデザイナーズ・デザインブック](https://www.amazon.co.jp/dp/B01LW1BC2L/)*
 
 ---
 

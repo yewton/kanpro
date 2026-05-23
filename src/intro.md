@@ -62,7 +62,7 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 > A release is called **code complete** when the development team agrees that no entirely new source code will be added to this release.
 > 
-> &#x2014; *[Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle) From Wikipedia, the free encyclopedia*
+> *&#x2014; [Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle) From Wikipedia, the free encyclopedia*
 
 ---
 
@@ -215,7 +215,7 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 <!-- _class: lead quote -->
 
 > It's **only the first 10 minutes that the code's original** , when you type it in the first time. That's it.
-> &#x2014; *[The Noble Art of Maintenance Programming](https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/)*
+> *&#x2014; [The Noble Art of Maintenance Programming](https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/)*
 
 
 # プログラミングは
