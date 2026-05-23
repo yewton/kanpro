@@ -1,0 +1,10 @@
+%%{init: {'class': {'hideEmptyMembersBox': true}}}%%
+classDiagram
+    class Controller
+    class BusinessLogic
+    class Database
+    class Presenter
+
+    Controller --> BusinessLogic
+    BusinessLogic --> Database
+    BusinessLogic --> Presenter

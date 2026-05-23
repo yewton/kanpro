@@ -1,0 +1,22 @@
+%%{init: {'class': {'hideEmptyMembersBox': true}}}%%
+classDiagram
+    class Controller
+    class BusinessLogic
+    class Database
+    class Presenter
+    class InputBoundary {
+        <<interface>>
+    }
+    class OutputBoundary {
+        <<interface>>
+    }
+    class DataAccessInterface {
+        <<interface>>
+    }
+
+    Controller --> InputBoundary
+    InputBoundary <|.. BusinessLogic
+    BusinessLogic --> OutputBoundary
+    OutputBoundary <|.. Presenter
+    BusinessLogic --> DataAccessInterface
+    DataAccessInterface <|.. Database

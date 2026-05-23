@@ -1,0 +1,25 @@
+%%{init: {'class': {'hideEmptyMembersBox': true}}}%%
+classDiagram
+    class Iterable {
+        <<interface>>
+    }
+    class Collection {
+        <<interface>>
+    }
+    class List {
+        <<interface>>
+    }
+    class AbstractCollection {
+        <<abstract>>
+    }
+    class AbstractList {
+        <<abstract>>
+    }
+    class ArrayList
+
+    Iterable <|-- Collection
+    Collection <|-- List
+    List <|.. AbstractList
+    Collection <|.. AbstractCollection
+    AbstractCollection <|-- AbstractList
+    AbstractList <|-- ArrayList

@@ -1,0 +1,40 @@
+%%{init: {'class': {'hideEmptyMembersBox': true}}}%%
+classDiagram
+    class Iterable {
+        <<interface>>
+    }
+    class MutableIterable {
+        <<interface>>
+    }
+    class Collection {
+        <<interface>>
+    }
+    class MutableCollection {
+        <<interface>>
+    }
+    class List {
+        <<interface>>
+    }
+    class MutableList {
+        <<interface>>
+    }
+    class AbstractCollection {
+        <<abstract>>
+    }
+    class AbstractMutableCollection {
+        <<abstract>>
+    }
+    class ArrayList
+
+    Iterable <|-- MutableIterable
+    Iterable <|-- Collection
+    MutableIterable <|-- MutableCollection
+    Collection <|.. AbstractCollection
+    Collection <|-- MutableCollection
+    Collection <|-- List
+    AbstractCollection <|-- AbstractMutableCollection
+    MutableCollection <|.. AbstractMutableCollection
+    AbstractMutableCollection <|-- ArrayList
+    MutableCollection <|-- MutableList
+    List <|-- MutableList
+    MutableList <|.. ArrayList
