@@ -6,6 +6,7 @@ description: 〈完全なプログラミング〉を目指す会 2020 の導入�
 
 # <!--fit--> 〈完全なプログラミング〉を目指す会 2020
 
+<!-- _class: lead title -->
 
 ## <!--fit--> 第一回〈完全なプログラミング〉
 
@@ -61,7 +62,7 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 > A release is called **code complete** when the development team agrees that no entirely new source code will be added to this release.
 > 
-> &#x2014; *[Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle) From Wikipedia, the free encyclopedia*
+> *&#x2014; [Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle) From Wikipedia, the free encyclopedia*
 
 ---
 
@@ -211,8 +212,10 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 ---
 
+<!-- _class: lead quote -->
+
 > It's **only the first 10 minutes that the code's original** , when you type it in the first time. That's it.
-> &#x2014; *[The Noble Art of Maintenance Programming](https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/)*
+> *&#x2014; [The Noble Art of Maintenance Programming](https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/)*
 
 
 # プログラミングは
@@ -221,6 +224,8 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 ## <!--fit--> **コミュニケーション** 🤝
 
 ---
+
+<!-- _class: lead quote -->
 
 > プログラミングにおいてコンピュータとのやり取りはほんの15%にすぎず、85%が人とのコミュニケーションである
 > *&#x2013; CODE COMPLETE 33.1 個人の資質は話題からずれているか*
@@ -235,11 +240,15 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 ---
 
+<!-- _class: lead quote -->
+
 > 最初の開発時でさえ、コードを書くことよりも読むことのほうが多い。
 > 読み手の便宜を犠牲にしてまで書き手の便宜を優先しても、表面的な節約にしかならない。
 > *&#x2014; CODE COMPLETE 6.2.2 良いカプセル化*
 
 ---
+
+<!-- _class: lead quote -->
 
 > コードを読みやすくすることは、開発プロセスのオプション部分ではない。そして、読むときの便宜ではなく書くときの便宜を図るのは不経済である。
 > *&#x2014; CODE COMPLETE 34.3 人間が1番、コンピュータは2番*
@@ -340,10 +349,14 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 ---
 
+<!-- _class: lead quote -->
+
 > ほとんどのプロジェクトで最も時間のかかるアクティビティは、正しく動作しないコードのデバッグと修正である。
 > デバッグとそれに伴うリファクタリングなどの修正作業は、従来の単純なソフトウェア開発サイクルにおいて約50%の時間を占める。
 
 ---
+
+<!-- _class: lead quote -->
 
 > エラーを予防してデバッグを減らせば、生産性は向上する。
 > したがって、開発スケジュールを短縮する最も明らかな方法とは、製品の品質を向上させ、ソフトウェアのデバッグや作業のやり直しにかかる時間を減らすことである。
