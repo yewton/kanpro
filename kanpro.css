@@ -9,3 +9,11 @@ code {
 section {
     font-family: 'Noto Sans JP', sans-serif;
 }
+
+/* インライン画像をスライド内に収める。gaia のコンテンツ領域は 1140x580px
+   （1280x720 から padding 70px を除く）。見出しと余白の分を差し引いた高さに
+   上限を設け、縦長の図（dip_layer など）がはみ出して欠けるのを防ぐ。 */
+section img {
+    max-width: 100%;
+    max-height: 460px;
+}
