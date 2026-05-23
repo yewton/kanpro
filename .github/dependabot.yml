@@ -1,0 +1,18 @@
+version: 2
+updates:
+  # npm 依存の更新。cooldown により公開直後のバージョンへの更新 PR を抑止する。
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 5
+
+  # GitHub Actions の更新。SHA ピン留めを維持したまま更新 PR を作成する。
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
