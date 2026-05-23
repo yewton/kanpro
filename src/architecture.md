@@ -5,6 +5,8 @@ description: 〈完全なプログラミング〉を目指す会 2020 アーキ�
 
 # <!--fit--> 〈完全なプログラミング〉を目指す会 2020
 
+<!-- _class: lead title -->
+
 ## <!--fit--> 第五回 アーキテクチャ
 
 omuomugin
@@ -72,6 +74,8 @@ see also [ベストな「How」は「Why」でしか規定できない メルカ
 
 --- 
 
+<!-- _class: lead quote -->
+
 > よい設計は悪い設計よりも変更しやすい
 > 我々が知る限り、この世のあらゆる設計原則は ETC (Easier to Change) 原則を特殊化したものとなっています
 > *&#x2014; 達人プログラマ第二版 Tips14*
@@ -86,10 +90,14 @@ see also [ベストな「How」は「Why」でしか規定できない メルカ
 
 ---
 
+<!-- _class: lead quote -->
+
 > ソフトウェアは「変化し続ける要求」と「戦略的ではない依存の追加や変更」によって腐っていく
 > *&#x2014; Design Principles and Design Patterns, 2000, Robert C. Martin*
 
 ---
+
+<!-- _class: lead quote -->
 
 > ソフトウェアの複雑性は、「依存」と「曖昧さ」によって引き起こされる
 > *&#x2014; Philosophy of Software Design*
@@ -159,14 +167,17 @@ a = 7  // ソフトウェア要素 B
 
 ---
 
-## 弱い凝集性
-- 情報的凝集: 決まった順番で処理される必要があるだけ
-- 連絡的凝集: 同じデータを利用しているものを集めただけ
-- 時間的凝集: 同時に実行されるものを集めただけ
-- 手順的凝集: 独立している処理が順番に並んでる
-- 論理的凝集: 分岐処理が1つのルーチンに閉じ込められてる
-- 偶発的凝集: たまたま一緒 (暗号的凝集とも呼ばれる)
+<!-- _class: lead cols-2 -->
 
+## 弱い凝集性
+
+> - 情報的凝集: 決まった順番で処理される必要があるだけ
+> - 連絡的凝集: 同じデータを利用しているものを集めただけ
+> - 時間的凝集: 同時に実行されるものを集めただけ
+> - 手順的凝集: 独立している処理が順番に並んでる
+> - 論理的凝集: 分岐処理が1つのルーチンに閉じ込められてる
+> - 偶発的凝集: たまたま一緒 (暗号的凝集とも呼ばれる)
+>
 > *&#x2014; Code Complete 上 第７章 高品質なルーチン*
 
 ---
@@ -375,7 +386,7 @@ nurse.administerFluVaccine(patient, vaccine);
 ![bg contain opacity](assets/2020-04-24_05-21-45_joshua-tree-1772159_1280.jpg)
 
 > 名前を言えるようになったとたんに、いたる所でそれを見るようになりました
-> &#x2013; Robin Williams [ノンデザイナーズ・デザインブック](https://www.amazon.co.jp/dp/B01LW1BC2L/)
+> *&#x2013; Robin Williams [ノンデザイナーズ・デザインブック](https://www.amazon.co.jp/dp/B01LW1BC2L/)*
 
 ---
 
@@ -461,6 +472,8 @@ nurse.administerFluVaccine(patient, vaccine);
 - see also https://github.com/ddd-crew/context-mapping
 
 ---
+
+<!-- _class: lead cols-2 -->
 
 ## パターン
 

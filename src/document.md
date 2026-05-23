@@ -6,6 +6,7 @@ description: 〈完全なプログラミング〉を目指す会 2020 ドキュ�
 
 # <!--fit--> 〈完全なプログラミング〉を目指す会 2020
 
+<!-- _class: lead title -->
 
 ## <!--fit--> 第四回 ドキュメント
 
@@ -342,6 +343,8 @@ System.out.println(String.format("Product = %d", product));
 
 # まとめると
 
+<!-- _class: lead quote -->
+
 > Code Tells You How
 > Comments Tell You Why
 > *&#x2014; [Code Tells You How, Comments Tell You Why](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)*
@@ -410,12 +413,16 @@ System.out.println(String.format("Product = %d", product));
 
 ---
 
+<!-- _class: lead quote -->
+
 > Re-establishing the context of a piece of code is wasteful.
 > We can't avoid it completely, so our efforts should go to **reducing it [as much] as possible.**
 > 
 > Commit messages can do exactly that
 
 ---
+
+<!-- _class: lead quote -->
 
 > and as a result, a commit message shows **whether a developer is a good collaborator.**
 > *&#x2014; [Who-T: On commit messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)*
@@ -679,7 +686,7 @@ System.out.println(String.format("Product = %d", product));
 > One of the most effective ways of documenting architecture decisions is through Architecture Decision Records ([ADRs](https://adr.github.io/)).
 > ADRs were first evangelized by Michael Nygard in a [blog post](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) and later marked as “adopt” in the [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records).
 > 
-> &#x2014; [Fundamentals of Software Architecture](http://fundamentalsofsoftwarearchitecture.com/)
+> *&#x2014; [Fundamentals of Software Architecture](http://fundamentalsofsoftwarearchitecture.com/)*
 
 
 # <!--fit--> **アーキテクチャ** とは
