@@ -230,7 +230,7 @@ section.lead {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 section.lead h1 {
