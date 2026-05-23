@@ -1,21 +1,60 @@
-@import 'gaia';
+/*!
+ * KANPRO – Obsidian Dark Theme
+ * スタンドアロン Marpit テーマ（gaia 不依存）
+ *
+ * @theme kanpro
+ * @author yewton
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */
 
 @import url('https://fonts.bunny.net/css?family=noto-sans-jp:400,700|m-plus-1-code:400,700');
 
 /* ================================================================
-   KANPRO – Obsidian Dark Theme
-   深いネイビー × エレクトリックブルー × アンバー
+   シンタックスハイライト（ダークパレット）
    ================================================================ */
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+}
+code.hljs { padding: 0; }
+.hljs                           { background: transparent; color: #c6d0ee; }
+.hljs-comment, .hljs-quote      { color: #637098; font-style: italic; }
+.hljs-keyword, .hljs-selector-tag, .hljs-type { color: #a78bfa; }
+.hljs-string, .hljs-regexp      { color: #4dd8c5; }
+.hljs-number, .hljs-literal, .hljs-symbol, .hljs-bullet { color: #f6c94e; }
+.hljs-name, .hljs-section, .hljs-tag { color: #5899f5; }
+.hljs-title, .hljs-title.class_, .hljs-title.function_ { color: #93c5fd; }
+.hljs-attribute, .hljs-variable, .hljs-template-variable { color: #f6c94e; }
+.hljs-built_in                  { color: #4dd8c5; }
+.hljs-addition                  { color: #4dd8c5; background: rgba(77, 216, 197, 0.1); }
+.hljs-deletion                  { color: #f87171; background: rgba(248, 113, 113, 0.1); }
+.hljs-strong                    { font-weight: 700; }
+.hljs-emphasis                  { font-style: italic; }
 
-/* ── コードフォント ── */
-code {
-  font-family: 'M PLUS 1 Code', monospace;
+/* ================================================================
+   Auto-scaling 上限（<!--fit--> 用）
+   ================================================================ */
+h1::part(auto-scaling),
+h2::part(auto-scaling),
+h3::part(auto-scaling),
+h4::part(auto-scaling),
+h5::part(auto-scaling),
+h6::part(auto-scaling) {
+  max-height: 580px;
+}
+
+pre::part(auto-scaling) {
+  max-height: calc(580px - 1em);
 }
 
 /* ================================================================
-   デザイントークン（全スライド共通）
+   デザイントークン + ベースレイアウト
    ================================================================ */
 section {
+  /* カラートークン */
   --c-bg:      #0f1624;
   --c-surface: #192038;
   --c-border:  #253050;
@@ -26,22 +65,30 @@ section {
   --c-strong:  #f6c94e;
   --c-dim:     #637098;
   --c-codebg:  #090f1e;
-}
 
-/* ================================================================
-   ベーススタイル
-   ================================================================ */
-section {
+  /* Marpit スライドサイズ（@size 宣言と一致させる） */
+  width: 1280px;
+  height: 720px;
+  box-sizing: border-box;
+  overflow: hidden;
+
   font-family: 'Noto Sans JP', sans-serif;
-  background: var(--c-bg);
-  color: var(--c-text);
   font-size: 27px;
   line-height: 1.75;
+  word-wrap: break-word;
+
+  background: var(--c-bg);
+  color: var(--c-text);
   padding: 52px 80px 60px;
   position: relative;
 }
 
-/* グラジエントアクセントバー（上端） */
+/* 先頭子要素のマージンをリセット */
+section > :first-child {
+  margin-top: 0;
+}
+
+/* グラジェントアクセントバー（上端） */
 section::before {
   content: '';
   position: absolute;
@@ -59,8 +106,49 @@ section::before {
 }
 
 /* ================================================================
+   フッター・ページ番号
+   ================================================================ */
+footer,
+section::after {
+  box-sizing: border-box;
+  font-size: 0.5em;
+  line-height: 1;
+  overflow: hidden;
+  padding: 0 25px;
+  position: absolute;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--c-dim);
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+section::after {
+  bottom: 15px;
+  right: 0;
+  color: var(--c-dim);
+}
+
+/* ================================================================
    見出し
    ================================================================ */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0 0;
+}
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.1em; }
+h5 { font-size: 1.0em; }
+h6 { font-size: 0.9em; }
+
 section h1 {
   color: var(--c-head);
   font-weight: 700;
@@ -84,7 +172,7 @@ section h3 {
   margin: 0 0 0.3em;
 }
 
-/* ── h4 は architecture.md で使用 ── */
+/* h4 は architecture.md などで使用 */
 section h4 {
   color: var(--c-dim);
   font-weight: 600;
@@ -128,20 +216,14 @@ section blockquote {
   font-size: 0.875em;
   line-height: 1.72;
   color: var(--c-text);
+  position: relative;
 }
 
 section blockquote p {
   margin: 0.2em 0;
 }
 
-/* gaia のブロック引用符デコレーション（::before/::after に " を挿入）を無効化。
-   section.quote 専用スタイルで独自の引用符を使うため。 */
-section blockquote::before,
-section blockquote::after {
-  content: none;
-}
-
-/* 出典（em in blockquote）*/
+/* 出典（em in blockquote） */
 section blockquote em {
   display: flex;
   justify-content: flex-end;
@@ -155,6 +237,10 @@ section blockquote em {
 /* ================================================================
    コードブロック
    ================================================================ */
+code {
+  font-family: 'M PLUS 1 Code', monospace;
+}
+
 section code {
   font-family: 'M PLUS 1 Code', monospace;
   background: var(--c-codebg);
@@ -205,7 +291,6 @@ section li > ol {
 
 /* ================================================================
    インライン画像
-   gaia コンテンツ領域 1140×580px から見出し・余白を差し引いた上限
    ================================================================ */
 section img {
   max-width: 100%;
@@ -214,23 +299,7 @@ section img {
 }
 
 /* ================================================================
-   フッター・ページ番号
-   ================================================================ */
-section footer {
-  color: var(--c-dim);
-  font-size: 0.5em;
-  letter-spacing: 0.04em;
-  opacity: 0.8;
-}
-
-section::after {
-  color: var(--c-dim);
-  font-size: 0.5em;
-}
-
-/* ================================================================
-   LEAD クラス（共通フロントマターで全スライドに適用）
-   gaia のデフォルト lead スタイルをダークテーマで上書き
+   LEAD クラス（全スライド共通）
    ================================================================ */
 section.lead {
   background: var(--c-bg);
@@ -241,22 +310,10 @@ section.lead {
   align-items: stretch;
 }
 
-section.lead h1 {
-  color: var(--c-head);
-}
-
-section.lead h2 {
-  color: var(--c-accent);
-}
-
-section.lead h3 {
-  color: var(--c-teal);
-}
-
-section.lead strong {
-  color: var(--c-strong);
-}
-
+section.lead h1 { color: var(--c-head); }
+section.lead h2 { color: var(--c-accent); }
+section.lead h3 { color: var(--c-teal); }
+section.lead strong { color: var(--c-strong); }
 section.lead a {
   color: var(--c-accent);
   border-bottom-color: rgba(88, 153, 245, 0.35);
@@ -264,7 +321,6 @@ section.lead a {
 
 /* ================================================================
    TITLE レイアウト  ── <!-- _class: lead title -->
-   タイトルスライド: グラジエント見出し + 放射状ライトエフェクト
    ================================================================ */
 section.title {
   background:
@@ -291,7 +347,6 @@ section.title p {
 
 /* ================================================================
    QUOTE レイアウト  ── <!-- _class: lead quote -->
-   引用専用: デコレーティブな大引用符 + ボックススタイル
    ================================================================ */
 section.quote {
   background:
@@ -331,7 +386,6 @@ section.quote blockquote em {
 
 /* ================================================================
    COLS-2 レイアウト  ── <!-- _class: lead cols-2 -->
-   リストを 2 カラムに自動レイアウト
    ================================================================ */
 section.cols-2 ul,
 section.cols-2 ol,
