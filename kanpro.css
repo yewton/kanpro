@@ -302,12 +302,21 @@ section img {
    LEAD クラス（全スライド共通）
    ================================================================ */
 section.lead {
-  background: var(--c-bg);
-  color: var(--c-text);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  place-content: safe center;
   align-items: stretch;
+}
+
+section.lead h1,
+section.lead h2,
+section.lead h3,
+section.lead h4,
+section.lead h5,
+section.lead h6 {
+  text-align: center;
+}
+
+section.lead p {
+  text-align: center;
 }
 
 section.lead h1 { color: var(--c-head); }
@@ -327,7 +336,7 @@ section.title {
     radial-gradient(ellipse at 20% 55%, rgba(88, 153, 245, 0.14) 0%, transparent 55%),
     radial-gradient(ellipse at 80% 75%, rgba(77, 216, 197, 0.08) 0%, transparent 50%),
     var(--c-bg);
-  justify-content: center;
+  place-content: safe center;
 }
 
 section.title h1 {
@@ -351,7 +360,7 @@ section.title p {
 section.quote {
   background:
     linear-gradient(140deg, #0c1325 0%, #111e3d 60%, #0f1624 100%);
-  justify-content: center;
+  place-content: safe center;
   padding: 60px 100px;
 }
 
