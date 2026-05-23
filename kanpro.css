@@ -1,19 +1,342 @@
 @import 'gaia';
 
-@import url(https://fonts.bunny.net/css?family=noto-sans-jp:400|m-plus-1-code:400,700);
+@import url('https://fonts.bunny.net/css?family=noto-sans-jp:400,700|m-plus-1-code:400,700');
 
+/* ================================================================
+   KANPRO – Obsidian Dark Theme
+   深いネイビー × エレクトリックブルー × アンバー
+   ================================================================ */
+
+/* ── コードフォント ── */
 code {
-    font-family: 'M PLUS 1 Code', monospace;
+  font-family: 'M PLUS 1 Code', monospace;
 }
 
+/* ================================================================
+   デザイントークン（全スライド共通）
+   ================================================================ */
 section {
-    font-family: 'Noto Sans JP', sans-serif;
+  --c-bg:      #0f1624;
+  --c-surface: #192038;
+  --c-border:  #253050;
+  --c-text:    #c6d0ee;
+  --c-head:    #eef2ff;
+  --c-accent:  #5899f5;
+  --c-teal:    #4dd8c5;
+  --c-strong:  #f6c94e;
+  --c-dim:     #637098;
+  --c-codebg:  #090f1e;
 }
 
-/* インライン画像をスライド内に収める。gaia のコンテンツ領域は 1140x580px
-   （1280x720 から padding 70px を除く）。見出しと余白の分を差し引いた高さに
-   上限を設け、縦長の図（dip_layer など）がはみ出して欠けるのを防ぐ。 */
+/* ================================================================
+   ベーススタイル
+   ================================================================ */
+section {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-size: 27px;
+  line-height: 1.75;
+  padding: 52px 80px 60px;
+  position: relative;
+}
+
+/* グラジエントアクセントバー（上端） */
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--c-accent) 0%,
+    var(--c-teal) 50%,
+    #a78bfa 100%
+  );
+  z-index: 10;
+}
+
+/* ================================================================
+   見出し
+   ================================================================ */
+section h1 {
+  color: var(--c-head);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin: 0 0 0.45em;
+}
+
+section h2 {
+  color: var(--c-accent);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin: 0 0 0.35em;
+}
+
+section h3 {
+  color: var(--c-teal);
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 0.3em;
+}
+
+/* ── h4 は architecture.md で使用 ── */
+section h4 {
+  color: var(--c-dim);
+  font-weight: 600;
+  font-size: 0.82em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0.6em 0 0.25em;
+}
+
+/* ================================================================
+   テキスト装飾
+   ================================================================ */
+section strong {
+  color: var(--c-strong);
+  font-weight: 700;
+}
+
+section em {
+  color: var(--c-dim);
+  font-style: italic;
+}
+
+/* ================================================================
+   リンク
+   ================================================================ */
+section a {
+  color: var(--c-accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(88, 153, 245, 0.35);
+}
+
+/* ================================================================
+   引用ブロック（デフォルト）
+   ================================================================ */
+section blockquote {
+  margin: 0.5em 0;
+  padding: 0.7em 1.2em;
+  border-left: 3px solid var(--c-accent);
+  background: rgba(88, 153, 245, 0.06);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.875em;
+  line-height: 1.72;
+  color: var(--c-text);
+}
+
+section blockquote p {
+  margin: 0.2em 0;
+}
+
+/* 出典（em in blockquote）*/
+section blockquote em {
+  display: block;
+  margin-top: 0.5em;
+  text-align: right;
+  font-size: 0.84em;
+  color: var(--c-dim);
+  font-style: italic;
+}
+
+/* ================================================================
+   コードブロック
+   ================================================================ */
+section code {
+  font-family: 'M PLUS 1 Code', monospace;
+  background: var(--c-codebg);
+  color: var(--c-teal);
+  padding: 0.1em 0.38em;
+  border-radius: 5px;
+  border: 1px solid var(--c-border);
+  font-size: 0.87em;
+}
+
+section pre {
+  background: var(--c-codebg);
+  border: 1px solid var(--c-border);
+  border-radius: 10px;
+  padding: 1.1em 1.4em;
+  margin: 0.4em 0;
+  overflow: hidden;
+}
+
+section pre code {
+  background: transparent;
+  color: #c6d0ee;
+  border: none;
+  font-size: 0.71em;
+  padding: 0;
+}
+
+/* ================================================================
+   リスト
+   ================================================================ */
+section ul,
+section ol {
+  padding-left: 1.4em;
+  margin: 0.3em 0;
+}
+
+section li {
+  margin-bottom: 0.3em;
+  line-height: 1.7;
+}
+
+section li > ul,
+section li > ol {
+  margin-top: 0.15em;
+  font-size: 0.93em;
+  opacity: 0.88;
+}
+
+/* ================================================================
+   インライン画像
+   gaia コンテンツ領域 1140×580px から見出し・余白を差し引いた上限
+   ================================================================ */
 section img {
-    max-width: 100%;
-    max-height: 460px;
+  max-width: 100%;
+  max-height: 460px;
+  border-radius: 8px;
+}
+
+/* ================================================================
+   フッター・ページ番号
+   ================================================================ */
+section footer {
+  color: var(--c-dim);
+  font-size: 0.5em;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+section::after {
+  color: var(--c-dim);
+  font-size: 0.5em;
+}
+
+/* ================================================================
+   LEAD クラス（共通フロントマターで全スライドに適用）
+   gaia のデフォルト lead スタイルをダークテーマで上書き
+   ================================================================ */
+section.lead {
+  background: var(--c-bg);
+  color: var(--c-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section.lead h1 {
+  color: var(--c-head);
+}
+
+section.lead h2 {
+  color: var(--c-accent);
+}
+
+section.lead h3 {
+  color: var(--c-teal);
+}
+
+section.lead strong {
+  color: var(--c-strong);
+}
+
+section.lead a {
+  color: var(--c-accent);
+  border-bottom-color: rgba(88, 153, 245, 0.35);
+}
+
+/* ================================================================
+   TITLE レイアウト  ── <!-- _class: lead title -->
+   タイトルスライド: グラジエント見出し + 放射状ライトエフェクト
+   ================================================================ */
+section.title {
+  background:
+    radial-gradient(ellipse at 20% 55%, rgba(88, 153, 245, 0.14) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 75%, rgba(77, 216, 197, 0.08) 0%, transparent 50%),
+    var(--c-bg);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section.title h1 {
+  background: linear-gradient(135deg, var(--c-accent) 0%, var(--c-teal) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: 0.05em;
+}
+
+section.title h2 {
+  color: var(--c-text);
+  font-weight: 400;
+}
+
+section.title p {
+  margin-top: 1.5em;
+  color: var(--c-dim);
+  font-size: 0.72em;
+}
+
+/* ================================================================
+   QUOTE レイアウト  ── <!-- _class: lead quote -->
+   引用専用: デコレーティブな大引用符 + ボックススタイル
+   ================================================================ */
+section.quote {
+  background:
+    linear-gradient(140deg, #0c1325 0%, #111e3d 60%, #0f1624 100%);
+  justify-content: center;
+  padding: 60px 100px;
+}
+
+section.quote blockquote {
+  border-left: none;
+  background: rgba(88, 153, 245, 0.06);
+  border: 1px solid rgba(88, 153, 245, 0.18);
+  border-radius: 14px;
+  padding: 1.6em 2em 1.6em 3.4em;
+  font-size: 0.92em;
+  line-height: 1.88;
+  position: relative;
+}
+
+section.quote blockquote::before {
+  content: '\201C';
+  position: absolute;
+  top: 0.05em;
+  left: 0.3em;
+  font-size: 4em;
+  line-height: 1;
+  color: var(--c-accent);
+  opacity: 0.3;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+section.quote blockquote em {
+  margin-top: 0.8em;
+  padding-top: 0.5em;
+  border-top: 1px solid rgba(88, 153, 245, 0.18);
+}
+
+/* ================================================================
+   COLS-2 レイアウト  ── <!-- _class: lead cols-2 -->
+   リストを 2 カラムに自動レイアウト
+   ================================================================ */
+section.cols-2 ul,
+section.cols-2 ol {
+  column-count: 2;
+  column-gap: 3em;
+  column-rule: 1px solid var(--c-border);
+}
+
+section.cols-2 li {
+  break-inside: avoid;
 }

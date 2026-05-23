@@ -5,6 +5,8 @@ description: 〈完全なプログラミング〉を目指す会 2020 アーキ�
 
 # <!--fit--> 〈完全なプログラミング〉を目指す会 2020
 
+<!-- _class: lead title -->
+
 ## <!--fit--> 第五回 アーキテクチャ
 
 omuomugin
@@ -72,6 +74,8 @@ see also [ベストな「How」は「Why」でしか規定できない メルカ
 
 --- 
 
+<!-- _class: lead quote -->
+
 > よい設計は悪い設計よりも変更しやすい
 > 我々が知る限り、この世のあらゆる設計原則は ETC (Easier to Change) 原則を特殊化したものとなっています
 > *&#x2014; 達人プログラマ第二版 Tips14*
@@ -86,10 +90,14 @@ see also [ベストな「How」は「Why」でしか規定できない メルカ
 
 ---
 
+<!-- _class: lead quote -->
+
 > ソフトウェアは「変化し続ける要求」と「戦略的ではない依存の追加や変更」によって腐っていく
 > *&#x2014; Design Principles and Design Patterns, 2000, Robert C. Martin*
 
 ---
+
+<!-- _class: lead quote -->
 
 > ソフトウェアの複雑性は、「依存」と「曖昧さ」によって引き起こされる
 > *&#x2014; Philosophy of Software Design*
@@ -158,6 +166,8 @@ a = 7  // ソフトウェア要素 B
 ## ちょっとまた別の話
 
 ---
+
+<!-- _class: lead cols-2 -->
 
 ## 弱い凝集性
 - 情報的凝集: 決まった順番で処理される必要があるだけ
@@ -461,6 +471,8 @@ nurse.administerFluVaccine(patient, vaccine);
 - see also https://github.com/ddd-crew/context-mapping
 
 ---
+
+<!-- _class: lead cols-2 -->
 
 ## パターン
 
