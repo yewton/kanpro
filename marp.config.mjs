@@ -16,6 +16,8 @@ _footer: ""
 // 解釈する前段（render の入力文字列）で結合するため、結果は共通設定を各 .md に
 // 直接書いていた従来と等価になる。ビルド・プレビュー(`marp -s src`)・ウォッチの
 // いずれでもこのエンジンが使われるため、編集時の体験も保たれる。
+// Marp には宣言的な共通フロントマター機構が存在せず（メンテナによる意図的な設計）、
+// engine プラグインによるこの前処理が公式の案内する唯一の回避策である。
 const injectSharedFrontMatter = (markdown) => {
   const opening = /^---\r?\n/.exec(markdown)
   if (opening) {
