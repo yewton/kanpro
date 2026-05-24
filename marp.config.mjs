@@ -1,11 +1,14 @@
 /** @type {import('@marp-team/marp-cli').Config} */
 
+// 年度の単一定義。年を変えるときはここだけ書き換える。
+const YEAR = '2026'
+
 // 全スライド横断の共通フロントマター（旧 libs.org / setupfile.org の後継）。
 // ここを書き換えると全デッキへ反映される。各 src/*.md は固有の
 // title / description のみをフロントマターに持つ。
 const SHARED_FRONT_MATTER = `class: lead
 paginate: true
-footer: 〈完全なプログラミング〉を目指す会 2020
+footer: 〈完全なプログラミング〉を目指す会 ${YEAR}
 _paginate: false
 _footer: ""
 `

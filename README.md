@@ -7,6 +7,8 @@ yewton が社内向けに **〈完全なプログラミング〉を目指す会*
 
 [スライドはこちら。](https://yewton.github.io/kanpro/)
 
+2020年版のアーカイブは[こちら](https://kanpro2020--kanpro.netlify.app/)。
+
 ## スライドの作成方法
 
 スライドは [Marp](https://github.com/marp-team/marp) を用いて作成しており、ビルド・デプロイの構成は [yhatt/marp-cli-example](https://github.com/yhatt/marp-cli-example) を参考にしています。
