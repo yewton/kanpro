@@ -12,7 +12,7 @@ paths:
 
 ## オーサリング
 
-- 全スライド横断の共通フロントマター（フッター・ページ番号など）は `marp.config.mjs` に定義済み。各 `.md` には固有の `title` と `description` のみを記述する。
+- 全スライド横断の共通フロントマター（フッター・ページ番号・`class: lead` など）は `marp.config.mjs` に定義済み。各 `.md` には固有の `title` と `description` のみを記述する。
 - フォントなど全体に影響するスタイルは `kanpro.css` で指定する。Web フォントの利用が推奨。
 - UML などの図は `src/diagrams/*.mmd`（Mermaid）で記述し、`npm run diagrams` で `src/assets/*.png` に再生成する。図を変更する際は必ずソースの `.mmd` を編集して再生成し、生成した PNG をコミットする。
 

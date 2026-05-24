@@ -13,7 +13,7 @@ yewton が社内向けに **〈完全なプログラミング〉を目指す会*
 
 スライドは [Marp](https://github.com/marp-team/marp) を用いて作成しており、ビルド・デプロイの構成は [yhatt/marp-cli-example](https://github.com/yhatt/marp-cli-example) を参考にしています。
 
-各スライドは `src` ディレクトリ以下の `.md` を編集します。全スライド横断の共通設定（フッターやページ番号などのフロントマター）は `marp.config.mjs` に定義してあり、各 `.md` には固有の `title` と `description` のみを記述します。
+各スライドは `src` ディレクトリ以下の `.md` を編集します。全スライド横断の共通設定（フッター・ページ番号・`class: lead` などの共通フロントマター）は `marp.config.mjs` に定義してあり、各 `.md` には固有の `title` と `description` のみを記述します。
 
 以下を実行するとプレビュー用の Marp サーバーが立ち上がります:
 
