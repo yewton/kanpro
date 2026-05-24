@@ -25,7 +25,8 @@
     "deck:architecture": "marp --no-stdin src/architecture.md -o dist/architecture.html --og-image ${URL}/architecture.jpg --url ${URL}/architecture.html",
     "og-image:architecture": "marp src/architecture.md -o dist/architecture.jpg",
     "build": "npm run clean && npm run assets && run-p og-image:* && run-p deck:*",
-    "start": "marp -s src"
+    "start": "marp -s src",
+    "adr": "node scripts/adr.mjs"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^4.4.0",
