@@ -19,4 +19,5 @@ npm run adr -- reindex                            # この索引を再生成
 | [0001](0001-adr-management.md) | ADR を docs/adr に自前スクリプトで記録・運用する | Accepted |
 | [0002](0002-shared-front-matter.md) | 共通フロントマターを marp.config.mjs の engine で注入する | Accepted |
 | [0003](0003-year-notation.md) | 年表記を DRY UP しない | Accepted |
+| [0004](0004-test-ci.md) | スクリプトに最小テストと CI を導入する | Accepted |
 <!-- adr:list:end -->

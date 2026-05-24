@@ -26,7 +26,8 @@
     "og-image:architecture": "marp src/architecture.md -o dist/architecture.jpg",
     "build": "npm run clean && npm run assets && run-p og-image:* && run-p deck:*",
     "start": "marp -s src",
-    "adr": "node scripts/adr.mjs"
+    "adr": "node scripts/adr.mjs",
+    "test": "node --test scripts/adr.test.mjs"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^4.4.0",

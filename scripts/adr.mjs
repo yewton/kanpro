@@ -2,11 +2,12 @@
 // ADR 管理スクリプト（依存ゼロ）。連番採番・雛形配置・索引更新・supersede を行う。
 // 運用方針と設計判断の根拠は docs/adr/0001-adr-management.md を参照。
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs'
-import { join, dirname } from 'node:path'
+import { join, dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
-const adrDir = join(root, 'docs', 'adr')
+// 既定は docs/adr。テストでは ADR_DIR で別ディレクトリへ向ける（副作用の隔離）。
+const adrDir = process.env.ADR_DIR ? resolve(process.env.ADR_DIR) : join(root, 'docs', 'adr')
 const indexPath = join(adrDir, 'README.md')
 const templatePath = join(adrDir, 'templates', 'template.md')
 
