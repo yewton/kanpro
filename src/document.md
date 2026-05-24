@@ -451,6 +451,17 @@ System.out.println(String.format("Product = %d", product));
     -   コンテキストの再構築に役立つ
 
 
+# <!--fit--> この形式には<br>名前がある
+
+
+# [**Conventional Commits**](https://www.conventionalcommits.org/ja/)
+
+-   `<type>(<scope>): <subject>` という構造化された規約
+    -   `feat` / `fix` / `docs` / `refactor` / `chore` …
+-   **機械可読** なので CHANGELOG 生成やバージョニングを自動化できる
+-   人にも AI にも **意図が伝わりやすい** 共通語彙になる
+
+
 # (FYI)[Spring Boot もこのような形式](https://github.com/spring-projects/spring-boot/blob/v2.2.6.RELEASE/CONTRIBUTING.adoc#code-conventions-and-housekeeping)
 
     Restore support for TransactionAwareCacheDecorator
@@ -639,6 +650,13 @@ System.out.println(String.format("Product = %d", product));
 
 -   レビュー後にローカルで rebase した結果をリモートに反映するときに使う
 -   いかなる force push も許容しないという考え方もあるのでチームの指針に従いましょう
+
+
+# `git push --force-if-includes`
+
+-   `--force-with-lease` には穴がある: 暗黙の `fetch` でリモート追跡 ref が更新されると lease がすり抜ける
+-   `--force-if-includes` ( **Git 2.30** / 2021) を併用すると、ローカルが **リモートの最新を取り込んだ上で** 書き換えたことを確認してから push する
+-   *cf. [git-push Documentation](https://git-scm.com/docs/git-push)*
 
 
 # `git add -p`
