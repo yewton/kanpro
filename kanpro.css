@@ -1,19 +1,406 @@
-@import 'gaia';
+/*!
+ * KANPRO – Obsidian Dark Theme
+ * スタンドアロン Marpit テーマ（gaia 不依存）
+ *
+ * @theme kanpro
+ * @author yewton
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */
 
-@import url(https://fonts.bunny.net/css?family=noto-sans-jp:400|m-plus-1-code:400,700);
+@import url('https://fonts.bunny.net/css?family=noto-sans-jp:400,700|m-plus-1-code:400,700');
 
-code {
-    font-family: 'M PLUS 1 Code', monospace;
+/* ================================================================
+   シンタックスハイライト（ダークパレット）
+   ================================================================ */
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+}
+code.hljs { padding: 0; }
+.hljs                           { background: transparent; color: var(--c-text); }
+.hljs-comment, .hljs-quote      { color: var(--c-dim); font-style: italic; }
+.hljs-keyword, .hljs-selector-tag, .hljs-type { color: var(--c-purple); }
+.hljs-string, .hljs-regexp      { color: var(--c-teal); }
+.hljs-number, .hljs-literal, .hljs-symbol, .hljs-bullet { color: var(--c-strong); }
+.hljs-name, .hljs-section, .hljs-tag { color: var(--c-accent); }
+.hljs-title, .hljs-title.class_, .hljs-title.function_ { color: var(--c-sky); }
+.hljs-attribute, .hljs-variable, .hljs-template-variable { color: var(--c-strong); }
+.hljs-built_in                  { color: var(--c-teal); }
+.hljs-addition                  { color: var(--c-teal); background: rgba(77, 216, 197, 0.1); }
+.hljs-deletion                  { color: var(--c-red); background: rgba(248, 113, 113, 0.1); }
+.hljs-strong                    { font-weight: 700; }
+.hljs-emphasis                  { font-style: italic; }
+
+/* ================================================================
+   Auto-scaling 上限（<!--fit--> 用）
+   ================================================================ */
+h1::part(auto-scaling),
+h2::part(auto-scaling),
+h3::part(auto-scaling),
+h4::part(auto-scaling),
+h5::part(auto-scaling),
+h6::part(auto-scaling) {
+  max-height: 580px;
 }
 
+pre::part(auto-scaling) {
+  max-height: calc(580px - 1em);
+}
+
+/* ================================================================
+   デザイントークン + ベースレイアウト
+   ================================================================ */
 section {
-    font-family: 'Noto Sans JP', sans-serif;
+  /* カラートークン */
+  --c-bg:      #0f1624;
+  --c-surface: #192038;
+  --c-border:  #253050;
+  --c-text:    #c6d0ee;
+  --c-head:    #eef2ff;
+  --c-accent:  #5899f5;
+  --c-teal:    #4dd8c5;
+  --c-strong:  #f6c94e;
+  --c-dim:     #637098;
+  --c-codebg:  #090f1e;
+  --c-purple:  #a78bfa;
+  --c-sky:     #93c5fd;
+  --c-red:     #f87171;
+
+  /* Marpit スライドサイズ（@size 宣言と一致させる） */
+  width: 1280px;
+  height: 720px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 27px;
+  line-height: 1.75;
+  word-wrap: break-word;
+
+  background: var(--c-bg);
+  color: var(--c-text);
+  padding: 52px 80px 60px;
+  position: relative;
 }
 
-/* インライン画像をスライド内に収める。gaia のコンテンツ領域は 1140x580px
-   （1280x720 から padding 70px を除く）。見出しと余白の分を差し引いた高さに
-   上限を設け、縦長の図（dip_layer など）がはみ出して欠けるのを防ぐ。 */
+/* 先頭子要素のマージンをリセット */
+section > :first-child {
+  margin-top: 0;
+}
+
+/* グラジェントアクセントバー（上端） */
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--c-accent) 0%,
+    var(--c-teal) 50%,
+    var(--c-purple) 100%
+  );
+  z-index: 10;
+}
+
+/* ================================================================
+   フッター・ページ番号
+   ================================================================ */
+footer,
+section::after {
+  box-sizing: border-box;
+  font-size: 0.5em;
+  line-height: 1;
+  overflow: hidden;
+  padding: 0 25px;
+  position: absolute;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--c-dim);
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+section::after {
+  bottom: 15px;
+  right: 0;
+  color: var(--c-dim);
+}
+
+/* ================================================================
+   見出し
+   ================================================================ */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0 0;
+}
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.1em; }
+h5 { font-size: 1.0em; }
+h6 { font-size: 0.9em; }
+
+section h1 {
+  color: var(--c-head);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin: 0 0 0.45em;
+}
+
+section h2 {
+  color: var(--c-accent);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin: 0 0 0.35em;
+}
+
+section h3 {
+  color: var(--c-teal);
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 0.3em;
+}
+
+/* h4 は architecture.md などで使用 */
+section h4 {
+  color: var(--c-dim);
+  font-weight: 600;
+  font-size: 0.82em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0.6em 0 0.25em;
+}
+
+/* ================================================================
+   テキスト装飾
+   ================================================================ */
+section strong {
+  color: var(--c-strong);
+  font-weight: 700;
+}
+
+section em {
+  color: var(--c-dim);
+  font-style: italic;
+}
+
+/* ================================================================
+   リンク
+   ================================================================ */
+section a {
+  color: var(--c-accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(88, 153, 245, 0.35);
+}
+
+/* ================================================================
+   引用ブロック（デフォルト）
+   ================================================================ */
+section blockquote {
+  margin: 0.5em 0;
+  padding: 0.7em 1.2em;
+  border-left: 3px solid var(--c-accent);
+  background: rgba(88, 153, 245, 0.06);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.875em;
+  line-height: 1.72;
+  color: var(--c-text);
+  position: relative;
+}
+
+section blockquote p {
+  margin: 0.2em 0;
+}
+
+/* 出典（em in blockquote） */
+section blockquote em {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.25em;
+  margin-top: 0.5em;
+  font-size: 0.84em;
+  color: var(--c-dim);
+  font-style: italic;
+}
+
+/* ================================================================
+   コードブロック
+   ================================================================ */
+code {
+  font-family: 'M PLUS 1 Code', monospace;
+}
+
+section code {
+  font-family: 'M PLUS 1 Code', monospace;
+  background: var(--c-codebg);
+  color: var(--c-teal);
+  padding: 0.1em 0.38em;
+  border-radius: 5px;
+  border: 1px solid var(--c-border);
+  font-size: 0.87em;
+}
+
+section pre {
+  background: var(--c-codebg);
+  border: 1px solid var(--c-border);
+  border-radius: 10px;
+  padding: 1.1em 1.4em;
+  margin: 0.4em 0;
+  overflow: hidden;
+}
+
+section pre code {
+  background: transparent;
+  color: var(--c-text);
+  border: none;
+  font-size: 0.71em;
+  padding: 0;
+}
+
+/* ================================================================
+   リスト
+   ================================================================ */
+section ul,
+section ol {
+  padding-left: 1.4em;
+  margin: 0.3em 0;
+}
+
+section li {
+  margin-bottom: 0.3em;
+  line-height: 1.7;
+}
+
+section li > ul,
+section li > ol {
+  margin-top: 0.15em;
+  font-size: 0.93em;
+  opacity: 0.88;
+}
+
+/* ================================================================
+   インライン画像
+   ================================================================ */
 section img {
-    max-width: 100%;
-    max-height: 460px;
+  max-width: 100%;
+  max-height: 460px;
+  border-radius: 8px;
+}
+
+/* ================================================================
+   LEAD クラス（全スライド共通）
+   ================================================================ */
+section.lead {
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: safe center;
+  align-items: stretch;
+}
+
+section.lead h1,
+section.lead h2,
+section.lead h3,
+section.lead h4,
+section.lead h5,
+section.lead h6 {
+  text-align: center;
+}
+
+section.lead p {
+  text-align: center;
+}
+
+/* ================================================================
+   TITLE レイアウト  ── <!-- _class: lead title -->
+   ================================================================ */
+section.title {
+  background:
+    radial-gradient(ellipse at 20% 55%, rgba(88, 153, 245, 0.14) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 75%, rgba(77, 216, 197, 0.08) 0%, transparent 50%),
+    var(--c-bg);
+  place-content: safe center;
+}
+
+section.title h1 {
+  color: var(--c-accent);
+}
+
+section.title h2 {
+  color: var(--c-text);
+  font-weight: 400;
+}
+
+section.title p {
+  margin-top: 1.5em;
+  color: var(--c-dim);
+  font-size: 0.72em;
+}
+
+/* ================================================================
+   QUOTE レイアウト  ── <!-- _class: lead quote -->
+   ================================================================ */
+section.quote {
+  background:
+    linear-gradient(140deg, #0c1325 0%, #111e3d 60%, #0f1624 100%);
+  place-content: safe center;
+  padding: 60px 100px;
+}
+
+section.quote blockquote {
+  border-left: none;
+  background: rgba(88, 153, 245, 0.06);
+  border: 1px solid rgba(88, 153, 245, 0.18);
+  border-radius: 14px;
+  padding: 1.6em 2em 1.6em 3.4em;
+  font-size: 0.92em;
+  line-height: 1.88;
+  position: relative;
+}
+
+section.quote blockquote::before {
+  content: '\201C';
+  position: absolute;
+  top: 0.05em;
+  left: 0.3em;
+  font-size: 4em;
+  line-height: 1;
+  color: var(--c-accent);
+  opacity: 0.3;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+section.quote blockquote em {
+  margin-top: 0.8em;
+  padding-top: 0.5em;
+  border-top: 1px solid rgba(88, 153, 245, 0.18);
+}
+
+/* ================================================================
+   COLS-2 レイアウト  ── <!-- _class: lead cols-2 -->
+   ================================================================ */
+section.cols-2 ul,
+section.cols-2 ol,
+section.cols-2 blockquote ul,
+section.cols-2 blockquote ol {
+  column-count: 2;
+  column-gap: 3em;
+  column-rule: 1px solid var(--c-border);
+}
+
+section.cols-2 li {
+  break-inside: avoid;
 }

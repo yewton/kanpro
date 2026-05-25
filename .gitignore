@@ -1,4 +1,6 @@
 /dist
+# marp --images png で生成されるスライド PNG
+/src/*.png
 ### https://raw.github.com/github/gitignore/af988f5c1ed081c88e1d4d33945bb2f14d9a9d4e/Node.gitignore
 
 # Logs

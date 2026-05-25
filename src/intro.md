@@ -1,11 +1,12 @@
 ---
 title: 第一回 〈完全なプログラミング〉
-description: 〈完全なプログラミング〉を目指す会 2020 の導入です
+description: 〈完全なプログラミング〉を目指す会 2026 の導入です
 ---
 
 
-# <!--fit--> 〈完全なプログラミング〉を目指す会 2020
+# <!--fit--> 〈完全なプログラミング〉を目指す会 2026
 
+<!-- _class: lead title -->
 
 ## <!--fit--> 第一回〈完全なプログラミング〉
 
@@ -61,11 +62,11 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 > A release is called **code complete** when the development team agrees that no entirely new source code will be added to this release.
 > 
-> &#x2014; *[Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle) From Wikipedia, the free encyclopedia*
+> *&#x2014; [Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle) From Wikipedia, the free encyclopedia*
 
 ---
 
--   特に定まった定義は無く、「コーディング完了」くらいの意味で使われう
+-   特に定まった定義は無く、「コーディング完了」くらいの意味で使われる
 -   **Code complete** した後に QA が行われ、バグフィックス後リリースされる
 
 
@@ -97,10 +98,10 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 プログラミングを目指したい :muscle:
 
 
-# 10 年以上前の本なんですが 😅
+# <!--fit--> 20 年以上前の本なんですが 😅
 
--   CODE COMPLETE の原著は **2004 年** 発売
--   日進月歩のソフトウェア業界に身を置く我々がこんな **化石みたいな** 本を読む必要があるんですかね？
+-   CODE COMPLETE 第2版の原著は **2004 年** 発売、つまり **20 年以上前**
+-   生成 AI がコードを書く 2026 年に、こんな **化石みたいな** 本を読む必要があるんですかね？
 
 
 # <!--fit--> あります
@@ -109,11 +110,12 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 ## 😤
 
 
-# ソフトウェアは **人間がつくる**
+# ソフトウェアは **人間のため**にある
 
--   古今東西コードを書くのは **人間** だった
--   人間はこの 10 年で何か著しく変わったか？
--   知見や使えるツールは増えても **人間自体は変わってない**
+-   この 20 年でツールは激変した。今や **コードの多くを AI が書く**
+-   では、本質も変わったのか？
+-   **否。** コードを **理解し**、最終的に **責任を負う** のは人間
+-   増えたのは道具と知見。**人間の認知の限界は変わってない**
 
 
 # なぜ
@@ -204,6 +206,43 @@ yewton の考える **〈完全なプログラミング〉** を知り、
     -   [What Do Programmers Really Do Anyway? (aka Part 2 of the Yardstick saga)](https://blogs.msdn.microsoft.com/peterhal/2006/01/04/what-do-programmers-really-do-anyway-aka-part-2-of-the-yardstick-saga/)
 
 
+# <!--fit--> 2026 年の<br>ツッコミ
+
+
+# <!--fit-->「でも今は<br> **AI が読み書き** するんでしょ?」
+
+---
+
+-   コードを書くのも読むのも AI に任せられる時代
+-   じゃあ人間向けの **可読性なんて甘え** では? 😏
+
+
+# <!--fit--> 🙅
+
+
+# <!--fit--> 読み手に **AI が加わった** だけ
+
+---
+
+-   生成が **安く・速く** なったぶん、ボトルネックは「書く」から **「理解する・確かめる」** へ移った
+-   AI が書いたコードでも、 **最終的に理解し責任を負うのは人間** (レビュアー)
+-   つまり **「8 割は理解」** は薄まるどころか **一層効く**
+
+
+# <!--fit--> 反証になる?<br> **AI 第一の言語** なら<br>可読性は要らない?
+
+---
+
+-   2026 年 5 月、 [**ZeroLang (Zero)**](https://zerolang.ai/) が登場
+    -   *AI エージェントが読み・直し・出荷する* ことを第一に設計された言語 (Vercel Labs)
+-   ところがその設計目標は **readable / inspectable / explicit**
+    -   診断は構造化 (JSON)、契約は明示、隠れた挙動を排除
+-   読み手が AI でも、求められるのは **「明快さ」**
+
+
+# <!--fit--> 〈完全〉の価値は<br> **読み手が AI でも** 変わらない
+
+
 # <!--fit--> プログラミングの
 
 
@@ -211,8 +250,10 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 ---
 
+<!-- _class: lead quote -->
+
 > It's **only the first 10 minutes that the code's original** , when you type it in the first time. That's it.
-> &#x2014; *[The Noble Art of Maintenance Programming](https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/)*
+> *&#x2014; [The Noble Art of Maintenance Programming](https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/)*
 
 
 # プログラミングは
@@ -221,6 +262,8 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 ## <!--fit--> **コミュニケーション** 🤝
 
 ---
+
+<!-- _class: lead quote -->
 
 > プログラミングにおいてコンピュータとのやり取りはほんの15%にすぎず、85%が人とのコミュニケーションである
 > *&#x2013; CODE COMPLETE 33.1 個人の資質は話題からずれているか*
@@ -235,11 +278,15 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 ---
 
+<!-- _class: lead quote -->
+
 > 最初の開発時でさえ、コードを書くことよりも読むことのほうが多い。
 > 読み手の便宜を犠牲にしてまで書き手の便宜を優先しても、表面的な節約にしかならない。
 > *&#x2014; CODE COMPLETE 6.2.2 良いカプセル化*
 
 ---
+
+<!-- _class: lead quote -->
 
 > コードを読みやすくすることは、開発プロセスのオプション部分ではない。そして、読むときの便宜ではなく書くときの便宜を図るのは不経済である。
 > *&#x2014; CODE COMPLETE 34.3 人間が1番、コンピュータは2番*
@@ -340,10 +387,14 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 ---
 
+<!-- _class: lead quote -->
+
 > ほとんどのプロジェクトで最も時間のかかるアクティビティは、正しく動作しないコードのデバッグと修正である。
 > デバッグとそれに伴うリファクタリングなどの修正作業は、従来の単純なソフトウェア開発サイクルにおいて約50%の時間を占める。
 
 ---
+
+<!-- _class: lead quote -->
 
 > エラーを予防してデバッグを減らせば、生産性は向上する。
 > したがって、開発スケジュールを短縮する最も明らかな方法とは、製品の品質を向上させ、ソフトウェアのデバッグや作業のやり直しにかかる時間を減らすことである。
@@ -375,6 +426,7 @@ yewton の考える **〈完全なプログラミング〉** を知り、
 
 -   [CODE COMPLETE 第2版](https://www.amazon.co.jp/dp/489100455X/)
 -   [ピープルウエア 第3版](https://www.amazon.co.jp/dp/4822285243)
+-   [Zero — An agent-first language experiment (Vercel Labs)](https://zerolang.ai/) / [vercel-labs/zero](https://github.com/vercel-labs/zero)
 -   [Marp - Markdown Presentation Ecosystem](https://marp.app/)
 -   [凶暴化した暴徒が鉄拳制裁のフリー素材 from ぱくたそ](https://www.pakutaso.com/20170458107post-11122.html)
 
