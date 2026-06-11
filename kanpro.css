@@ -175,7 +175,6 @@ section h3 {
   margin: 0 0 0.3em;
 }
 
-/* h4 は architecture.md などで使用 */
 section h4 {
   color: var(--c-dim);
   font-weight: 600;

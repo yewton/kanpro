@@ -655,7 +655,7 @@ System.out.println(String.format("Product = %d", product));
 # `git push --force-if-includes`
 
 -   `--force-with-lease` には穴がある: 暗黙の `fetch` でリモート追跡 ref が更新されると lease がすり抜ける
--   `--force-if-includes` ( **Git 2.30** / 2021) を併用すると、ローカルが **リモートの最新を取り込んだ上で** 書き換えたことを確認してから push する
+-   `--force-if-includes` ( **Git 2.30** / 2020) を併用すると、ローカルが **リモートの最新を取り込んだ上で** 書き換えたことを確認してから push する
 -   *cf. [git-push Documentation](https://git-scm.com/docs/git-push)*
 
 
