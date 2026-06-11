@@ -451,6 +451,17 @@ System.out.println(String.format("Product = %d", product));
     -   コンテキストの再構築に役立つ
 
 
+# <!--fit--> この形式には<br>名前がある
+
+
+# [**Conventional Commits**](https://www.conventionalcommits.org/ja/)
+
+-   `<type>(<scope>): <subject>` という構造化された規約
+    -   `feat` / `fix` / `docs` / `refactor` / `chore` …
+-   **機械可読** なので CHANGELOG 生成やバージョニングを自動化できる
+-   人にも AI にも **意図が伝わりやすい** 共通語彙になる
+
+
 # (FYI)[Spring Boot もこのような形式](https://github.com/spring-projects/spring-boot/blob/v2.2.6.RELEASE/CONTRIBUTING.adoc#code-conventions-and-housekeeping)
 
     Restore support for TransactionAwareCacheDecorator
@@ -641,6 +652,13 @@ System.out.println(String.format("Product = %d", product));
 -   いかなる force push も許容しないという考え方もあるのでチームの指針に従いましょう
 
 
+# `git push --force-if-includes`
+
+-   `--force-with-lease` には穴がある: 暗黙の `fetch` でリモート追跡 ref が更新されると lease がすり抜ける
+-   `--force-if-includes` ( **Git 2.30** / 2021) を併用すると、ローカルが **リモートの最新を取り込んだ上で** 書き換えたことを確認してから push する
+-   *cf. [git-push Documentation](https://git-scm.com/docs/git-push)*
+
+
 # `git add -p`
 
 -   [Git - 対話的なステージング](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E5%AF%BE%E8%A9%B1%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0)
@@ -723,19 +741,26 @@ System.out.println(String.format("Product = %d", product));
 ---
 
 
-## 目的
+`Status` ・ `Date`
 
+## 目的
 
 ## 背景
 
-
 ## 前提
-
 
 ## 選択肢
 
-
 ## 結論
+
+## 結果・影響
+
+
+# Status ・ Date
+
+-   `Proposed` → `Accepted` → `Superseded` … と **状態と日付を更新** していく
+-   ADR は決定の **「生きた記録」** 。古い決定は消さず、新しい ADR で **置き換える(supersede)**
+-   「**どれが今も有効か**」「何が何を置き換えたか」が一目で分かる
 
 
 # 目的
@@ -770,6 +795,15 @@ System.out.println(String.format("Product = %d", product));
 -   採用する提案とその理由を書く。特に、デメリットにどう対処するのか(あるいは許容するのか)を忘れずに書く。
 
     例) A案を採用する。技術人員リソースの不足は開発支援チームの支援を受けることで解決する。
+
+
+# 結果・影響
+
+-   この決定が生む **新たな制約・フォローアップ・取れなくなる選択肢** を書く
+    -   つまり **将来この決定を変える人が、何を考慮すべきか**
+-   「変更したくなったとき何を考慮するか分かる」(冒頭) は、 **ここで担保される**
+
+    例) 10分の遅延を許容するため、即時性が要る新機能はこの基盤には乗せられない
 
 
 # <!--fit--> まとめ

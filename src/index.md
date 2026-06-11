@@ -13,5 +13,5 @@ description: 〈完全なプログラミング〉を目指す会 2026 の資料�
 -   [オブジェクト指向プログラミング](oop.html)
 -   [命名](naming.html)
 -   [ドキュメント](document.html)
--   [アーキテクチャ](architecture.html)
+-   [AI 時代の〈完全なプログラミング〉](ai.html)
 
